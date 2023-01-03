@@ -326,7 +326,7 @@ template {
 
 .gallery {
   border-top: 1px solid white;
-  background: url("../../images/mainpage/flash.svg") 0% 0% no-repeat fixed, url("../../images/mainpage/flash.svg") 50% 23% no-repeat fixed, url("../../images/mainpage/flash.svg") 112% 15.5% no-repeat fixed, url("../../images/mainpage/flash.svg") 24% 72.2% no-repeat fixed, url("../../images/mainpage/flash.svg") 69% 70% no-repeat fixed, url("../../images/mainpage/gray.svg") 30% 66% no-repeat fixed;
+  background: url("../../images/mainpage/flash.svg") 1% -13% no-repeat fixed, url("../../images/mainpage/flash.svg") 50% 23% no-repeat fixed, url("../../images/mainpage/flash.svg") 112% 15.5% no-repeat fixed, url("../../images/mainpage/flash.svg") 24% 72.2% no-repeat fixed, url("../../images/mainpage/flash.svg") 69% 70% no-repeat fixed, url("../../images/mainpage/gray.svg") 30% 66% no-repeat fixed;
   background-size: 30%, 18%, 22%, 6.5%, 10%, 100%;
 }
 
@@ -353,14 +353,27 @@ template {
   text-align: center;
 }
 
+.heroesBox__title {
+  font-size: 32px;
+  font-weight: bold;
+  box-sizing: border-box;
+  margin-top: 0;
+  text-decoration: none;
+  color: black;
+}
+
 .heroesBox {
-  margin-top: 4em;
-  display: flex;
-  flex-direction: row;
-  height: 70vh;
-  justify-content: space-around;
+  height: 80vh;
   padding: 7em;
   box-sizing: border-box;
+}
+
+.heroesBox2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-sizing: border-box;
+  margin-top: 2.5em;
 }
 
 /*# sourceMappingURL=style.css.map */
