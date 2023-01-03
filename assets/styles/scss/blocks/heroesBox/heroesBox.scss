@@ -1,0 +1,13 @@
+@import "./__btn/heroesBox__btn.scss";
+@import "./__card/heroesBox__card.scss";
+
+.heroesBox {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    justify-content: space-around;
+    padding: 7em;
+    box-sizing: border-box;
+
+}
