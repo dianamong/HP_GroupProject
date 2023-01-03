@@ -376,4 +376,8 @@ template {
   margin-top: 2.5em;
 }
 
+.comments {
+  background: linear-gradient(0deg, #1D1D1F, #1D1D1F), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2);
+}
+
 /*# sourceMappingURL=style.css.map */
