@@ -12,7 +12,25 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <title>Document</title>
+    <style>
+        .button {
+            box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .3);
+            display: inline-block;
+            vertical-align: middle;
+            box-sizing: border-box;
+            background-color: transparent;
+            border: 1px solid hsla(0, 0%, 100%, .5);
+            border-radius: 100px;
+            cursor: pointer;
+            position: relative;
+            z-index: 100;
+            background: url('../../images/mainpage/arrayRight.svg');
+        }
 
+        .button:hover {
+            background-image: linear-gradient(160deg, #44cbd4, #2881ef);
+        }
+    </style>
 </head>
 
 <body>
@@ -23,23 +41,10 @@
             <div class="heroesBox">
                 <a class="heroesBox__title" href="" target="_blank">HEROES</a>
                 <div class="heroesBox2">
-                    <button class="heroesBox__btn heroesBox__btn_right"></button>
-                    <div class="heroesBox__card"><img src="./assets/images/mainpage/harry.svg">
-                        <p class="galleryText_size">Harry Potter</p>
-                    </div>
-                    <div class="heroesBox__card"><img src="./assets/images/mainpage/lord.svg">
-                        <p class="galleryText_size">Lord Voldemort</p>
-                    </div>
-                    <div class="heroesBox__card"><img src="./assets/images/mainpage/hermione.svg">
-                        <p class="galleryText_size">Hermione Granger </p>
-                    </div>
-                    <div class="heroesBox__card"><img src="./assets/images/mainpage/ron.svg">
-                        <p class="galleryText_size">Ron Weasley</p>
-                    </div>
-                    <button class="heroesBox__btn heroesBox__btn_left"></button>
                 </div>
             </div>
         </article>
+        <button class="button">hi</button>
         <!--Spells Gallery-->
     </main>
     <footer></footer>

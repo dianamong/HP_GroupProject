@@ -1,0 +1,11 @@
+.imgHover:hover {
+    -webkit-box-shadow: 0px 5px 32px -10px rgba(31, 31, 51, 0.76);
+    -moz-box-shadow: 0px 5px 32px -10px rgba(31, 31, 51, 0.76);
+    box-shadow: 0px 5px 32px -10px rgba(31, 31, 51, 0.76);
+    transform: scale(1.02);
+}
+
+.imgHover {
+    transition: 0.6s;
+    /* Время эффекта */
+}

@@ -1,0 +1,45 @@
+let rightArray = document.querySelector('arrayRight');
+let leftArray = document.querySelector('arrayLeft');
+let heroCards = document.querySelectorAll('.heroesBox__card');
+
+
+//rightArray.addEventListener('click', function () {
+//  for (const card of heroCards) {
+
+//}
+//})
+
+class HeroCard {
+    constructor(img, name) {
+        this.img = img;
+        this.name = name;
+    }
+}
+let heroes = [
+    new HeroCard("./assets/images/mainpage/harry.svg", 'Harry Potter'),
+    new HeroCard("./assets/images/mainpage/lord.svg", 'Lord Voldemort'),
+    new HeroCard("./assets/images/mainpage/hermione.svg", 'Hermione'),
+    new HeroCard("./assets/images/mainpage/ron.svg", 'Ron Weasley'),
+
+];
+console.log(heroes[3].img);
+
+
+document.addEventListener('DOMContentLoaded', function (event) {
+    let heroesContent = '';
+    heroesContent += ` <button class="heroesBox__btn heroesBox__btn_right" id="arrayRight"></button>
+        <div class="heroesBox__card"><img src="${heroes[0].img}" class="imgHover"alt="Harry">
+            <p class="galleryText_size">${heroes[0].name}</p>
+        </div>
+        <div class="heroesBox__card"><img src="${heroes[1].img}"class="imgHover" alt="Lord">
+            <p class="galleryText_size">${heroes[1].name}</p>
+        </div>
+        <div class="heroesBox__card"><img src="${heroes[2].img}" class="imgHover"alt="Hermione">
+            <p class="galleryText_size">${heroes[2].name}</p>
+        </div>
+        <div class="heroesBox__card"><img src="${heroes[3].img}"class="imgHover" alt="Ron">
+            <p class="galleryText_size">${heroes[3].name}</p>
+        </div>
+        <button class="heroesBox__btn heroesBox__btn_left" id="arrayLeft"></button></button>`
+    document.querySelector('.heroesBox2').innerHTML = heroesContent;
+});

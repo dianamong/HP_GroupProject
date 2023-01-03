@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -316,6 +317,10 @@ template {
   font-size: 25px;
 }
 
+.galleryText_size:hover {
+  color: rgb(48, 48, 48);
+}
+
 .subtittle_size {
   font-size: 28px;
 }
@@ -360,6 +365,22 @@ template {
   margin-top: 0;
   text-decoration: none;
   color: black;
+}
+
+.heroesBox__title:hover {
+  color: rgb(48, 48, 48);
+}
+
+.imgHover:hover {
+  -webkit-box-shadow: 0px 5px 32px -10px rgba(31, 31, 51, 0.76);
+  -moz-box-shadow: 0px 5px 32px -10px rgba(31, 31, 51, 0.76);
+  box-shadow: 0px 5px 32px -10px rgba(31, 31, 51, 0.76);
+  transform: scale(1.02);
+}
+
+.imgHover {
+  transition: 0.6s;
+  /* Время эффекта */
 }
 
 .heroesBox {
