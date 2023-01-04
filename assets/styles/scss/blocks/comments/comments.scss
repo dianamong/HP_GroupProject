@@ -1,5 +1,6 @@
 @import "./commentsBox/commentsBox.scss";
-@import "./comments__block/comments__block.scss";
+@import "./__block/_block";
+@import "./__form/_form";
 .comments {
     background: #1D1D1F;
 }
