@@ -397,6 +397,26 @@ template {
   margin-top: 2.5em;
 }
 
+.comments__block {
+  box-sizing: border-box;
+  padding: 5em 7em;
+}
+
+.comments__title {
+  color: #FFFFFF;
+}
+
+.comments__title:hover {
+  color: grey;
+}
+
+.form-control {
+  display: flex;
+  margin-top: 2.5em;
+  width: 476px;
+  border: 4px solid #FFFFFF;
+}
+
 .comments {
   background: linear-gradient(0deg, #1D1D1F, #1D1D1F), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2);
 }
