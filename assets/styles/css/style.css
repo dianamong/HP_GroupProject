@@ -490,6 +490,7 @@ template {
   height: 100%;
   grid-template-columns: 100%;
   grid-template-rows: 25% 12% 12% 10%;
+
 }
 
 .mainpage__container__text1{
@@ -529,7 +530,5 @@ template {
 .mainpage__container__input:focus{
   outline: none;
 }
-.mainpage__container__image{
 
-}
 /*# sourceMappingURL=style.css.map */
