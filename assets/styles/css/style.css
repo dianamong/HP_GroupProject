@@ -422,6 +422,8 @@ template {
 .comments__block {
   box-sizing: border-box;
   padding: 4em 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .comments__title {
@@ -470,6 +472,19 @@ template {
 
 .comments {
   background: #1D1D1F;
+}
+
+.comments__result {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments__result-item {
+  width: 45rem;
+  height: 7rem;
+  background-color: white;
+  border-radius: 27px;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

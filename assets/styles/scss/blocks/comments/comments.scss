@@ -5,3 +5,16 @@
 .comments {
     background: #1D1D1F;
 }
+
+.comments__result {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments__result-item {
+    width: 45rem;
+    height: 7rem;
+    background-color: white;
+    border-radius: 27px;
+    margin-bottom: 2rem;
+}
