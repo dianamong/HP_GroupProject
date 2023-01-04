@@ -397,8 +397,25 @@ template {
   margin-top: 2.5em;
 }
 
+.commentsBox__title {
+  color: white;
+}
+
+.commentsBox__title:hover {
+  color: gray;
+}
+
+.commentsBox {
+  box-sizing: border-box;
+  padding: 7em;
+}
+
+.comments__block {
+  padding: 4em 0;
+}
+
 .comments {
-  background: linear-gradient(0deg, #1D1D1F, #1D1D1F), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2);
+  background: #1D1D1F;
 }
 
 /*# sourceMappingURL=style.css.map */

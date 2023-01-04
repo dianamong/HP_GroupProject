@@ -1,3 +1,5 @@
+@import "./commentsBox/commentsBox.scss";
+@import "./comments__block/comments__block.scss";
 .comments {
-    background: linear-gradient(0deg, #1D1D1F, #1D1D1F), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2);
+    background: #1D1D1F;
 }
