@@ -339,15 +339,24 @@ template {
   background: url("../../images/mainpage/arrayLeft.svg") no-repeat;
 }
 
+.heroesBox__btn_left:hover {
+  background: url("../../images/mainpage/arrayBlueR.svg");
+}
+
 .heroesBox__btn_right {
   background: url("../../images/mainpage/arrayRight.svg") no-repeat;
 }
 
+.heroesBox__btn_right:hover {
+  background: url("../../images/mainpage/arrayBlueL.svg");
+}
+
 .heroesBox__btn {
-  height: 3em;
-  width: 3em;
+  height: 2.5em;
+  width: 2.5em;
   margin-top: 8em;
   border: none;
+  border-radius: 100%;
 }
 
 .heroesBox__card {
