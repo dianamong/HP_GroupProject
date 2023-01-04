@@ -309,12 +309,12 @@ template {
 }
 
 .button_fontsize {
-  font-size: 26px;
-  font-weight: bold;
+  font-size: 1.97vw;
+  font-weight: 400;
 }
 
 .galleryText_size {
-  font-size: 25px;
+  font-size: 1.89vw;
 }
 
 .galleryText_size:hover {
@@ -322,11 +322,11 @@ template {
 }
 
 .subtittle_size {
-  font-size: 28px;
+  font-size: 2.12vw;
 }
 
 .tittle_size {
-  font-size: 36px;
+  font-size: 2.73vw;
 }
 
 .gallery {
@@ -430,4 +430,64 @@ template {
   background: linear-gradient(0deg, #1D1D1F, #1D1D1F), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2);
 }
 
+.mainpage{
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../images/mainpage/fon_mainpage.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+}
+
+.mainpage__container{
+  padding-top: 15vh;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  display: grid;
+  width: 55vw;
+  height: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 12% 12% 10%;
+}
+
+.mainpage__container__text1{
+  color: white;
+  font-size: 2.73vw;
+  font-weight: 400;
+}
+.mainpage__container__text2{
+  color: white;
+  font-size: 1.89vw;
+  font-weight: 300;
+}
+.mainpage__container__button{
+  width: 20%;
+  height: 60%;
+  background-color: #DE9E15;
+  border-width: 0;
+  border-radius: 24px;
+  color:white;
+}
+.search{
+  width: 50%;
+  height:30%;
+  margin-left: 5%;
+  display: inline-flex;
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 10px;
+  
+}
+.mainpage__container__input{
+  width: 95%;
+  background: transparent;
+  border-width: 0;
+  color:white;
+}
+.mainpage__container__input:focus{
+  outline: none;
+}
+.mainpage__container__image{
+
+}
 /*# sourceMappingURL=style.css.map */
