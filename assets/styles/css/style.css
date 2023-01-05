@@ -563,7 +563,7 @@ template {
 }
 
 .header__link {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   margin-right: 70px;
   font-weight: 500;
@@ -583,12 +583,51 @@ template {
 }
 
 .header__login a {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   font-weight: 500;
   font-size: 19px;
   line-height: 19px;
   color: #000;
+}
+
+.footer {
+  background-color: #EDEDED;
+}
+
+.footer__container {
+  display: flex;
+  padding: 1em 7em 3em;
+}
+
+.footer__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.footer__link {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000;
+  text-decoration: none;
+  margin-right: 70px;
+}
+
+.footer__social a {
+  margin-right: 15px;
+}
+
+.footer__social a:last-child {
+  margin-right: 0;
+}
+
+.footer__col-l {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
