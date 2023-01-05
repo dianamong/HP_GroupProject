@@ -28,6 +28,19 @@
         .button:hover {
             background-image: linear-gradient(160deg, #44cbd4, #2881ef);
         }
+
+        /*стили карточки героя и карточки заклинания, позже удалятся*/
+        .hero{
+
+            margin:auto;
+            width: 450px;
+            height: 600px;
+            background-image: url('./assets/images/card/bigfon.png');
+            background-size: 100%;
+           background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 40px;
+        }
     </style>
 </head>
 
@@ -52,7 +65,7 @@
     <main class="main">
             <article class="mainpage">
                 <div class="mainpage__container">
-                    <div class="mainpage__container__logodiv"><img class="mainpage__container__logo" src="./assets/images/mainpage/logo.png" alt="логотип"></div>
+                    <div class="mainpage__container__logodiv"><img class="mainpage__container__logo" src="./assets/images/mainpage/logo.png" alt="logo"></div>
                     <p class="mainpage__container__text1">Hello! You got into Harry Potter Wiki!</p>
                     
                     <div class="mainpage__container__container2"><p class="mainpage__container__text2">Here you can find information about your favorite heroes and spells of the Harry Potter universe</p>
@@ -97,6 +110,25 @@
 
     </main>
     <footer></footer>
+    <div class="hero">
+        <div class="hero__container">
+            <img src="" alt="image of hero"  class="hero__container__img">
+            <div class="hero__container__div1">Name: <span>Harry Potter</span></div>
+            <div class="hero__container__div2">Species: <span>human, wizard</span></div>
+            <div class="hero__container__div3">Gender: <span>male</span></div>
+            <div class="hero__container__div4">House: <span>Griffindor</span></div>
+            <div class="hero__container__div5">Date of birth: <span>31-07-1980</span></div>
+            <div class="hero__container__div6">Ancestry: <span>half-blood</span></div>
+            <div class="hero__container__div7">Eye colour: <span>green</span></div>
+            <div class="hero__container__div8">Hair colour: <span>black</span></div>
+            <div class="hero__container__div9">Wand: <span>holy, phoneix feather, 11</span></div>
+            <div class="hero__container__div10">Patronus: <span>stag</span></div>
+            <div class="hero__container__div11">Status: <span>student, alive</span></div>
+            <div class="hero__container__div12">Actor: <span>Daniel Radcliffe</span></div>
+
+        </div>
+        <button class="hero__container__button">Close</button>
+    </div>
     <script src="./assets/scripts/index.js"></script>
 </body>
 
