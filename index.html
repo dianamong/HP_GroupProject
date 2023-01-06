@@ -36,12 +36,96 @@
 
             margin: auto;
             width: 450px;
-            height: 600px;
+            height: 650px;
             background-image: url('./assets/images/card/bigfon.png');
             background-size: 100%;
             background-position: center;
             background-repeat: no-repeat;
+            border: 4px solid white;
             border-radius: 40px;
+            color:white;
+            font-family: 'Roboto', sans-serif;
+            font-size:1.21vw;
+            font-weight: 500;
+        }
+        .hero__container{
+            padding-left:8%;
+            padding-right: 8%;
+            padding-top: 8%;
+            display: grid;
+            width:82%;
+            height:70%;
+            grid-template-rows: 100%;
+            grid-template-columns: 40% 60%;
+            column-gap: 5%;
+
+        }
+        .hero__container__container2{
+            display: grid;
+            width:100%;
+            height: 100%;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(12,1fr);
+        }
+        .hero__container__container2 span{
+            font-family: 'Playfair Display', serif;
+            font-weight: 100;
+        }
+        .hero__container__img{
+            width: 100%;
+        }
+        .hero__container__button{
+            margin-top: 20%;
+            margin-left: 70%;
+            width: 22%;
+            height: 5%;
+            background-color: #DE9E15;
+            border-width: 0;
+            border-radius: 12px;
+            color:white;
+            font-weight: 400;
+        }
+        .spell-card{
+            margin: auto;
+            width: 450px;
+            height: 270px;
+            background-image: url('./assets/images/card/smallfon.png');
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 4px solid white;
+            border-radius: 30px;
+            color:white;
+            font-family: 'Roboto', sans-serif;
+            font-size:1.21vw;
+            font-weight: 500; 
+        }
+        .spell-card__container{
+            padding-left:8%;
+            padding-right: 8%;
+            padding-top: 3%;
+            display: grid;
+            width:82%;
+            height:70%;
+            grid-template-rows: 20% 80%;
+            grid-template-columns: 100%;
+        }
+        .spell-card__container__text2{
+            font-family: 'Playfair Display', serif;
+            font-size: 1.11vw;
+            font-weight: 100;
+            line-height: 150%;
+        }
+        .spell-card__container__button{
+ 
+            margin-left: 70%;
+            width: 22%;
+            height: 12%;
+            background-color: #DE9E15;
+            border-width: 0;
+            border-radius: 12px;
+            color:white;
+            font-weight: 400;
         }
     </style>
 </head>
@@ -174,22 +258,30 @@
     </footer>
     <div class="hero">
         <div class="hero__container">
-            <img src="" alt="image of hero" class="hero__container__img">
-            <div class="hero__container__div1">Name: <span>Harry Potter</span></div>
-            <div class="hero__container__div2">Species: <span>human, wizard</span></div>
-            <div class="hero__container__div3">Gender: <span>male</span></div>
-            <div class="hero__container__div4">House: <span>Griffindor</span></div>
-            <div class="hero__container__div5">Date of birth: <span>31-07-1980</span></div>
-            <div class="hero__container__div6">Ancestry: <span>half-blood</span></div>
-            <div class="hero__container__div7">Eye colour: <span>green</span></div>
-            <div class="hero__container__div8">Hair colour: <span>black</span></div>
-            <div class="hero__container__div9">Wand: <span>holy, phoneix feather, 11</span></div>
-            <div class="hero__container__div10">Patronus: <span>stag</span></div>
-            <div class="hero__container__div11">Status: <span>student, alive</span></div>
-            <div class="hero__container__div12">Actor: <span>Daniel Radcliffe</span></div>
-
+            <img src="./assets/images/card/harry.png" alt="image of hero" class="hero__container__img">
+            <div class="hero__container__container2">
+            <div class="hero__container__container2__div1">Name: <span>Harry Potter</span></div>
+            <div class="hero__container__container2__div2">Species: <span>human, wizard</span></div>
+            <div class="hero__container__container2__div3">Gender: <span>male</span></div>
+            <div class="hero__container__container2__div4">House: <span>Griffindor</span></div>
+            <div class="hero__container__container2__div5">Date of birth: <span>31-07-1980</span></div>
+            <div class="hero__container__container2__div6">Ancestry: <span>half-blood</span></div>
+            <div class="hero__container__container2__div7">Eye colour: <span>green</span></div>
+            <div class="hero__container__container2r__div8">Hair colour: <span>black</span></div>
+            <div class="hero__container__container2__div9">Wand: <span>holy, phoneix feather, 11</span></div>
+            <div class="hero__container__container2__div10">Patronus: <span>stag</span></div>
+            <div class="hero__container__container2__div11">Status: <span>student, alive</span></div>
+            <div class="hero__container__container2__div12">Actor: <span>Daniel Radcliffe</span></div>
+        </div>
         </div>
         <button class="hero__container__button">Close</button>
+    </div>
+    <div class="spell-card">
+        <div class="spell-card__container">
+            <p class="spell-card__container__text1">Apparate</p>
+            <p class="spell-card__container__text2">A non-verbal transportation spell that allows a witch or wizard to instantly travel on the spot and appear at another location (disapparate is the opposite)</p>
+        </div>
+        <button class="spell-card__container__button">Close</button>
     </div>
     <script src="./assets/scripts/index.js"></script>
 </body>
