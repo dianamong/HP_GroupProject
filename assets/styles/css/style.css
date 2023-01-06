@@ -315,24 +315,29 @@ template {
 
 .galleryText_size {
   font-size: 1.89vw;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 33px;
 }
 
 .galleryText_size:hover {
-  color: rgb(48, 48, 48);
+  color: #DE9E15;
+  text-decoration: none;
 }
 
 .subtittle_size {
   font-size: 2.12vw;
 }
 
-.tittle_size {
+.title_size {
   font-size: 2.73vw;
-}
-
-.gallery {
-  border-top: 1px solid white;
-  background: url("../../images/mainpage/flash.svg") 1% -13% no-repeat fixed, url("../../images/mainpage/flash.svg") 50% 23% no-repeat fixed, url("../../images/mainpage/flash.svg") 112% 15.5% no-repeat fixed, url("../../images/mainpage/flash.svg") 24% 72.2% no-repeat fixed, url("../../images/mainpage/flash.svg") 69% 70% no-repeat fixed, url("../../images/mainpage/gray.svg") 30% 66% no-repeat fixed;
-  background-size: 30%, 18%, 22%, 6.5%, 10%, 100%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
 }
 
 .heroesBox__btn_left {
@@ -368,8 +373,6 @@ template {
 }
 
 .heroesBox__title {
-  font-size: 32px;
-  font-weight: bold;
   box-sizing: border-box;
   margin-top: 0;
   text-decoration: none;
@@ -381,21 +384,14 @@ template {
 }
 
 .imgHover:hover {
-  -webkit-box-shadow: 0px 5px 32px -10px rgba(31, 31, 51, 0.76);
-  -moz-box-shadow: 0px 5px 32px -10px rgba(31, 31, 51, 0.76);
-  box-shadow: 0px 5px 32px -10px rgba(31, 31, 51, 0.76);
-  transform: scale(1.02);
-}
-
-.imgHover {
-  transition: 0.6s;
-  /* Время эффекта */
+  box-shadow: 1px 3px 7px 2px rgba(0, 0, 0, 0.5);
 }
 
 .heroesBox {
-  height: 80vh;
+  height: 90vh;
   padding: 7em;
   box-sizing: border-box;
+  background-image: url("../../images/mainpage/фон.png");
 }
 
 .heroesBox2 {
