@@ -466,10 +466,6 @@ template {
   font-size: 26px;
 }
 
-.comments__button:hover {
-  opacity: 0.8;
-}
-
 .comments__result {
   display: flex;
   flex-direction: column;
@@ -479,6 +475,7 @@ template {
   width: 38rem;
   height: 7rem;
   background-color: white;
+  opacity: 0.8;
   border-radius: 27px;
   margin-bottom: 5px;
 }
