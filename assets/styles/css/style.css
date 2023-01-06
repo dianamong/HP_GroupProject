@@ -315,6 +315,7 @@ template {
 
 .button__shine:hover {
   box-shadow: 1px 1px 20px 7px rgba(222, 158, 21, 0.4);
+  cursor: pointer;
 }
 
 .button__shine::before {
