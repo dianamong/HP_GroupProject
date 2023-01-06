@@ -22,7 +22,6 @@ let heroes = [
     new HeroCard("./assets/images/mainpage/ron.svg", 'Ron Weasley'),
 
 ];
-console.log(heroes[3].img);
 
 
 document.addEventListener('DOMContentLoaded', function (event) {
@@ -43,3 +42,26 @@ document.addEventListener('DOMContentLoaded', function (event) {
         <button class="heroesBox__btn heroesBox__btn_left" id="arrayLeft"></button></button>`
     document.querySelector('.heroesBox2').innerHTML = heroesContent;
 });
+
+//import Swiper, { Navigation, Pagination } from 'swiper';
+//import 'swiper/css';
+//import 'swiper/css/navigation';
+//import 'swiper/css/pagination';
+//const swiper = require('swiper');
+
+//const swiper = new Swiper('.heroesBox', {
+//modules: [Navigation, Pagination],
+//direction: 'horizontal',
+//loop: true,
+//navigation: {
+// nextEl: '.heroesBox__btn_left',
+// prevEl: '.heroesBox__btn_right',
+//},
+//});
+
+let instaFooter = document.getElementById('insta');
+let whatsFooter = document.getElementById('whats');
+instaFooter.addEventListener('mouseover', e => instaFooter.src = "./assets/images/footer/insta.svg");
+instaFooter.addEventListener('mouseout', e => instaFooter.src = "./assets/images/footer/image_41.png");
+whatsFooter.addEventListener('mouseover', e => whatsFooter.src = "./assets/images/footer/whats.svg");
+whatsFooter.addEventListener('mouseout', e => whatsFooter.src = "./assets/images/footer/image_40.png");
