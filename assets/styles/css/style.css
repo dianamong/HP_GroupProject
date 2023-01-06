@@ -457,9 +457,9 @@ template {
 
 .form-control {
   box-sizing: border-box;
-  background: black;
+  background: 0%;
   border: 4px solid white;
-  width: 27rem;
+  width: 28rem;
   color: rgba(255, 255, 255, 0.49);
   font-size: 20px;
   padding-left: 2rem;
@@ -487,10 +487,6 @@ template {
   font-size: 26px;
 }
 
-.comments__button:hover {
-  opacity: 0.8;
-}
-
 .comments__result {
   display: flex;
   flex-direction: column;
@@ -500,6 +496,7 @@ template {
   width: 38rem;
   height: 7rem;
   background-color: white;
+  opacity: 0.8;
   border-radius: 27px;
   margin-bottom: 5px;
 }
@@ -527,7 +524,9 @@ template {
 }
 
 .comments {
-  background: #1D1D1F;
+  background-image: url("../../images/mainpage/hat.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .comments__result {
