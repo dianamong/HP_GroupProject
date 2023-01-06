@@ -490,6 +490,11 @@ template {
   margin-left: 1rem;
 }
 
+.comments__name {
+  font-size: 25px;
+  margin: -3rem 0 0 5rem;
+}
+
 .comments {
   background: #1D1D1F;
 }
