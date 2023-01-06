@@ -1,12 +1,13 @@
 @import "../vendor/normalize.scss";
+@import "../scss/blocks/button__shine.scss";
 @import "../scss/blocks/button_fontsize.scss";
 @import "../scss/blocks/galleryText_size.scss";
 @import "../scss/blocks/subtitle_size.scss";
-@import "../scss/blocks/tittle_size.scss";
-@import "../scss/blocks/gallery/gallery.scss";
+@import "../scss/blocks/title_size.scss";
 @import "../scss/blocks/heroesBox/heroesBox.scss";
 @import "../scss/blocks/heroesBox/heroesBox2.scss";
 @import "../scss/blocks/comments/comments.scss";
 @import "../scss/blocks/mainpage/mainpage.scss";
 @import "../scss/blocks/header/header.scss";
 @import "../scss/blocks/footer/footer.scss";
+@import "../scss/blocks/spells/spells.scss";
