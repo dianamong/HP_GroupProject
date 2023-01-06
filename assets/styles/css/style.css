@@ -421,8 +421,8 @@ template {
 }
 
 .button_fontsize {
-    font-size: 1.97vw;
-    font-weight: 400;
+    font-size: 26px;
+    font-weight: bold;
 }
 
 .galleryText_size {
@@ -582,6 +582,18 @@ template {
     opacity: 0.8;
 }
 
+.comments__result {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments__result-item {
+    width: 38rem;
+    height: 7rem;
+    background-color: white;
+    border-radius: 27px;
+}
+
 .comments {
     background: #1D1D1F;
 }
@@ -592,11 +604,11 @@ template {
 }
 
 .comments__result-item {
-    width: 45rem;
+    width: 38rem;
     height: 7rem;
     background-color: white;
     border-radius: 27px;
-    margin-bottom: 2rem;
+    margin-bottom: 5px;
 }
 
 

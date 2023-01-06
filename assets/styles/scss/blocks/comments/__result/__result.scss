@@ -1,0 +1,11 @@
+.comments__result {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments__result-item {
+    width: 38rem;
+    height: 7rem;
+    background-color: white;
+    border-radius: 27px;
+}
