@@ -12,3 +12,4 @@ fetch("https://hp-api.onrender.com/api/characters")
 })
 .catch(err => console.log(err));
 }
+/**/ 
