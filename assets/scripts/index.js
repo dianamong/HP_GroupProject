@@ -3,11 +3,6 @@ let leftArray = document.querySelector('arrayLeft');
 let heroCards = document.querySelectorAll('.heroesBox__card');
 
 
-//rightArray.addEventListener('click', function () {
-//  for (const card of heroCards) {
-
-//}
-//})
 
 class HeroCard {
     constructor(img, name) {
@@ -39,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
         <div class="heroesBox__card"><img src="${heroes[3].img}"class="imgHover" alt="Ron">
             <p class="galleryText_size">${heroes[3].name}</p>
         </div>
-        <button class="heroesBox__btn heroesBox__btn_left" id="arrayLeft"></button></button>`
+        <button class="heroesBox__btn heroesBox__btn_left" id="arrayLeft"></button>`
     document.querySelector('.heroesBox2').innerHTML = heroesContent;
 });
 
@@ -65,3 +60,7 @@ instaFooter.addEventListener('mouseover', e => instaFooter.src = "./assets/image
 instaFooter.addEventListener('mouseout', e => instaFooter.src = "./assets/images/footer/image_41.png");
 whatsFooter.addEventListener('mouseover', e => whatsFooter.src = "./assets/images/footer/whats.svg");
 whatsFooter.addEventListener('mouseout', e => whatsFooter.src = "./assets/images/footer/image_40.png");
+
+
+
+

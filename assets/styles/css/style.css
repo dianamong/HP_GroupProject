@@ -397,7 +397,7 @@ template {
 .heroesBox__card {
   display: flex;
   flex-direction: column;
-  width: 13em;
+  max-width: 13em;
   margin: auto 0 auto 0;
   text-align: center;
 }
