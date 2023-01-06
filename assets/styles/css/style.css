@@ -492,7 +492,17 @@ template {
 
 .comments__name {
   font-size: 25px;
-  margin: -3rem 0 0 5rem;
+  margin: -3.5rem 0 0 5rem;
+}
+
+.comments__content {
+  font-size: 23px;
+  margin: 1rem 0 0 5rem;
+}
+
+.comments__time {
+  font-size: 15px;
+  margin: 0 0 1rem 32rem;
 }
 
 .comments {
