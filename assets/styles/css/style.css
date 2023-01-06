@@ -503,7 +503,9 @@ template {
 }
 
 .comments {
-  background: #1D1D1F;
+  background-image: url("../../images/mainpage/hat.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .comments__result {
