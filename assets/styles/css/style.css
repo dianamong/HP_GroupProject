@@ -404,10 +404,6 @@ template {
   color: black;
 }
 
-.heroesBox__title:hover {
-  color: rgb(48, 48, 48);
-}
-
 .imgHover:hover {
   box-shadow: 1px 3px 7px 2px rgba(0, 0, 0, 0.5);
 }
