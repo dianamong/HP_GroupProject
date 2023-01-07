@@ -397,7 +397,7 @@ template {
 .heroesBox__card {
   display: flex;
   flex-direction: column;
-  width: 13em;
+  max-width: 13em;
   margin: auto 0 auto 0;
   text-align: center;
 }
@@ -443,7 +443,7 @@ template {
 
 .commentsBox {
   box-sizing: border-box;
-  padding: 7em;
+  padding: 5em 7em 0 7em;
 }
 
 .comments__block {
@@ -752,6 +752,11 @@ a:hover {
   width: 55%;
   margin-left: 45%;
   margin-top: -130px;
+}
+
+.padding {
+  padding-left: 6vw;
+  padding-right: 6vw;
 }
 
 /*# sourceMappingURL=style.css.map */
