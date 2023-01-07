@@ -20,6 +20,9 @@
   width: 40px;
   height: 40px;
   border: none;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
 }
 
 .slick-prev {
@@ -27,14 +30,26 @@
   background: url("../../images/mainpage/arrayRight.svg") 0 0/100% no-repeat;
 }
 
+.slick-prev:hover {
+  background: url("../../images/mainpage/arrayBlueL.svg");
+}
+
 .slick-next {
   right: 0;
   background: url("../../images/mainpage/arrayLeft.svg") 0 0/100% no-repeat;
 }
 
+.slick-next:hover {
+  background: url("../../images/mainpage/arrayBlueR.svg");
+}
+
 .slider__item {
   text-align: center;
   max-width: 100%;
+}
+
+.slick-list {
+  text-align: center;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -377,7 +392,14 @@ template {
 }
 
 .galleryText_size {
-  font-size: 1.89vw;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 33px;
+}
+
+.galleryText_sizeHover {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
@@ -448,11 +470,11 @@ template {
 
 .imgHover:hover {
   box-shadow: 1px 3px 7px 2px rgba(0, 0, 0, 0.5);
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .imgHover {
-  transition: 1s;
+  transition: 0.5s;
   max-width: 13em;
 }
 

@@ -17,6 +17,7 @@ let heroes = [
 $(document).ready(function () {
     $('.slider').slick({
         dots: false,
+        arrows: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         speed: 500,
@@ -50,7 +51,18 @@ $(document).ready(function () {
     });
 
 });
-
+let pHover = document.querySelectorAll('.galleryText_size');
+console.log(pHover);
+for (p of pHover) {
+    p.addEventListener('mouseover', function () {
+        p.classList.add('galleryText_sizeHover');
+    });
+    p.addEventListener('mouseover', function () {
+        p.classList.add('galleryText_size');
+    });
+}
+//instaFooter.addEventListener('mouseover', e => instaFooter.src = "./assets/images/footer/insta.svg");
+//instaFooter.addEventListener('mouseout', e => instaFooter.src = "./assets/images/footer/image_41.png");
 
 
 
