@@ -14,7 +14,7 @@
 
 .slider .slick-arrow {
   position: absolute;
-  top: 35%;
+  top: 42%;
   z-index: 10;
   font-size: 0;
   width: 40px;
@@ -46,10 +46,6 @@
 .slider__item {
   text-align: center;
   max-width: 100%;
-}
-
-.slick-list {
-  text-align: center;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -475,11 +471,11 @@ template {
 
 .imgHover {
   transition: 0.5s;
-  max-width: 13em;
+  max-width: 14em;
 }
 
 .heroesBox {
-  height: 85vh;
+  height: 80vh;
   padding: 7em;
   box-sizing: border-box;
   background-image: url("../../images/mainpage/фон.png");
@@ -660,6 +656,7 @@ template {
   background-size: 100%;
   background-repeat: no-repeat;
   font-family: "Roboto", sans-serif;
+  display: none;
 }
 
 .header__container {
@@ -908,6 +905,23 @@ a:hover {
   border-radius: 12px;
   color: white;
   font-weight: 400;
+}
+
+#tooltip {
+  z-index: 9999;
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 0px;
+  width: 90px;
+  background-color: rgb(0, 0, 0);
+  padding: 5px 10px 5px 10px;
+  color: #DE9E15;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgb(54, 54, 54);
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

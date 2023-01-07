@@ -135,6 +135,13 @@
             color: white;
             font-weight: 400;
         }
+
+        #block {
+            background: red;
+            width: 100px;
+            height: 100px;
+            display: none;
+        }
     </style>
 </head>
 
@@ -182,23 +189,31 @@
         <div class="wrapper heroesBox">
             <h2 class="title_size padding">HEROES</h2>
             <div class="slider ">
-                <div class="slider__item"><img src="./assets/images/mainpage/harry.svg" class="imgHover" alt="Harry">
-                    <a class="galleryText_size">Harry Potter</a>
+                <div class="slider__item" data-tooltip="Harry Potter"><img src="./assets/images/mainpage/harry.svg"
+                        class="imgHover" alt="Harry">
+
                 </div>
-                <div class="slider__item"><img src="./assets/images/mainpage/lord.svg" class="imgHover" alt="Lord">
-                    <a class="galleryText_size">Lord Voldemort</a>
+                <div class="slider__item" data-tooltip="Lord Voldemort"><img src="./assets/images/mainpage/lord.svg"
+                        class="imgHover" alt="Lord">
+
                 </div>
-                <div class="slider__item"><img src="./assets/images/mainpage/hermione.svg" class="imgHover"
-                        alt="Hermione">
-                    <a class="galleryText_size">Hermione</a>
+                <div class="slider__item" data-tooltip="Hermione"><img src="./assets/images/mainpage/hermione.svg"
+                        class="imgHover" alt="Hermione">
+
                 </div>
-                <div class="slider__item"><img src="./assets/images/mainpage/lord.svg" class="imgHover" alt="Lord">
-                    <a class="galleryText_size">Lord Voldemort</a>
+                <div class="slider__item" data-tooltip="Lord Voldemort"><img src="./assets/images/mainpage/lord.svg"
+                        class="imgHover" alt="Lord">
+
                 </div>
-                <div class="slider__item"><img src="./assets/images/mainpage/lord.svg" class="imgHover" alt="Lord">
-                    <a class="galleryText_size">Lord Voldemort</a>
+                <div class="slider__item" data-tooltip="Lord Voldemort"><img src="./assets/images/mainpage/lord.svg"
+                        class="imgHover" alt="Lord">
+
                 </div>
             </div>
+        </div>
+        <div id="tooltip"></div>
+        <div id="block">
+
         </div>
         <!--Spells Gallery-->
         <article class="spellsGallery">

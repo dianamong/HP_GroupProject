@@ -61,11 +61,25 @@ for (p of pHover) {
         p.classList.add('galleryText_size');
     });
 }
-//instaFooter.addEventListener('mouseover', e => instaFooter.src = "./assets/images/footer/insta.svg");
-//instaFooter.addEventListener('mouseout', e => instaFooter.src = "./assets/images/footer/image_41.png");
-
-
-
+$(function () {
+    $("[data-tooltip]").mousemove(function (eventObject) {
+        $data_tooltip = $(this).attr("data-tooltip");
+        $("#tooltip").html($data_tooltip)
+            .css({
+                "top": eventObject.pageY + 5,
+                "left": eventObject.pageX + 5
+            })
+            .show();
+    }).mouseout(function () {
+        $("#tooltip").hide()
+            .html("")
+            .css({
+                "top": 0,
+                "left": 0
+            });
+    });
+});
+$(".mainpage").fadeIn(1000);
 let instaFooter = document.getElementById('insta');
 let whatsFooter = document.getElementById('whats');
 instaFooter.addEventListener('mouseover', e => instaFooter.src = "./assets/images/footer/insta.svg");
