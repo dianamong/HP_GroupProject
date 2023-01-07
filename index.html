@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="./assets/styles/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
     <title>Document</title>
     <style>
@@ -27,13 +25,12 @@
             z-index: 100;
             background: url('../../images/mainpage/arrayRight.svg');
         }
-
+        
         .button:hover {
             background-image: linear-gradient(160deg, #44cbd4, #2881ef);
         }
-
         /*стили карточки героя и карточки заклинания, позже удалятся*/
-
+        
         .hero {
             margin: auto;
             width: 450px;
@@ -49,7 +46,7 @@
             font-size: 1.21vw;
             font-weight: 500;
         }
-
+        
         .hero__container {
             padding-left: 8%;
             padding-right: 8%;
@@ -61,7 +58,7 @@
             grid-template-columns: 40% 60%;
             column-gap: 5%;
         }
-
+        
         .hero__container__container2 {
             display: grid;
             width: 100%;
@@ -69,16 +66,16 @@
             grid-template-columns: 100%;
             grid-template-rows: repeat(12, 1fr);
         }
-
+        
         .hero__container__container2 span {
             font-family: 'Playfair Display', serif;
             font-weight: 100;
         }
-
+        
         .hero__container__img {
             width: 100%;
         }
-
+        
         .hero__container__button {
             margin-top: 20%;
             margin-left: 70%;
@@ -90,7 +87,7 @@
             color: white;
             font-weight: 400;
         }
-
+        
         .spell-card {
             margin: auto;
             width: 450px;
@@ -106,7 +103,7 @@
             font-size: 1.21vw;
             font-weight: 500;
         }
-
+        
         .spell-card__container {
             padding-left: 8%;
             padding-right: 8%;
@@ -117,14 +114,14 @@
             grid-template-rows: 20% 80%;
             grid-template-columns: 100%;
         }
-
+        
         .spell-card__container__text2 {
             font-family: 'Playfair Display', serif;
             font-size: 1.11vw;
             font-weight: 100;
             line-height: 150%;
         }
-
+        
         .spell-card__container__button {
             margin-left: 70%;
             width: 22%;
@@ -160,15 +157,12 @@
     <main class="main">
         <article class="mainpage">
             <div class="mainpage__container">
-                <div class="mainpage__container__logodiv"><img class="mainpage__container__logo"
-                        src="./assets/images/mainpage/logo.png" alt="логотип"></div>
+                <div class="mainpage__container__logodiv"><img class="mainpage__container__logo" src="./assets/images/mainpage/logo.png" alt="логотип"></div>
                 <p class="mainpage__container__text1">Hello! You got into Harry Potter Wiki!</p>
 
                 <div class="mainpage__container__container2">
-                    <p class="mainpage__container__text2">Here you can find information about your favorite heroes and
-                        spells of the Harry Potter universe</p>
-                    <button class="mainpage__container__button button_fontsize button__shine"
-                        onclick="heroSearch()">Search</button>
+                    <p class="mainpage__container__text2">Here you can find information about your favorite heroes and spells of the Harry Potter universe</p>
+                    <button class="mainpage__container__button button_fontsize button__shine" onclick="heroSearch()">Search</button>
                     <div class="mainpage__container__search">
                         <input type="text" class="mainpage__container__input" placeholder="Name of character" id="hero">
                     </div>
@@ -188,8 +182,7 @@
         <article class="spellsGallery">
             <img src="./assets/images/spells/magicStick.png" class="spellsGallery_magicStick">
             <wrapper class="spellsGallery_wrapper">
-                <div class="h2">SPELLS</div>
-
+                <h2 class="title_size padding">SPELLS</h2>
                 <div class="spellsGallery_wrapper_cards ">
                     <div class="spells_icon_left">
                         <img src="./assets/images/mainpage/arrayRight.svg" class="spells_icon_left_pic  ">
@@ -222,17 +215,15 @@
         <!--Comments -->
         <article class="comments">
             <div class="commentsBox">
-                <a class="heroesBox__title commentsBox__title" href="" target="_blank">COMMENTS</a>
+                <h2 class="title_size commentsBox__title padding">COMMENTS</h2>
                 <div class="comments__block">
                     <div class="comments__form">
                         <form>
                             <div class="form-group">
-                                <input type="name" class="form-control form-name" id="comment-name"
-                                    placeholder="Your name:">
+                                <input type="name" class="form-control form-name" id="comment-name" placeholder="Your name:">
                             </div>
                             <div class="form-group">
-                                <input type="name" class="form-control form-comment" id="comment-body"
-                                    placeholder="Comment:">
+                                <input type="name" class="form-control form-comment" id="comment-body" placeholder="Comment:">
                             </div>
                         </form>
                         <button type="submit" class="comments__button button__shine">Add comment</button>
@@ -313,8 +304,7 @@
     <div class="spell-card">
         <div class="spell-card__container">
             <p class="spell-card__container__text1">Apparate</p>
-            <p class="spell-card__container__text2">A non-verbal transportation spell that allows a witch or wizard to
-                instantly travel on the spot and appear at another location (disapparate is the opposite)</p>
+            <p class="spell-card__container__text2">A non-verbal transportation spell that allows a witch or wizard to instantly travel on the spot and appear at another location (disapparate is the opposite)</p>
         </div>
         <button class="spell-card__container__button">Close</button>
     </div>
