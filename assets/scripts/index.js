@@ -17,8 +17,8 @@ let heroes = [
 $(document).ready(function () {
     $('.slider').slick({
         dots: false,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 4,
+        slidesToScroll: 1,
         speed: 500,
         easing: 'ease',
         adaptiveHeight: true,
