@@ -417,7 +417,6 @@ template {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
   line-height: 38px;
 }
 
@@ -672,7 +671,9 @@ template {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em 7em;
+  padding-top: 1em;
+  padding-left: 6vw;
+  padding-right: 6vw;
 }
 
 .header__list {
@@ -716,7 +717,7 @@ template {
 
 .footer__container {
   display: flex;
-  padding: 1em 7em 3em;
+  padding: 1em 6vw 3em 6vw;
 }
 
 .footer__list {
@@ -749,8 +750,16 @@ template {
   flex-direction: column;
 }
 
+.spellsGallery {
+  width: 100%;
+  height: 100%;
+  background-image: url("../..//images/spells/fon.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 .spellsGallery_wrapper {
-  padding-top: 110px;
+  padding-top: 9vh;
   padding-left: 6vw;
   padding-right: 6vw;
   display: block;
@@ -761,8 +770,6 @@ template {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 38px;
   margin-bottom: 55px;
 }
 
@@ -811,13 +818,6 @@ a {
 a:hover {
   color: #DE9E15; /* Цвет ссылки при наведении */
   text-decoration: none; /* Добавляем подчёркивание */
-}
-
-.spellsGallery_magicStick {
-  position: absolute;
-  width: 55%;
-  margin-left: 45%;
-  margin-top: -130px;
 }
 
 .padding {
