@@ -185,7 +185,9 @@
         <!--Heroes Gallery-->
         <!--Wrapper-->
         <div class="wrapper heroesBox">
+
             <h2 class="title_size padding">MAIN HEROES</h2>
+
             <div class="slider ">
                 <div class="slider__item" data-tooltip="Harry Potter"><img
                         src="./assets/images/mainpage/HarryPotter.png" class="imgHover" alt="Harry">
@@ -224,9 +226,8 @@
         </div>
         <!--Spells Gallery-->
         <article class="spellsGallery">
-            <img src="./assets/images/spells/magicStick.png" class="spellsGallery_magicStick">
             <wrapper class="spellsGallery_wrapper">
-                <h2 class="title_size padding">SPELLS</h2>
+                <h2 class="title_size">SPELLS</h2>
                 <div class="spellsGallery_wrapper_cards ">
                     <div class="spells_icon_left">
                         <img src="./assets/images/mainpage/arrayRight.svg" class="spells_icon_left_pic  ">
@@ -355,6 +356,94 @@
         </div>
         <button class="spell-card__container__button">Close</button>
     </div>
+
+
+    <div class="loginForm">
+        <div class="loginForm_template">
+            <div class="loginForm_template_pic">
+                <img class="loginForm_template_pic_Harry" src="./assets/images/login/authorisation.png">
+            </div>
+            <div class="loginForm_welcome">
+                <p class="loginForm_welcome_text">Hi, <span class="nameColor">Stranger</span>!</p>
+            </div>
+
+            <div class="loginForm_template_fieldset">
+                <div class="emailBlock">
+                    <label for="userEmail" class="emailLabel">Email</label>
+                    <input type="email" id="userEmail" class="email" placeholder="Enter your email" />
+                </div>
+
+                <div class="passwordBlock">
+                    <label for="userPassword" class="passwordLabel">Password</label>
+                    <input type="text" id="userPassword" class="password" placeholder="Enter your password" />
+                </div>
+
+                <div class="checkboxBlock">
+                    <label class="rememberText"><input type="checkbox" name="remember" value="1"> Remember me</label>
+                    <div class="restorePass">
+                        <a href="#" class="restorePass_Link">Forgot password?</a>
+                    </div>
+                </div>
+
+                <div class="loginForm_Buttons">
+                    <button class="button__shine loginButton">LOGIN</button>
+                    <button class="button__shine signUpButton">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="registrationForm">
+        <div class="registration_template">
+            <div class="registration_template_pic">
+                <img class="registration_template_pic_Harry" src="./assets/images/login/authorisation.png">
+            </div>
+            <div class="registration_welcome">
+                <p class="registration_welcome_text">Hi, <span class="nameColor">Stranger</span>!</p>
+            </div>
+
+            <div class="registration_template_fieldset">
+
+                <div class="loginBlock">
+                    <label for="userLogin" class="loginLabel">Login</label>
+                    <input type="text" id="userLogin" class="login" placeholder="Enter your login" />
+                </div>
+
+                <div class="emailBlock">
+                    <label for="userEmail" class="emailLabel">Email</label>
+                    <input type="email" id="userEmail" class="email" placeholder="Enter your email" />
+                </div>
+
+                <div class="passwordBlock">
+                    <label for="userPassword" class="passwordLabel">Password</label>
+                    <input type="text" id="userPassword" class="password" placeholder="Enter your password" />
+                </div>
+
+                <div class="passwordBlock">
+                    <label for="userPassword" class="passwordLabel">Password</label>
+                    <input type="text" id="userPassword" class="password" placeholder="Enter your password" />
+                </div>
+
+                <div class="heroBlock">
+                    <label for="selectHero" class="heroLabel">Your Hero</label>
+                    <input type="text" id="selectHero" class="selectHero" placeholder="Sirius Black" />
+                </div>
+
+                <div class="checkboxBlock checkLogin">
+                    <label class="rememberText"><input type="checkbox" name="remember" value="1"> Remember me</label>
+                </div>
+
+                <div class="registration_Buttons">
+                    <button class="button__shine signUpButton_registration">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <script src="./assets/jquery-3.6.3.js"></script>
     <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
     <script src="./assets/scripts/index.js"></script>
