@@ -3,6 +3,21 @@
 
 function heroSearch(){
     let heroName=document.getElementById('hero').value;
+    let array = heroName.split(" ");
+
+    let name=array[0].split('');
+    let first_name=name[0].toUpperCase();
+    name.splice(0,1);
+    let resultname=[first_name,...name].join('');
+
+    let surname=array[1].split('');
+    let first_surname=surname[0].toUpperCase();
+    surname.splice(0,1);
+    let resultsurname=[first_surname,...surname].join('');
+
+    heroName=resultname + " " + resultsurname;
+
+
 fetch("https://hp-api.onrender.com/api/characters")
 .then(response => response.json())
 .then(heroes => {
@@ -31,7 +46,7 @@ fetch("https://hp-api.onrender.com/api/characters")
               });
            
             modal.show();
-            heroName.reset();
+            document.getElementById('hero').value = "";
             document.querySelector('.btn__cancel').addEventListener("click", () => modal.hide());
         }
     }
