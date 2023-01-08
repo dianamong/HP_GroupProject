@@ -1,0 +1,15 @@
+@import "./commentsBox/commentsBox.scss";
+@import "./__block/_block";
+@import "./__form/_form";
+@import "./__button/_button";
+@import "./__result/_result";
+.comments {
+    background-image: url('../../images/mainpage/hat.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.comments__result {
+    display: flex;
+    flex-direction: column;
+}

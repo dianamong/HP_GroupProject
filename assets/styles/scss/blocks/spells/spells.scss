@@ -1,0 +1,66 @@
+.spellsGallery{
+  width: 100%;
+  height: 100%;
+  background-image: url('../..//images/spells/fon.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.spellsGallery_wrapper{
+    padding-top: 9vh;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    display: block;
+    margin-bottom: 155px;
+  
+  }
+  
+  .h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 55px;
+  }
+  
+  .spellsGallery_wrapper_cards{
+    display: flex;
+    align-items: center;
+  }
+  
+  .spellCard_picture{
+    width: 100%;
+  }
+  .spellCard_picture:hover{
+    box-shadow: 1px 3px 7px 2px rgba(0, 0, 0, 0.5)
+  }
+  
+  .spellCard{
+    margin-left: 7px;
+    margin-right: 7px;
+    display: grid;
+    justify-items: center;
+  }
+  .spells_icon_left{
+    margin-right: 55px;
+  }
+  .spells_icon_right{
+    margin-left: 55px;
+  }
+  .spellCard_text{
+    font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 33px;
+  margin-top: 17px;
+  }
+  
+  a {
+    color: #000000; /* Цвет обычной ссылки */ 
+    text-decoration: none; /* Убираем подчёркивание у ссылок */
+  }
+  
+  a:hover {
+    color: #DE9E15  ; /* Цвет ссылки при наведении */ 
+    text-decoration: none; /* Добавляем подчёркивание */
+  }
+  

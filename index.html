@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="./assets/scripts/modal.js"></script>
+    <title>Document</title>
+    <style>
+        .button {
+            box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .3);
+            display: inline-block;
+            vertical-align: middle;
+            box-sizing: border-box;
+            background-color: transparent;
+            border: 1px solid hsla(0, 0%, 100%, .5);
+            border-radius: 100px;
+            cursor: pointer;
+            position: relative;
+            z-index: 100;
+            background: url('../../images/mainpage/arrayRight.svg');
+        }
+        
+        .button:hover {
+            background-image: linear-gradient(160deg, #44cbd4, #2881ef);
+        }
+        /*стили карточки героя и карточки заклинания, позже удалятся*/
+        
+        .hero {
+            margin: auto;
+            width: 450px;
+            height: 650px;
+            background-image: url('./assets/images/card/bigfon.png');
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 4px solid white;
+            border-radius: 40px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.21vw;
+            font-weight: 500;
+        }
+        
+        .hero__container {
+            padding-left: 8%;
+            padding-right: 8%;
+            padding-top: 8%;
+            display: grid;
+            width: 82%;
+            height: 70%;
+            grid-template-rows: 100%;
+            grid-template-columns: 40% 60%;
+            column-gap: 5%;
+        }
+        
+        .hero__container__container2 {
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(12, 1fr);
+        }
+        
+        .hero__container__container2 span {
+            font-family: 'Playfair Display', serif;
+            font-weight: 100;
+        }
+        
+        .hero__container__img {
+            width: 100%;
+        }
+        
+        .hero__container__button {
+            margin-top: 20%;
+            margin-left: 70%;
+            width: 22%;
+            height: 5%;
+            background-color: #DE9E15;
+            border-width: 0;
+            border-radius: 12px;
+            color: white;
+            font-weight: 400;
+        }
+        
+        .spell-card {
+            margin: auto;
+            width: 450px;
+            height: 270px;
+            background-image: url('./assets/images/card/smallfon.png');
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 4px solid white;
+            border-radius: 30px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.21vw;
+            font-weight: 500;
+        }
+        
+        .spell-card__container {
+            padding-left: 8%;
+            padding-right: 8%;
+            padding-top: 3%;
+            display: grid;
+            width: 82%;
+            height: 70%;
+            grid-template-rows: 20% 80%;
+            grid-template-columns: 100%;
+        }
+        
+        .spell-card__container__text2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.11vw;
+            font-weight: 100;
+            line-height: 150%;
+        }
+        
+        .spell-card__container__button {
+            margin-left: 70%;
+            width: 22%;
+            height: 12%;
+            background-color: #DE9E15;
+            border-width: 0;
+            border-radius: 12px;
+            color: white;
+            font-weight: 400;
+        }
+        
+        #block {
+            background: red;
+            width: 100px;
+            height: 100px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="./index.html"><img src="./assets/images/header/image 26.png" alt="logo"></a>
+            </div>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li><a href="#" class="header__link">MAIN</a></li>
+                    <li><a href="#" class="header__link">HEROES</a></li>
+                    <li><a href="#" class="header__link">SPELLS</a></li>
+                    <li><a href="#" class="header__link">COMMENTS</a></li>
+                </ul>
+            </nav>
+            <div class="header__login">
+                <a href="#">SIGN IN</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <article class="mainpage">
+            <div class="mainpage__container">
+                <div class="mainpage__container__logodiv"><img class="mainpage__container__logo" src="./assets/images/mainpage/logo.png" alt="логотип"></div>
+                <p class="mainpage__container__text1">Hello! You got into Harry Potter Wiki!</p>
+                <p class="mainpage__container__text2">Here you can find information about your favorite heroes and spells of the Harry Potter universe</p>
+                <div class="mainpage__container2">
+                    <div class="mainpage__container__search">
+                        <input type="text" class="mainpage__container__input" placeholder="Name of character" id="hero">
+                    </div>
+                    <button class="mainpage__container__button button_fontsize button__shine" onclick="heroSearch()">Search</button>
+                </div>
+
+            </div>
+        </article>
+        <!--Heroes Gallery-->
+        <!--Wrapper-->
+        <div class="wrapper heroesBox">
+
+            <h2 class="title_size padding">MAIN HEROES</h2>
+
+            <div class="slider ">
+                <div class="slider__item harry" data-tooltip="Harry Potter"><img src="./assets/images/mainpage/HarryPotter.png" class="imgHover" alt="Harry">
+
+                </div>
+                <div class="slider__item lord" data-tooltip="Lord Voldemort"><img src="./assets/images/mainpage/Voldemort.png" class="imgHover" alt="Lord">
+
+                </div>
+                <div class="slider__item hermione" data-tooltip="Hermione Granger"><img src="./assets/images/mainpage/HermioneGranger.png" class="imgHover" alt="Hermione">
+
+                </div>
+                <div class="slider__item ron" data-tooltip="Ron Weasley"><img src="./assets/images/mainpage/RonWeasley.png" class="imgHover" alt="Ron">
+
+                </div>
+                <div class="slider__item albus" data-tooltip="Albus Dumbledore"><img src="./assets/images/mainpage/AlbusDumbledore.png" class="imgHover" alt="Albus">
+                </div>
+
+                <div class="slider__item rubeus" data-tooltip="Rubeus Hagrid"><img src="./assets/images/mainpage/RubeusHagrid.png" class="imgHover" alt="Hagrid">
+                </div>
+                <div class="slider__item snape" data-tooltip="Severus Snape"><img src="./assets/images/mainpage/SeverusSnape.png" class="imgHover" alt="Snape">
+                </div>
+                <div class="slider__item draco" data-tooltip="Draco Malfoy"><img src="./assets/images/mainpage/DracoMalfoy.jpg" class="imgHover" alt="Malfoy">
+                </div>
+            </div>
+        </div>
+        <div id="tooltip"></div>
+        <div id="block">
+
+        </div>
+        <!--Spells Gallery-->
+        <article class="spellsGallery">
+            <wrapper class="spellsGallery_wrapper">
+                <h2 class="title_size">SPELLS</h2>
+                <div class="spellsGallery_wrapper_cards ">
+                    <div class="spells_icon_left">
+                        <img src="./assets/images/mainpage/arrayRight.svg" class="spells_icon_left_pic  ">
+                    </div>
+
+                    <div class="spellCard">
+                        <img src="./assets/images/spells/alberto.png" class="spellCard_picture imgHover ">
+                        <div class="spellCard_text"><a href="#">Aberto</a></div>
+                    </div>
+
+                    <div class="spellCard">
+                        <img src="./assets/images/spells/accio.png" class="spellCard_picture imgHover ">
+                        <div class="spellCard_text"><a href="#">Accio</a></div>
+                    </div>
+
+                    <div class="spellCard">
+                        <img src="./assets/images/spells/aguamenti.png" class="spellCard_picture imgHover ">
+                        <div class="spellCard_text"><a href="#">Aguamenti</a></div>
+                    </div>
+
+                    <div class="spells_icon_right">
+                        <img src="./assets/images/mainpage/arrayLeft.svg" class="spells_icon_right_pic  ">
+                    </div>
+
+                </div>
+                </div>
+            </wrapper>
+        </article>
+
+        <!--Comments -->
+        <article class="comments">
+            <div class="commentsBox">
+                <h2 class="title_size commentsBox__title padding">COMMENTS</h2>
+                <div class="comments__block">
+                    <div class="comments__form">
+                        <form>
+                            <div class="form-group">
+                                <input type="name" class="form-control form-name" id="comment-name" placeholder="Your name:">
+                            </div>
+                            <div class="form-group">
+                                <input type="name" class="form-control form-comment" id="comment-body" placeholder="Comment:">
+                            </div>
+                        </form>
+                        <button type="submit" class="comments__button button__shine">Add comment</button>
+                    </div>
+                    <div class="comments__result">
+                        <div class="comments__result-item">
+                            <img class="comments__photo" src="./assets/images/mainpage/mini_ava.svg" alt="photo">
+                            <p class="comments__name">Катя:</p>
+                            <p class="comments__content">Крутой сайт!</p>
+                            <p class="comments__time">06.01.2023</p>
+                        </div>
+                        <div class="comments__result-item">
+                            <img class="comments__photo" src="./assets/images/mainpage/mini_photo.svg" alt="photo">
+                            <p class="comments__name">Катя:</p>
+                            <p class="comments__content">Крутой сайт!</p>
+                            <p class="comments__time">06.01.2023</p>
+                        </div>
+                        <div class="comments__result-item">
+                            <img class="comments__photo" src="./assets/images/mainpage/mini_ava.svg" alt="photo">
+                            <p class="comments__name">Катя:</p>
+                            <p class="comments__content">Крутой сайт!</p>
+                            <p class="comments__time">06.01.2023</p>
+                        </div>
+                        <div class="comments__result-item">
+                            <img class="comments__photo" src="./assets/images/mainpage/mini_ava.svg" alt="photo">
+                            <p class="comments__name">Катя:</p>
+                            <p class="comments__content">Крутой сайт!</p>
+                            <p class="comments__time">06.01.2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </main>
+    <!--Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__col-l">
+                <div class="footer__logo">
+                    <a href=""><img src="./assets/images/footer/image 42.png" alt="HP-logo"></a>
+                </div>
+                <div class="footer__menu">
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Main</a></li>
+                        <li><a href="#" class="footer__link">Heroes</a></li>
+                        <li><a href="#" class="footer__link">Spells</a></li>
+                        <li><a href="#" class="footer__link">Comments</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__social">
+                <a href="#"><img src="./assets/images/footer/image_41.png" id="insta" alt="inst"></a>
+                <a href="#"><img src="./assets/images/footer/image_40.png" id="whats" alt="whatsapp"></a>
+            </div>
+        </div>
+    </footer>
+    <div class="hero">
+        <div class="hero__container">
+            <img src="./assets/images/card/harry.png" alt="image of hero" class="hero__container__img">
+            <div class="hero__container__container2">
+                <div class="hero__container__container2__div1">Name: <span>Harry Potter</span></div>
+                <div class="hero__container__container2__div2">Species: <span>human, wizard</span></div>
+                <div class="hero__container__container2__div3">Gender: <span>male</span></div>
+                <div class="hero__container__container2__div4">House: <span>Griffindor</span></div>
+                <div class="hero__container__container2__div5">Date of birth: <span>31-07-1980</span></div>
+                <div class="hero__container__container2__div6">Ancestry: <span>half-blood</span></div>
+                <div class="hero__container__container2__div7">Eye colour: <span>green</span></div>
+                <div class="hero__container__container2r__div8">Hair colour: <span>black</span></div>
+                <div class="hero__container__container2__div9">Wand: <span>holy, phoneix feather, 11</span></div>
+                <div class="hero__container__container2__div10">Patronus: <span>stag</span></div>
+                <div class="hero__container__container2__div11">Status: <span>student, alive</span></div>
+                <div class="hero__container__container2__div12">Actor: <span>Daniel Radcliffe</span></div>
+            </div>
+        </div>
+        <button class="hero__container__button">Close</button>
+    </div>
+    <div class="spell-card">
+        <div class="spell-card__container">
+            <p class="spell-card__container__text1">Apparate</p>
+            <p class="spell-card__container__text2">A non-verbal transportation spell that allows a witch or wizard to instantly travel on the spot and appear at another location (disapparate is the opposite)</p>
+        </div>
+        <button class="spell-card__container__button">Close</button>
+    </div>
+
+
+    <div class="loginForm">
+        <div class="loginForm_template">
+            <div class="loginForm_template_pic">
+                <img class="loginForm_template_pic_Harry" src="./assets/images/login/authorisation.png">
+            </div>
+            <div class="loginForm_welcome">
+                <p class="loginForm_welcome_text">Hi, <span class="nameColor">Stranger</span>!</p>
+            </div>
+
+            <div class="loginForm_template_fieldset">
+                <div class="emailBlock">
+                    <label for="userEmail" class="emailLabel">Email</label>
+                    <input type="email" id="userEmail" class="email" placeholder="Enter your email" />
+                </div>
+
+                <div class="passwordBlock">
+                    <label for="userPassword" class="passwordLabel">Password</label>
+                    <input type="text" id="userPassword" class="password" placeholder="Enter your password" />
+                </div>
+
+                <div class="checkboxBlock">
+                    <label class="rememberText"><input type="checkbox" name="remember" value="1"> Remember me</label>
+                    <div class="restorePass">
+                        <a href="#" class="restorePass_Link">Forgot password?</a>
+                    </div>
+                </div>
+
+                <div class="loginForm_Buttons">
+                    <button class="button__shine loginButton">LOGIN</button>
+                    <button class="button__shine signUpButton">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="registrationForm">
+        <div class="registration_template">
+            <div class="registration_template_pic">
+                <img class="registration_template_pic_Harry" src="./assets/images/login/authorisation.png">
+            </div>
+            <div class="registration_welcome">
+                <p class="registration_welcome_text">Hi, <span class="nameColor">Stranger</span>!</p>
+            </div>
+
+            <div class="registration_template_fieldset">
+
+                <div class="loginBlock">
+                    <label for="userLogin" class="loginLabel">Login</label>
+                    <input type="text" id="userLogin" class="login" placeholder="Enter your login" />
+                </div>
+
+                <div class="emailBlock">
+                    <label for="userEmail" class="emailLabel">Email</label>
+                    <input type="email" id="userEmail" class="email" placeholder="Enter your email" />
+                </div>
+
+                <div class="passwordBlock">
+                    <label for="userPassword" class="passwordLabel">Password</label>
+                    <input type="text" id="userPassword" class="password" placeholder="Enter your password" />
+                </div>
+
+                <div class="passwordBlock">
+                    <label for="userPassword" class="passwordLabel">Password</label>
+                    <input type="text" id="userPassword" class="password" placeholder="Enter your password" />
+                </div>
+
+                <div class="heroBlock">
+                    <label for="selectHero" class="heroLabel">Your Hero</label>
+                    <input type="text" id="selectHero" class="selectHero" placeholder="Sirius Black" />
+                </div>
+
+                <div class="checkboxBlock checkLogin">
+                    <label class="rememberText"><input type="checkbox" name="remember" value="1"> Remember me</label>
+                </div>
+
+                <div class="registration_Buttons">
+                    <button class="button__shine signUpButton_registration">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/jquery-3.6.3.js"></script>
+    <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/scripts/index.js"></script>
+    <script src="./assets/scripts/search.js"></script>
+    <script src="./assets/scripts/comments.js"></script>
+</body>
+
+</html>
