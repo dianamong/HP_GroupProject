@@ -135,6 +135,13 @@
             color: white;
             font-weight: 400;
         }
+
+        #block {
+            background: red;
+            width: 100px;
+            height: 100px;
+            display: none;
+        }
     </style>
 </head>
 
@@ -163,16 +170,15 @@
                 <div class="mainpage__container__logodiv"><img class="mainpage__container__logo"
                         src="./assets/images/mainpage/logo.png" alt="логотип"></div>
                 <p class="mainpage__container__text1">Hello! You got into Harry Potter Wiki!</p>
-
-                <div class="mainpage__container__container2">
                     <p class="mainpage__container__text2">Here you can find information about your favorite heroes and
                         spells of the Harry Potter universe</p>
-                    <button class="mainpage__container__button button_fontsize button__shine"
-                        onclick="heroSearch()">Search</button>
+                        <div class="mainpage__container2">
                     <div class="mainpage__container__search">
                         <input type="text" class="mainpage__container__input" placeholder="Name of character" id="hero">
                     </div>
-                </div>
+                    <button class="mainpage__container__button button_fontsize button__shine"
+                    onclick="heroSearch()">Search</button></div>
+                
             </div>
         </article>
         <!--Heroes Gallery-->
@@ -182,23 +188,31 @@
         <div class="wrapper heroesBox">
             <h2 class="title_size padding">HEROES</h2>
             <div class="slider ">
-                <div class="slider__item"><img src="./assets/images/mainpage/harry.svg" class="imgHover" alt="Harry">
-                    <p class="galleryText_size">Harry Potter</p>
+                <div class="slider__item" data-tooltip="Harry Potter"><img src="./assets/images/mainpage/harry.svg"
+                        class="imgHover" alt="Harry">
+
                 </div>
-                <div class="slider__item"><img src="./assets/images/mainpage/lord.svg" class="imgHover" alt="Lord">
-                    <p class="galleryText_size">Lord Voldemort</p>
+                <div class="slider__item" data-tooltip="Lord Voldemort"><img src="./assets/images/mainpage/lord.svg"
+                        class="imgHover" alt="Lord">
+
                 </div>
-                <div class="slider__item"><img src="./assets/images/mainpage/hermione.svg" class="imgHover"
-                        alt="Hermione">
-                    <p class="galleryText_size">Hermione</p>
+                <div class="slider__item" data-tooltip="Hermione"><img src="./assets/images/mainpage/hermione.svg"
+                        class="imgHover" alt="Hermione">
+
                 </div>
-                <div class="slider__item"><img src="./assets/images/mainpage/ron.svg" class="imgHover" alt="Ron">
-                    <p class="galleryText_size">Ron Weasley</p>
+                <div class="slider__item" data-tooltip="Lord Voldemort"><img src="./assets/images/mainpage/lord.svg"
+                        class="imgHover" alt="Lord">
+
                 </div>
-                <div class="slider__item"><img src="./assets/images/mainpage/ron.svg" class="imgHover" alt="Ron">
-                    <p class="galleryText_size">Ron Weasley</p>
+                <div class="slider__item" data-tooltip="Lord Voldemort"><img src="./assets/images/mainpage/lord.svg"
+                        class="imgHover" alt="Lord">
+
                 </div>
             </div>
+        </div>
+        <div id="tooltip"></div>
+        <div id="block">
+
         </div>
         <!--Spells Gallery-->
         <article class="spellsGallery">

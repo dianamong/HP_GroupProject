@@ -14,12 +14,15 @@
 
 .slider .slick-arrow {
   position: absolute;
-  top: 35%;
+  top: 42%;
   z-index: 10;
   font-size: 0;
   width: 40px;
   height: 40px;
   border: none;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
 }
 
 .slick-prev {
@@ -27,9 +30,17 @@
   background: url("../../images/mainpage/arrayRight.svg") 0 0/100% no-repeat;
 }
 
+.slick-prev:hover {
+  background: url("../../images/mainpage/arrayBlueL.svg");
+}
+
 .slick-next {
   right: 0;
   background: url("../../images/mainpage/arrayLeft.svg") 0 0/100% no-repeat;
+}
+
+.slick-next:hover {
+  background: url("../../images/mainpage/arrayBlueR.svg");
 }
 
 .slider__item {
@@ -377,7 +388,14 @@ template {
 }
 
 .galleryText_size {
-  font-size: 1.89vw;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 33px;
+}
+
+.galleryText_sizeHover {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
@@ -448,16 +466,16 @@ template {
 
 .imgHover:hover {
   box-shadow: 1px 3px 7px 2px rgba(0, 0, 0, 0.5);
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .imgHover {
-  transition: 1s;
-  max-width: 13em;
+  transition: 0.5s;
+  max-width: 14em;
 }
 
 .heroesBox {
-  height: 85vh;
+  height: 80vh;
   padding: 7em;
   box-sizing: border-box;
   background-image: url("../../images/mainpage/фон.png");
@@ -587,15 +605,25 @@ template {
   height: 100%;
   grid-template-columns: 100%;
   grid-template-rows: 25% 12% 12% 10%;
+  align-items: center;
+}
+
+.mainpage__container2 {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 100%;
 }
 
 .mainpage__container__button {
-  width: 20%;
-  height: 60%;
+  margin-left: 3%;
+  width: 100%;
+  height: 100%;
   background-color: #DE9E15;
   border-width: 0;
   border-radius: 24px;
   color: white;
+  align-self: center;
 }
 
 .mainpage__container__input {
@@ -610,9 +638,8 @@ template {
 }
 
 .mainpage__container__search {
-  width: 50%;
-  height: 30%;
-  margin-left: 5%;
+  width: 90%;
+  height: 50%;
   display: inline-flex;
   border: 1px solid white;
   border-radius: 30px;
@@ -638,6 +665,7 @@ template {
   background-size: 100%;
   background-repeat: no-repeat;
   font-family: "Roboto", sans-serif;
+  display: none;
 }
 
 .header__container {
@@ -886,6 +914,23 @@ a:hover {
   border-radius: 12px;
   color: white;
   font-weight: 400;
+}
+
+#tooltip {
+  z-index: 9999;
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 0px;
+  width: 90px;
+  background-color: rgb(0, 0, 0);
+  padding: 5px 10px 5px 10px;
+  color: #DE9E15;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgb(54, 54, 54);
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

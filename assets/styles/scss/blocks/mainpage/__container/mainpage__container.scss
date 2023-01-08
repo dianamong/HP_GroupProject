@@ -7,6 +7,12 @@
     height: 100%;
     grid-template-columns: 100%;
     grid-template-rows: 25% 12% 12% 10%;
+    align-items: center;
   }
   
- 
+  .mainpage__container2{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 100%;
+  }

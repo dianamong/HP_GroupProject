@@ -17,6 +17,7 @@ let heroes = [
 $(document).ready(function () {
     $('.slider').slick({
         dots: false,
+        arrows: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         speed: 500,
@@ -50,10 +51,35 @@ $(document).ready(function () {
     });
 
 });
-
-
-
-
+let pHover = document.querySelectorAll('.galleryText_size');
+console.log(pHover);
+for (p of pHover) {
+    p.addEventListener('mouseover', function () {
+        p.classList.add('galleryText_sizeHover');
+    });
+    p.addEventListener('mouseover', function () {
+        p.classList.add('galleryText_size');
+    });
+}
+$(function () {
+    $("[data-tooltip]").mousemove(function (eventObject) {
+        $data_tooltip = $(this).attr("data-tooltip");
+        $("#tooltip").html($data_tooltip)
+            .css({
+                "top": eventObject.pageY + 5,
+                "left": eventObject.pageX + 5
+            })
+            .show();
+    }).mouseout(function () {
+        $("#tooltip").hide()
+            .html("")
+            .css({
+                "top": 0,
+                "left": 0
+            });
+    });
+});
+$(".mainpage").fadeIn(1000);
 let instaFooter = document.getElementById('insta');
 let whatsFooter = document.getElementById('whats');
 instaFooter.addEventListener('mouseover', e => instaFooter.src = "./assets/images/footer/insta.svg");
