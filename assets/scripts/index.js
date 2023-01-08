@@ -22,6 +22,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         speed: 500,
         easing: 'ease',
+        dots: true,
         adaptiveHeight: true,
         responsive: [
             {
