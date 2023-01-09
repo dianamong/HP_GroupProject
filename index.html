@@ -281,31 +281,31 @@
                 <p class="registration_welcome_text">Hi, <span class="nameColor">Stranger</span>!</p>
             </div>
 
-            <div class="registration_template_fieldset">
+            <form class="registration_template_fieldset">
 
                 <div class="loginBlock">
                     <label for="userLogin" class="loginLabel">Login</label>
-                    <input type="text" id="userLogin" class="login" />
+                    <input type="text" id="userLogin" class="login" required pattern="[a-zA-Z0-9]+$"/>
                 </div>
 
                 <div class="emailBlock">
                     <label for="userEmail" class="emailLabel">Email</label>
-                    <input type="email" id="userEmail" class="email" />
+                    <input type="email" id="userEmail" class="email" required/>
                 </div>
 
                 <div class="passwordBlock">
                     <label for="userPassword" class="passwordLabel">Password</label>
-                    <input type="text" id="userPassword" class="password" />
+                    <input type="text" id="userPassword" class="password" required/>
                 </div>
 
                 <div class="passwordBlock">
-                    <label for="userPassword" class="passwordLabel">Password</label>
-                    <input type="text" id="userPassword" class="password" />
+                    <label for="userPassword" class="passwordLabel">Repeat password</label>
+                    <input type="text" id="userPassword" class="password" required/>
                 </div>
 
                 <div class="heroBlock">
                     <label for="selectHero" class="heroLabel">Your Hero</label>
-                    <input type="text" id="selectHero" class="selectHero" placeholder="Sirius Black" />
+                    <input type="text" id="selectHero" class="selectHero" placeholder="Sirius Black" required/>
                 </div>
 
                 <div class="checkboxBlock checkLogin">
@@ -313,9 +313,9 @@
                 </div>
 
                 <div class="registration_Buttons">
-                    <button class="button__shine signUpButton_registration">SIGN UP</button>
+                    <button type="submit" class="button__shine signUpButton_registration">SIGN UP</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 

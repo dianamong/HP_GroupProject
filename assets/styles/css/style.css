@@ -1100,6 +1100,7 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   width: 422px;
   justify-content: space-between;
+  font-family: "Roboto";
 }
 
 .loginForm_Buttons,
@@ -1107,6 +1108,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   width: 422px;
+  font-family: "Roboto";
 }
 
 .loginButton,
@@ -1117,6 +1119,7 @@ a:hover {
   padding: 0px;
   margin-top: 41px;
   color: #fff;
+  font-family: "Roboto";
 }
 
 .signUpButton {
