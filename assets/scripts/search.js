@@ -3,6 +3,11 @@
 
 function heroSearch() {
     let heroName = document.getElementById('hero').value;
+    if (heroName == null ||
+        heroName == undefined ||
+        heroName.length == 0) {
+        alert("Вы не ввели имя и фамилию!");
+    }
     let array = heroName.split(" ");
 
     let name = array[0].split('');
@@ -49,8 +54,9 @@ function heroSearch() {
 
                     modal.show();
                     document.getElementById('hero').value = "";
-                    document.querySelector('.btn__cancel').addEventListener("click", () => modal.hide());
+                    
                 }
+
             }
         })
         .catch(err => console.log(err));

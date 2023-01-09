@@ -4,6 +4,10 @@
   height: 20em;
 }
 
+.slider_spells .slick-track {
+  height: 5em;
+}
+
 .slick-list {
   overflow: hidden;
   margin: auto;
@@ -11,10 +15,17 @@
 
 .slider {
   position: relative;
+  padding: 0;
+  width: 70%;
+  margin: auto;
+}
+
+.slider_spells {
+  position: relative;
   padding: 0 8%;
 }
 
-.slider .slick-arrow {
+.slick-arrow {
   position: absolute;
   top: 32%;
   z-index: 10;
@@ -27,27 +38,47 @@
   -webkit-transition: all 0.25s ease-in-out;
 }
 
+.slider_spells .slick-arrow {
+  position: absolute;
+  top: 19%;
+  z-index: 10;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+}
+
 .slick-prev {
-  left: -1%;
+  left: -8%;
   background: url("../../images/mainpage/arrayRight.svg") 0 0/100% no-repeat;
 }
 
+.slider_spells .slick-prev {
+  left: 7%;
+}
+
+.slider_spells .slick-next {
+  right: 7%;
+}
+
 .slick-prev:hover {
-  background: url("../../images/mainpage/arrayBlueL.svg");
+  background: url("../../images/mainpage/arrayBlueL.svg") no-repeat;
 }
 
 .slick-next {
-  right: -1%;
+  right: -8%;
   background: url("../../images/mainpage/arrayLeft.svg") 0 0/100% no-repeat;
 }
 
 .slick-next:hover {
-  background: url("../../images/mainpage/arrayBlueR.svg");
+  background: url("../../images/mainpage/arrayBlueR.svg") no-repeat;
 }
 
 .slider__item {
   text-align: center;
-  max-width: 100%;
 }
 
 .slick-dots {
@@ -70,9 +101,25 @@
   border-radius: 50%;
   background-color: transparent;
   border: none;
-  background-color: #c4c4c4;
+  background-color: rgba(30, 52, 109, 0.5607843137);
   padding: 0;
   margin: 3px;
+}
+
+.slider_margin {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.slider__itemSpell {
+  height: 4em;
+  margin: 0 1%;
+  padding: 0;
+  text-align: center;
+}
+
+.slider_spells p {
+  color: #1e356d;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -410,7 +457,7 @@ template {
 }
 
 .button_fontsize {
-  font-size: 1.97vw;
+  font-size: 1.7vw;
   font-weight: 400;
 }
 
@@ -420,19 +467,19 @@ template {
   font-weight: 400;
   font-size: 25px;
   line-height: 33px;
+  transition: 0.2s;
 }
 
-.galleryText_sizeHover {
+.galleryText_size:hover {
+  text-decoration: none;
+  transform: scale(1.1);
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
   line-height: 33px;
-}
-
-.galleryText_size:hover {
-  color: #DE9E15;
   text-decoration: none;
+  color: #DE9E15;
 }
 
 .subtittle_size {
@@ -501,10 +548,11 @@ template {
 }
 
 .heroesBox {
-  height: 80vh;
-  padding: 7em;
+  height: 36em;
+  margin-top: 0;
   box-sizing: border-box;
   background-image: url("../../images/mainpage/фон.png");
+  padding-top: 5em;
 }
 
 .heroesBox2 {
@@ -519,28 +567,20 @@ template {
   color: white;
 }
 
-.commentsBox__title:hover {
-  color: gray;
-}
-
 .commentsBox {
   box-sizing: border-box;
-  padding: 5em 7em 0 7em;
+  padding: 4em 6vw 0 6vw;
 }
 
 .comments__block {
   box-sizing: border-box;
-  padding: 4em 0 3em 0;
+  padding: 2em 0 0 0;
   display: flex;
   justify-content: space-between;
 }
 
 .comments__title {
   color: #FFFFFF;
-}
-
-.comments__title:hover {
-  color: green;
 }
 
 .form-control {
@@ -554,25 +594,26 @@ template {
 }
 
 .form-name {
-  height: 76px;
+  height: 11.6vh;
   border-radius: 19px;
 }
 
 .form-comment {
   box-sizing: border-box;
-  height: 194px;
+  height: 29.7vh;
   border-radius: 29px;
   margin: 3rem 0;
   padding-bottom: 5em;
 }
 
 .comments__button {
-  width: 239px;
-  height: 68px;
+  width: 15.9vw;
+  height: 9.04vh;
   background: #DE9E15;
   border-radius: 20px;
   color: white;
-  font-size: 26px;
+  border: none;
+  font-family: "Roboto", sans-serif;
 }
 
 #comment-field {
@@ -584,7 +625,6 @@ template {
     width: 38rem;
     height: 7rem;
     background-color: white;
-    opacity: 0.8;
     border-radius: 27px;
     margin-bottom: 5px;
 }*/
@@ -630,7 +670,7 @@ template {
   width: 55vw;
   height: 100%;
   grid-template-columns: 100%;
-  grid-template-rows: 25% 12% 12% 10%;
+  grid-template-rows: 25% 12% 12% 10% 5%;
   align-items: center;
 }
 
@@ -650,6 +690,24 @@ template {
   border-radius: 24px;
   color: white;
   align-self: center;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+/* FF 4-18 */
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+/* FF 19+ */
+input:focus:-ms-input-placeholder {
+  color: transparent;
 }
 
 .mainpage__container__input {
@@ -682,6 +740,12 @@ template {
   color: white;
   font-size: 1.89vw;
   font-weight: 300;
+}
+
+.mainpage__container__text3 {
+  color: rgb(177, 176, 176);
+  font-size: 1vw;
+  font-weight: 100;
 }
 
 .mainpage {
@@ -779,77 +843,39 @@ template {
 
 .spellsGallery {
   width: 100%;
-  height: 100%;
+  height: 70vh;
   background-image: url("../..//images/spells/fon.png");
+  background-attachment: scroll;
+  background-position: 3% 24.5%;
   background-size: 100%;
   background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.spells__img {
+  text-align: center;
 }
 
 .spellsGallery_wrapper {
-  padding-top: 9vh;
-  padding-left: 6vw;
-  padding-right: 6vw;
   display: block;
-  margin-bottom: 155px;
-}
-
-.h2 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
-  margin-bottom: 55px;
-}
-
-.spellsGallery_wrapper_cards {
-  display: flex;
-  align-items: center;
-}
-
-.spellCard_picture {
-  width: 100%;
-}
-
-.spellCard_picture:hover {
-  box-shadow: 1px 3px 7px 2px rgba(0, 0, 0, 0.5);
-}
-
-.spellCard {
-  margin-left: 7px;
-  margin-right: 7px;
-  display: grid;
-  justify-items: center;
-}
-
-.spells_icon_left {
-  margin-right: 55px;
-}
-
-.spells_icon_right {
-  margin-left: 55px;
-}
-
-.spellCard_text {
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 33px;
-  margin-top: 17px;
 }
 
 a {
-  color: #000000; /* Цвет обычной ссылки */
-  text-decoration: none; /* Убираем подчёркивание у ссылок */
+  color: #000000;
+  /* Цвет обычной ссылки */
+  text-decoration: none;
+  /* Убираем подчёркивание у ссылок */
 }
 
 a:hover {
-  color: #DE9E15; /* Цвет ссылки при наведении */
-  text-decoration: none; /* Добавляем подчёркивание */
+  color: #DE9E15;
+  /* Цвет ссылки при наведении */
+  text-decoration: none;
+  /* Добавляем подчёркивание */
 }
 
 .padding {
   padding-left: 6vw;
-  padding-right: 6vw;
 }
 
 .modal__backdrop {
@@ -958,6 +984,297 @@ a:hover {
   font-family: "Playfair Display";
   font-style: normal;
   font-size: 20px;
+}
+
+.loginForm,
+.registrationForm {
+  display: flex;
+  justify-content: center;
+}
+
+.loginForm_template,
+.registration_template {
+  background-color: #1D1D1F;
+  width: 507px;
+  border-radius: 31px;
+}
+
+.loginForm_template {
+  height: 685px;
+}
+
+.registration_template {
+  height: 960px;
+}
+
+.loginForm_template_pic,
+.registration_template_pic {
+  display: flex;
+}
+
+.loginForm_template_pic_Harry,
+.registration_template_pic_Harry {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+}
+
+.loginForm_welcome_text,
+.registration_welcome_text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.nameColor {
+  color: #DE9E15;
+}
+
+.loginForm_template_fieldset,
+.registration_template_fieldset {
+  display: grid;
+  justify-items: center;
+}
+
+.emailBlock,
+.passwordBlock,
+.loginBlock,
+.heroBlock {
+  display: grid;
+  justify-items: left;
+  margin-bottom: 24px;
+  width: 422px;
+}
+
+.email,
+.password,
+.login,
+.selectHero {
+  border-radius: 8px;
+  width: 406px;
+  height: 56px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1F2832;
+  padding-left: 16px;
+  border-style: solid;
+  border: none;
+}
+
+.emailLabel,
+.passwordLabel,
+.loginLabel,
+.heroLabel {
+  color: #fff;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.restorePass_Link {
+  text-align: right;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.rememberText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+.checkboxBlock {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  width: 422px;
+  justify-content: space-between;
+  font-family: "Roboto";
+}
+
+.loginForm_Buttons,
+.registration_Buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 422px;
+  font-family: "Roboto";
+}
+
+.loginButton,
+.signUpButton {
+  width: 193px;
+  height: 51px;
+  border-radius: 8px;
+  padding: 0px;
+  margin-top: 41px;
+  color: #fff;
+  font-family: "Roboto";
+}
+
+.signUpButton {
+  background-color: #DE9E15;
+  border-style: solid;
+  border: none;
+}
+
+.loginButton {
+  border: 1px solid white;
+  background-color: rgba(28, 28, 28, 0);
+}
+
+.signUpButton_registration {
+  width: 422px;
+  height: 51px;
+  border-radius: 8px;
+  padding: 0px;
+  margin-top: 23px;
+  color: #fff;
+  background-color: #DE9E15;
+  border-style: solid;
+  border: none;
+}
+
+.checkLogin {
+  justify-content: flex-end;
+}
+
+.pasInfo {
+  height: 2vh;
+  color: white;
+  font-family: "Roboto";
+}
+
+.button {
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid hsla(0deg, 0%, 100%, 0.5);
+  border-radius: 100px;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+  background: url("../../images/mainpage/arrayRight.svg");
+}
+
+.button:hover {
+  background-image: linear-gradient(160deg, #44cbd4, #2881ef);
+}
+
+.hero {
+  margin: auto;
+  width: 450px;
+  height: 650px;
+  background-image: url("../../images/card/bigfon.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 4px solid white;
+  border-radius: 40px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.21vw;
+  font-weight: 500;
+}
+
+.hero__container {
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 8%;
+  display: grid;
+  width: 82%;
+  height: 70%;
+  grid-template-rows: 100%;
+  grid-template-columns: 40% 60%;
+  column-gap: 5%;
+}
+
+.hero__container__container2 {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.hero__container__container2 span {
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+}
+
+.hero__container__img {
+  width: 100%;
+}
+
+.hero__container__button {
+  margin-top: 20%;
+  margin-left: 70%;
+  width: 22%;
+  height: 5%;
+  background-color: #DE9E15;
+  border-width: 0;
+  border-radius: 12px;
+  color: white;
+  font-weight: 400;
+}
+
+.spell-card {
+  margin: auto;
+  width: 450px;
+  height: 270px;
+  background-image: url("../../images/card/smallfon.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 4px solid white;
+  border-radius: 30px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.21vw;
+  font-weight: 500;
+}
+
+.spell-card__container {
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 3%;
+  display: grid;
+  width: 82%;
+  height: 70%;
+  grid-template-rows: 20% 80%;
+  grid-template-columns: 100%;
+}
+
+.spell-card__container__text2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.11vw;
+  font-weight: 100;
+  line-height: 150%;
+}
+
+.spell-card__container__button {
+  margin-left: 70%;
+  width: 22%;
+  height: 12%;
+  background-color: #DE9E15;
+  border-width: 0;
+  border-radius: 12px;
+  color: white;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */
