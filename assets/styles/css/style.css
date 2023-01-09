@@ -101,7 +101,7 @@
   border-radius: 50%;
   background-color: transparent;
   border: none;
-  background-color: #c4c4c4;
+  background-color: rgba(30, 52, 109, 0.5607843137);
   padding: 0;
   margin: 3px;
 }
@@ -118,7 +118,7 @@
 }
 
 .slider_spells p {
-  color: #DE9E15;
+  color: #1e356d;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -478,6 +478,7 @@ template {
   font-size: 25px;
   line-height: 33px;
   text-decoration: none;
+  color: #DE9E15;
 }
 
 .subtittle_size {
@@ -546,7 +547,7 @@ template {
 }
 
 .heroesBox {
-  height: 80vh;
+  height: 36em;
   margin-top: 0;
   box-sizing: border-box;
   background-image: url("../../images/mainpage/фон.png");
