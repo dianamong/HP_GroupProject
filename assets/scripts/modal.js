@@ -23,7 +23,7 @@ $modal = function (options) {
             elemModal = document.createElement('div'),
             modalTemplate = '<div class="modal__backdrop" data-dismiss="modal"><div class="modal__content"><div class="modal__body" data-modal="content">{{content}}</div>{{footer}}</div></div>',
             modalFooterTemplate = '<div class="modal__footer">{{buttons}}</div>',
-            modalButtonTemplate = '<button type="button" class="{{button_class}}" data-handler={{button_handler}}>{{button_text}}</button>',
+            modalButtonTemplate = '<button type="button" data-dismiss="modal" class="{{button_class}}" data-handler={{button_handler}}>{{button_text}}</button>',
             modalHTML,
             modalFooterHTML = '';
 
