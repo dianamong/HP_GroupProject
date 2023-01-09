@@ -1,19 +1,4 @@
 
-let heroCards = document.querySelectorAll('.heroesBox__card');
-
-class HeroCard {
-    constructor(img, name) {
-        this.img = img;
-        this.name = name;
-    }
-}
-let heroes = [
-    new HeroCard("./assets/images/mainpage/harry.svg", 'Harry Potter'),
-    new HeroCard("./assets/images/mainpage/lord.svg", 'Lord Voldemort'),
-    new HeroCard("./assets/images/mainpage/hermione.svg", 'Hermione'),
-    new HeroCard("./assets/images/mainpage/ron.svg", 'Ron Weasley'),
-];
-
 $(document).ready(function () {
     $('.slider').slick({
         infinite: false,
@@ -51,18 +36,8 @@ $(document).ready(function () {
 
         ]
     });
-
 });
-let pHover = document.querySelectorAll('.galleryText_size');
-console.log(pHover);
-for (p of pHover) {
-    p.addEventListener('mouseover', function () {
-        p.classList.add('galleryText_sizeHover');
-    });
-    p.addEventListener('mouseover', function () {
-        p.classList.add('galleryText_size');
-    });
-}
+
 $(function () {
     $("[data-tooltip]").mousemove(function (eventObject) {
         $data_tooltip = $(this).attr("data-tooltip");

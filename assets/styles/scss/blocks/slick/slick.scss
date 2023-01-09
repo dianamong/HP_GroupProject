@@ -3,6 +3,10 @@
     height: 20em;
 }
 
+.slider_spells .slick-track {
+    height: 5em;
+}
+
 .slick-list {
     overflow: hidden;
     margin: auto;
@@ -10,11 +14,19 @@
 
 .slider {
     position: relative;
-    padding: 0 8%;
+    padding: 0;
+    width: 70%;
+    margin: auto;
 
 }
 
-.slider .slick-arrow {
+.slider_spells {
+    position: relative;
+    padding: 0 8%;
+}
+
+
+.slick-arrow {
     position: absolute;
     top: 32%;
     z-index: 10;
@@ -27,42 +39,40 @@
     -webkit-transition: all .25s ease-in-out;
 }
 
-.slick-prev {
 
-    left: -1%;
+.slick-prev {
+    left: -8%;
     background: url('../../images/mainpage/arrayRight.svg')0 0 /100% no-repeat;
 }
 
 .slick-prev:hover {
-    background: url('../../images/mainpage/arrayBlueL.svg');
-
+    background: url('../../images/mainpage/arrayBlueL.svg') no-repeat;
 }
 
 .slick-next {
-    right: -1%;
+    right: -8%;
     background: url('../../images/mainpage/arrayLeft.svg')0 0 /100% no-repeat;
 }
 
 .slick-next:hover {
-    background: url('../../images/mainpage/arrayBlueR.svg');
+    background: url('../../images/mainpage/arrayBlueR.svg') no-repeat;
 }
 
 .slider__item {
     text-align: center;
-
 }
 
 .slick-dots {
     text-align: center;
-    display: flex; // поставить кнопки в ряд
-    justify-content: center; // выровнять по центру
-    list-style: none;
-
-
+    display: flex;
+    justify-content: center;
+    list-style: none; //убрать точки
 }
 
+
+
 .slick-dots li[class="slick-active"] button {
-    height: 12px; // высота точки
+    height: 12px;
     width: 12px;
 }
 
@@ -77,4 +87,33 @@
     background-color: #c4c4c4;
     padding: 0;
     margin: 3px;
+}
+
+.slider_margin {
+    width: 60%;
+    margin: 3em auto;
+}
+
+.slider__itemSpell {
+    height: 3em;
+    margin: 0;
+    padding: 0;
+}
+
+.slickSpells__elem {
+    text-align: center;
+}
+
+.slider__imgBox {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.btnSpells {
+    width: 40px;
+    height: 40px;
+    border: none;
+    align-self: center;
+    margin: auto;
 }

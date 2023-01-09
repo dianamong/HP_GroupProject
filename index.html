@@ -56,15 +56,11 @@
             </div>
         </article>
         <!--Heroes Gallery-->
-        <!--Wrapper-->
         <div class="wrapper heroesBox">
-
             <h2 class="title_size padding">MAIN HEROES</h2>
-
-            <div class="slider ">
+            <div class="slider">
                 <div class="slider__item harry" data-tooltip="Harry Potter"><img
                         src="./assets/images/mainpage/HarryPotter.png" class="imgHover" alt="Harry">
-
                 </div>
                 <div class="slider__item lord" data-tooltip="Lord Voldemort"><img
                         src="./assets/images/mainpage/Voldemort.png" class="imgHover" alt="Lord">
@@ -93,36 +89,47 @@
                 </div>
             </div>
         </div>
+        <!--Всплывающие подсказки при наведении-->
         <div id="tooltip"></div>
 
         <!--Spells Gallery-->
         <article class="spellsGallery">
-            <wrapper class="spellsGallery_wrapper">
-                <h2 class="title_size">SPELLS</h2>
-                <div class="spellsGallery_wrapper_cards ">
-                    <div class="spells_icon_left">
-                        <img src="./assets/images/mainpage/arrayRight.svg" class="spells_icon_left_pic  ">
+            <wrapper class="spellsGallery_wrapper wrapper ">
+                <h2 class="title_size padding">SPELLS</h2>
+                <div class="slider_spells slider_margin ">
+                    <div class="slider__item  galleryText_size slider__itemSpell">
+                        <p>Aberto</p>
                     </div>
-
-                    <div class="spellCard">
-                        <img src="./assets/images/spells/alberto.png" class="spellCard_picture imgHover ">
-                        <div class="spellCard_text"><a href="#">Aberto</a></div>
+                    <div class="slider__item  galleryText_size slider__itemSpell">
+                        <p>Accio</p>
                     </div>
-
-                    <div class="spellCard">
-                        <img src="./assets/images/spells/accio.png" class="spellCard_picture imgHover ">
-                        <div class="spellCard_text"><a href="#">Accio</a></div>
+                    <div class="slider__item  galleryText_size slider__itemSpell">
+                        <p>Aquamenti</p>
                     </div>
-
-                    <div class="spellCard">
-                        <img src="./assets/images/spells/aguamenti.png" class="spellCard_picture imgHover ">
-                        <div class="spellCard_text"><a href="#">Aguamenti</a></div>
+                    <div class="slider__item  galleryText_size slider__itemSpell">
+                        <p>Первое</p>
                     </div>
-
-                    <div class="spells_icon_right">
-                        <img src="./assets/images/mainpage/arrayLeft.svg" class="spells_icon_right_pic  ">
+                    <div class="slider__item  galleryText_size slider__itemSpell">
+                        <p>Первое</p>
                     </div>
-
+                    <div class="slider__item  galleryText_size slider__itemSpell">
+                        <p>Первое</p>
+                    </div>
+                    <div class="slider__item  galleryText_size slider__itemSpell">
+                        <p>Первое</p>
+                    </div>
+                    <div class="slider__item  galleryText_size slider__itemSpell">
+                        <p>Первое</p>
+                    </div>
+                    <div class="slider__item  galleryText_size slider__itemSpell">
+                        <p>Первое</p>
+                    </div>
+                </div>
+                <div class="slider__imgBox">
+                    <button class="btnSliderPrev btnSpells slick-prev"></button>
+                    <img src="./assets\images\spells\orig.gif" alt="spells-animation">
+                    <button class="btnSliderNext btnSpells slick-next"></button>
+                </div>
                 </div>
                 </div>
             </wrapper>
@@ -320,6 +327,7 @@
     <script src="./assets/scripts/index.js"></script>
     <script src="./assets/scripts/search.js"></script>
     <script src="./assets/scripts/comments.js"></script>
+    <script src="./assets/scripts/slaiderSpells.js"></script>
 </body>
 
 </html>
