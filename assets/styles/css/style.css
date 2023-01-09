@@ -467,7 +467,7 @@ template {
   font-weight: 400;
   font-size: 25px;
   line-height: 33px;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .galleryText_size:hover {
