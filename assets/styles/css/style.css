@@ -38,6 +38,19 @@
   -webkit-transition: all 0.25s ease-in-out;
 }
 
+.slider_spells .slick-arrow {
+  position: absolute;
+  top: 19%;
+  z-index: 10;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+}
+
 .slick-prev {
   left: -8%;
   background: url("../../images/mainpage/arrayRight.svg") 0 0/100% no-repeat;
@@ -94,32 +107,18 @@
 }
 
 .slider_margin {
-  width: 60%;
+  width: 40%;
   margin: 0 auto;
 }
 
 .slider__itemSpell {
   height: 3em;
-  margin: 0;
+  margin: 0 1%;
   padding: 0;
 }
 
-.slickSpells__elem {
-  text-align: center;
-}
-
-.slider__imgBox {
-  margin-top: 1em;
-  display: flex;
-  justify-content: center;
-}
-
-.btnSpells {
-  width: 40px;
-  height: 40px;
-  border: none;
-  align-self: center;
-  margin: auto;
+.slider_spells p {
+  color: #DE9E15;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -467,21 +466,18 @@ template {
   font-weight: 400;
   font-size: 25px;
   line-height: 33px;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .galleryText_size:hover {
-  color: #DE9E15;
   text-decoration: none;
-  transform: scale(1.03);
+  transform: scale(1.1);
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
   line-height: 33px;
-  color: #DE9E15;
   text-decoration: none;
-  transform: scale(1.03);
 }
 
 .subtittle_size {
