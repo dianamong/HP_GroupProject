@@ -565,28 +565,20 @@ template {
   color: white;
 }
 
-.commentsBox__title:hover {
-  color: gray;
-}
-
 .commentsBox {
   box-sizing: border-box;
-  padding: 5em 7em 0 7em;
+  padding: 4em 6vw 0 6vw;
 }
 
 .comments__block {
   box-sizing: border-box;
-  padding: 4em 0 3em 0;
+  padding: 2em 0 3em 0;
   display: flex;
   justify-content: space-between;
 }
 
 .comments__title {
   color: #FFFFFF;
-}
-
-.comments__title:hover {
-  color: green;
 }
 
 .form-control {
@@ -600,21 +592,21 @@ template {
 }
 
 .form-name {
-  height: 76px;
+  height: 11.6vh;
   border-radius: 19px;
 }
 
 .form-comment {
   box-sizing: border-box;
-  height: 194px;
+  height: 29.7vh;
   border-radius: 29px;
   margin: 3rem 0;
   padding-bottom: 5em;
 }
 
 .comments__button {
-  width: 210px;
-  height: 59px;
+  width: 15.9vw;
+  height: 9.04vh;
   background: #DE9E15;
   border-radius: 20px;
   color: white;
@@ -631,7 +623,6 @@ template {
   width: 38rem;
   height: 7rem;
   background-color: white;
-  opacity: 0.8;
   border-radius: 27px;
   margin-bottom: 5px;
 }
