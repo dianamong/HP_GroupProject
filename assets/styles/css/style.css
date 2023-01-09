@@ -112,9 +112,10 @@
 }
 
 .slider__itemSpell {
-  height: 3em;
+  height: 4em;
   margin: 0 1%;
   padding: 0;
+  text-align: center;
 }
 
 .slider_spells p {
@@ -466,7 +467,7 @@ template {
   font-weight: 400;
   font-size: 25px;
   line-height: 33px;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .galleryText_size:hover {
