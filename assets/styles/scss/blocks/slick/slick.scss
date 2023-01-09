@@ -21,6 +21,7 @@
 }
 
 .slider_spells {
+
     position: relative;
     padding: 0 8%;
 
@@ -44,6 +45,14 @@
 .slick-prev {
     left: -8%;
     background: url('../../images/mainpage/arrayRight.svg')0 0 /100% no-repeat;
+}
+
+.slider_spells .slick-prev {
+    left: 7%;
+}
+
+.slider_spells .slick-next {
+    right: 7%;
 }
 
 .slick-prev:hover {
