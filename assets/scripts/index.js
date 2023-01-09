@@ -213,7 +213,9 @@ fetch("https://hp-api.onrender.com/api/characters")
 
 
 
-$(".mainpage").fadeIn(1000);
+$(".mainpage").fadeIn(1300);
+
+
 let instaFooter = document.getElementById('insta');
 let whatsFooter = document.getElementById('whats');
 instaFooter.addEventListener('mouseover', e => instaFooter.src = "./assets/images/footer/insta.svg");
