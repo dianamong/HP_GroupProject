@@ -87,7 +87,7 @@
 
 .slider_margin {
   width: 60%;
-  margin: 3em auto;
+  margin: 0 auto;
 }
 
 .slider__itemSpell {
@@ -101,7 +101,7 @@
 }
 
 .slider__imgBox {
-  margin-top: 2em;
+  margin-top: 1em;
   display: flex;
   justify-content: center;
 }
@@ -842,14 +842,15 @@ input:focus:-ms-input-placeholder {
   width: 100%;
   height: 85vh;
   background-image: url("../..//images/spells/fon.png");
+  background-attachment: scroll;
+  background-position: 3% 33%;
   background-size: 100%;
   background-repeat: no-repeat;
+  box-sizing: border-box;
 }
 
 .spellsGallery_wrapper {
-  padding-top: 5.5vh;
   display: block;
-  margin-bottom: 155px;
 }
 
 a {
@@ -868,7 +869,6 @@ a:hover {
 
 .padding {
   padding-left: 6vw;
-  padding-right: 6vw;
 }
 
 .modal__backdrop {

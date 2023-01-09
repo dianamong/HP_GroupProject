@@ -23,6 +23,7 @@
 .slider_spells {
     position: relative;
     padding: 0 8%;
+
 }
 
 
@@ -91,13 +92,15 @@
 
 .slider_margin {
     width: 60%;
-    margin: 3em auto;
+    margin: 0 auto;
+
 }
 
 .slider__itemSpell {
     height: 3em;
     margin: 0;
     padding: 0;
+
 }
 
 .slickSpells__elem {
@@ -105,7 +108,7 @@
 }
 
 .slider__imgBox {
-    margin-top: 2em;
+    margin-top: 1em;
     display: flex;
     justify-content: center;
 }
