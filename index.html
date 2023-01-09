@@ -25,10 +25,10 @@
             </div>
             <nav class="header__menu">
                 <ul class="header__list">
-                    <li><a href="#" class="header__link">MAIN</a></li>
-                    <li><a href="#" class="header__link">HEROES</a></li>
-                    <li><a href="#" class="header__link">SPELLS</a></li>
-                    <li><a href="#" class="header__link">COMMENTS</a></li>
+                    <li><a href="#mainpage" class="header__link">MAIN</a></li>
+                    <li><a href="#heroes" class="header__link">HEROES</a></li>
+                    <li><a href="#spells" class="header__link">SPELLS</a></li>
+                    <li><a href="#comments" class="header__link">COMMENTS</a></li>
                 </ul>
             </nav>
             <div class="header__login">
@@ -38,7 +38,7 @@
     </header>
     <!--Main-->
     <main class="main">
-        <article class="mainpage">
+        <article class="mainpage" id="mainpage">
             <div class="mainpage__container">
                 <div class="mainpage__container__logodiv"><img class="mainpage__container__logo"
                         src="./assets/images/mainpage/logo.png" alt="логотип"></div>
@@ -57,7 +57,7 @@
             </div>
         </article>
         <!--Heroes Gallery-->
-        <div class="wrapper heroesBox">
+        <div class="wrapper heroesBox" id="heroes">
             <h2 class="title_size padding">MAIN HEROES</h2>
             <div class="slider">
                 <div class="slider__item harry" data-tooltip="Harry Potter"><img
@@ -94,7 +94,7 @@
         <div id="tooltip"></div>
 
         <!--Spells Gallery-->
-        <article class="spellsGallery">
+        <article class="spellsGallery" id="spells">
             <h2 class="title_size padding">SPELLS</h2>
             <wrapper class="spellsGallery_wrapper wrapper ">
                 <div class="slider_spells slider_margin ">
@@ -133,7 +133,7 @@
         </article>
 
         <!--Comments -->
-        <article class="comments">
+        <article class="comments" id="comments">
             <div class="commentsBox">
                 <h2 class="title_size commentsBox__title">COMMENTS</h2>
                 <div class="comments__block">
@@ -190,10 +190,10 @@
                 </div>
                 <div class="footer__menu">
                     <ul class="footer__list">
-                        <li><a href="#" class="footer__link">Main</a></li>
-                        <li><a href="#" class="footer__link">Heroes</a></li>
-                        <li><a href="#" class="footer__link">Spells</a></li>
-                        <li><a href="#" class="footer__link">Comments</a></li>
+                        <li><a href="#mainpage" class="footer__link">Main</a></li>
+                        <li><a href="#heroes" class="footer__link">Heroes</a></li>
+                        <li><a href="#spells" class="footer__link">Spells</a></li>
+                        <li><a href="#comments" class="footer__link">Comments</a></li>
                     </ul>
                 </div>
             </div>
@@ -326,6 +326,7 @@
     <script src="./assets/scripts/comments.js"></script>
     <script src="./assets/scripts/slaiderSpells.js"></script>
     <script src="./assets/scripts/validationReg.js"></script>
+    <script src="./assets/scripts/scroll.js"></script>
 </body>
 
 </html>
