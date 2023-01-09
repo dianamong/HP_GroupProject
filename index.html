@@ -285,7 +285,7 @@
 
                 <div class="loginBlock">
                     <label for="userLogin" class="loginLabel">Login</label>
-                    <input type="text" id="userLogin" class="login" required pattern="[a-zA-Z0-9]+$"/>
+                    <input type="text" id="userLogin" class="login" required pattern="[a-zA-Z0-9]+$" minlength="5"/>
                 </div>
 
                 <div class="emailBlock">
@@ -295,12 +295,12 @@
 
                 <div class="passwordBlock">
                     <label for="userPassword" class="passwordLabel">Password</label>
-                    <input type="text" id="userPassword" class="password" required/>
+                    <input type="text" id="userPassword1" class="password" required/>
                 </div>
 
                 <div class="passwordBlock">
                     <label for="userPassword" class="passwordLabel">Repeat password</label>
-                    <input type="text" id="userPassword" class="password" required/>
+                    <input type="text" id="userPassword2" class="password" required/>
                 </div>
 
                 <div class="heroBlock">
@@ -311,9 +311,9 @@
                 <div class="checkboxBlock checkLogin">
                     <label class="rememberText"><input type="checkbox" name="remember" value="1">Remember me</label>
                 </div>
-
+                <div class="pasInfo" id="pasInfo"></div>
                 <div class="registration_Buttons">
-                    <button type="submit" class="button__shine signUpButton_registration">SIGN UP</button>
+                    <button type="submit" class="button__shine signUpButton_registration" id="registration">SIGN UP</button>
                 </div>
             </form>
         </div>
@@ -325,6 +325,7 @@
     <script src="./assets/scripts/search.js"></script>
     <script src="./assets/scripts/comments.js"></script>
     <script src="./assets/scripts/slaiderSpells.js"></script>
+    <script src="./assets/scripts/validationReg.js"></script>
 </body>
 
 </html>
