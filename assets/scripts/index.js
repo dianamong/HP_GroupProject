@@ -30,7 +30,7 @@ $(document).ready(function () {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3
+                    slidesToScroll: 1
 
                 }
             },
@@ -107,16 +107,18 @@ fetch("https://hp-api.onrender.com/api/characters")
         }
         console.log(heroes);
 
-        document.querySelector('.lord').addEventListener('click', function () {
+        document.querySelector('.lord').addEventListener('click', function (e) {
             let modal = $modal({
                 content: ` <img src="${heroes[16].image}" alt="image of hero" class="hero__container__img"><div class="hero__container__container2"><div class="hero__container__container2__div1">Name: <span>${heroes[16].name}</span></div><div class="hero__container__container2__div2">Species: <span>${heroes[16].species}</span></div><div class="hero__container__container2__div3">Gender: <span>${heroes[16].gender}</span></div><div class="hero__container__container2__div4">House: <span>${heroes[16].house}</span></div><div class="hero__container__container2__div5">Date of birth: <span>${heroes[16].dateOfBirth}</span></div><div class="hero__container__container2__div6">Ancestry: <span>${heroes[16].ancestry}</span></div><div class="hero__container__container2__div7">Eye colour: <span>${heroes[16].eyeColour}</span></div><div class="hero__container__container__div8">Hair colour: <span>${heroes[16].hairColour}</span></div><div class="hero__container__container2__div9">Wand: <span>${heroes[16].wand.wood}, ${heroes[16].wand.core}, ${heroes[16].wand.length}</span></div><div class="hero__container__container2__div10">Patronus: <span>${heroes[0].patronus}</span></div><div class="hero__container__container2__div11">Status: <span>${getStudentInfo()},${getStatusInfo()}</span></div><div class="hero__container__container2__div12">Actor: <span>${heroes[16].actor}</span></div></div>`,
                 footerButtons: [
-                    { class: 'btn btn__cancel button__shine', text: 'Close', handler: 'modalHandlerCancel' }
+                    { class: 'btn btn__cancel button__shine ', text: 'Close', handler: 'modalHandlerCancel' }
+
                 ]
             })
             modal.show();
-            document.getElementById('hero').value = "";
             document.querySelector('.btn__cancel').addEventListener("click", () => modal.hide());
+
+
         })
         document.querySelector('.harry').addEventListener('click', function () {
             let modal = $modal({
@@ -127,7 +129,6 @@ fetch("https://hp-api.onrender.com/api/characters")
 
             })
             modal.show();
-            document.getElementById('hero').value = "";
             document.querySelector('.btn__cancel').addEventListener("click", () => modal.hide());
         })
         document.querySelector('.ron').addEventListener('click', function () {
@@ -139,7 +140,6 @@ fetch("https://hp-api.onrender.com/api/characters")
 
             })
             modal.show();
-            document.getElementById('hero').value = "";
             document.querySelector('.btn__cancel').addEventListener("click", () => modal.hide());
         })
         document.querySelector('.snape').addEventListener('click', function () {
@@ -151,7 +151,6 @@ fetch("https://hp-api.onrender.com/api/characters")
 
             })
             modal.show();
-            document.getElementById('hero').value = "";
             document.querySelector('.btn__cancel').addEventListener("click", () => modal.hide());
         })
         document.querySelector('.hermione').addEventListener('click', function () {
@@ -162,7 +161,6 @@ fetch("https://hp-api.onrender.com/api/characters")
                 ]
             })
             modal.show();
-            document.getElementById('hero').value = "";
             document.querySelector('.btn__cancel').addEventListener("click", () => modal.hide());
         })
         document.querySelector('.albus').addEventListener('click', function () {
@@ -174,7 +172,6 @@ fetch("https://hp-api.onrender.com/api/characters")
 
             })
             modal.show();
-            document.getElementById('hero').value = "";
             document.querySelector('.btn__cancel').addEventListener("click", () => modal.hide());
         })
         document.querySelector('.rubeus').addEventListener('click', function () {
@@ -186,7 +183,6 @@ fetch("https://hp-api.onrender.com/api/characters")
 
             })
             modal.show();
-            document.getElementById('hero').value = "";
             document.querySelector('.btn__cancel').addEventListener("click", () => modal.hide());
         })
         document.querySelector('.snape').addEventListener('click', function () {
@@ -198,7 +194,6 @@ fetch("https://hp-api.onrender.com/api/characters")
 
             })
             modal.show();
-            document.getElementById('hero').value = "";
             document.querySelector('.btn__cancel').add
         })
         document.querySelector('.draco').addEventListener('click', function () {
@@ -208,14 +203,14 @@ fetch("https://hp-api.onrender.com/api/characters")
                     { class: 'btn btn__cancel button__shine', text: 'Close', handler: 'modalHandlerCancel' }
                 ]
 
+
             })
             modal.show();
-            document.getElementById('hero').value = "";
-            document.querySelector('.btn__cancel').add
+            document.querySelector('.btn__cancel').addEventListener("click", () => modal.hide());
         })
     })
     .catch(err => console.log(err));
-console.log(document.querySelector('.draco'))
+
 
 
 $(".mainpage").fadeIn(1000);
