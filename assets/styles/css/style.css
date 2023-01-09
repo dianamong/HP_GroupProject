@@ -43,6 +43,14 @@
   background: url("../../images/mainpage/arrayRight.svg") 0 0/100% no-repeat;
 }
 
+.slider_spells .slick-prev {
+  left: 7%;
+}
+
+.slider_spells .slick-next {
+  right: 7%;
+}
+
 .slick-prev:hover {
   background: url("../../images/mainpage/arrayBlueL.svg") no-repeat;
 }
@@ -542,7 +550,7 @@ template {
 }
 
 .heroesBox {
-  height: 82vh;
+  height: 80vh;
   margin-top: 0;
   box-sizing: border-box;
   background-image: url("../../images/mainpage/фон.png");
@@ -847,6 +855,10 @@ input:focus:-ms-input-placeholder {
   background-size: 100%;
   background-repeat: no-repeat;
   box-sizing: border-box;
+}
+
+.spells__img {
+  text-align: center;
 }
 
 .spellsGallery_wrapper {

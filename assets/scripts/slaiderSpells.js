@@ -2,10 +2,11 @@
 $(document).ready(function () {
     $('.slider_spells').slick({
         infinite: false,
+        arrows: true,
         dots: false,
-        arrows: false,
         slidesToShow: 3,
         slidesToScroll: 3,
+        dots: true,
         speed: 500,
         easing: 'ease',
         adaptiveHeight: true,
