@@ -1,15 +1,16 @@
-.comments__result {
+#comment-field {
     display: flex;
     flex-direction: column;
 }
 
-.comments__result-item {
+
+/*.comments__result-item {
     width: 38rem;
     height: 7rem;
     background-color: white;
     border-radius: 27px;
     margin-bottom: 5px;
-}
+}*/
 
 .comments__photo {
     display: block;
@@ -20,7 +21,7 @@
 
 .comments__name {
     font-size: 25px;
-    margin: -3.5rem 0 0 5rem;
+    margin: 1rem 0 0 5rem;
 }
 
 .comments__content {
@@ -29,6 +30,7 @@
 }
 
 .comments__time {
+    display: block;
     font-size: 15px;
-    margin: 0 0 1rem 32rem;
+    margin: -1rem 0 0 32rem;
 }

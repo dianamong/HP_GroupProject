@@ -569,12 +569,12 @@ template {
 
 .commentsBox {
   box-sizing: border-box;
-  padding: 4em 6vw 0 6vw;
+  padding: 4em 6vw 10vw 6vw;
 }
 
 .comments__block {
   box-sizing: border-box;
-  padding: 2em 0 3em 0;
+  padding: 2em 0 0 0;
   display: flex;
   justify-content: space-between;
 }
@@ -594,21 +594,21 @@ template {
 }
 
 .form-name {
-  height: 11.6vh;
+  height: 12vh;
   border-radius: 19px;
 }
 
 .form-comment {
   box-sizing: border-box;
-  height: 29.7vh;
+  height: 30vh;
   border-radius: 29px;
   margin: 3rem 0;
-  padding-bottom: 5em;
+  padding-bottom: 5.5em;
 }
 
 .comments__button {
   width: 15.9vw;
-  height: 9.04vh;
+  height: 10vh;
   background: #DE9E15;
   border-radius: 20px;
   color: white;
@@ -616,19 +616,18 @@ template {
   font-family: "Roboto", sans-serif;
 }
 
-.comments__result {
+#comment-field {
   display: flex;
   flex-direction: column;
 }
 
-.comments__result-item {
-  width: 38rem;
-  height: 7rem;
-  background-color: white;
-  border-radius: 27px;
-  margin-bottom: 5px;
-}
-
+/*.comments__result-item {
+    width: 38rem;
+    height: 7rem;
+    background-color: white;
+    border-radius: 27px;
+    margin-bottom: 5px;
+}*/
 .comments__photo {
   display: block;
   position: relative;
@@ -638,7 +637,7 @@ template {
 
 .comments__name {
   font-size: 25px;
-  margin: -3.5rem 0 0 5rem;
+  margin: 1rem 0 0 5rem;
 }
 
 .comments__content {
@@ -647,8 +646,9 @@ template {
 }
 
 .comments__time {
+  display: block;
   font-size: 15px;
-  margin: 0 0 1rem 32rem;
+  margin: -1rem 0 0 32rem;
 }
 
 .comments {
@@ -1149,6 +1149,12 @@ a:hover {
 
 .checkLogin {
   justify-content: flex-end;
+}
+
+.pasInfo {
+  height: 2vh;
+  color: white;
+  font-family: "Roboto";
 }
 
 .button {

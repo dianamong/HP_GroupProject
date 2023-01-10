@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="./assets/styles/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="./assets/scripts/modal.js"></script>
     <script src="./assets/scripts/modal2.js"></script>
     <title>Document</title>
@@ -26,10 +24,10 @@
             </div>
             <nav class="header__menu">
                 <ul class="header__list">
-                    <li><a href="#" class="header__link">MAIN</a></li>
-                    <li><a href="#" class="header__link">HEROES</a></li>
-                    <li><a href="#" class="header__link">SPELLS</a></li>
-                    <li><a href="#" class="header__link">COMMENTS</a></li>
+                    <li><a href="#mainpage" class="header__link">MAIN</a></li>
+                    <li><a href="#heroes" class="header__link">HEROES</a></li>
+                    <li><a href="#spells" class="header__link">SPELLS</a></li>
+                    <li><a href="#comments" class="header__link">COMMENTS</a></li>
                 </ul>
             </nav>
             <div class="header__login">
@@ -39,55 +37,44 @@
     </header>
     <!--Main-->
     <main class="main">
-        <article class="mainpage">
+        <article class="mainpage" id="mainpage">
             <div class="mainpage__container">
-                <div class="mainpage__container__logodiv"><img class="mainpage__container__logo"
-                        src="./assets/images/mainpage/logo.png" alt="логотип"></div>
+                <div class="mainpage__container__logodiv"><img class="mainpage__container__logo" src="./assets/images/mainpage/logo.png" alt="логотип"></div>
                 <p class="mainpage__container__text1">Hello! You got into Harry Potter Wiki!</p>
-                <p class="mainpage__container__text2">Here you can find information about your favorite heroes and
-                    spells of the Harry Potter universe</p>
+                <p class="mainpage__container__text2">Here you can find information about your favorite heroes and spells of the Harry Potter universe</p>
                 <div class="mainpage__container2">
                     <div class="mainpage__container__search">
                         <input type="text" class="mainpage__container__input" placeholder="Name of character" id="hero">
                     </div>
-                    <button class="mainpage__container__button button_fontsize button__shine"
-                        onclick="heroSearch()">Search</button>
+                    <button class="mainpage__container__button button_fontsize button__shine" onclick="heroSearch()">Search</button>
                 </div>
                 <p class="mainpage__container__text3">P.S Please enter the character's First and Last Name!</p>
 
             </div>
         </article>
         <!--Heroes Gallery-->
-        <div class="wrapper heroesBox">
+        <div class="wrapper heroesBox" id="heroes">
             <h2 class="title_size padding">MAIN HEROES</h2>
             <div class="slider">
-                <div class="slider__item harry" data-tooltip="Harry Potter"><img
-                        src="./assets/images/mainpage/HarryPotter.png" class="imgHover" alt="Harry">
+                <div class="slider__item harry" data-tooltip="Harry Potter"><img src="./assets/images/mainpage/HarryPotter.png" class="imgHover" alt="Harry">
                 </div>
-                <div class="slider__item lord" data-tooltip="Lord Voldemort"><img
-                        src="./assets/images/mainpage/Voldemort.png" class="imgHover" alt="Lord">
+                <div class="slider__item lord" data-tooltip="Lord Voldemort"><img src="./assets/images/mainpage/Voldemort.png" class="imgHover" alt="Lord">
 
                 </div>
-                <div class="slider__item hermione" data-tooltip="Hermione Granger"><img
-                        src="./assets/images/mainpage/HermioneGranger.png" class="imgHover" alt="Hermione">
+                <div class="slider__item hermione" data-tooltip="Hermione Granger"><img src="./assets/images/mainpage/HermioneGranger.png" class="imgHover" alt="Hermione">
 
                 </div>
-                <div class="slider__item ron" data-tooltip="Ron Weasley"><img
-                        src="./assets/images/mainpage/RonWeasley.png" class="imgHover" alt="Ron">
+                <div class="slider__item ron" data-tooltip="Ron Weasley"><img src="./assets/images/mainpage/RonWeasley.png" class="imgHover" alt="Ron">
 
                 </div>
-                <div class="slider__item albus" data-tooltip="Albus Dumbledore"><img
-                        src="./assets/images/mainpage/AlbusDumbledore.png" class="imgHover" alt="Albus">
+                <div class="slider__item albus" data-tooltip="Albus Dumbledore"><img src="./assets/images/mainpage/AlbusDumbledore.png" class="imgHover" alt="Albus">
                 </div>
 
-                <div class="slider__item rubeus" data-tooltip="Rubeus Hagrid"><img
-                        src="./assets/images/mainpage/RubeusHagrid.png" class="imgHover" alt="Hagrid">
+                <div class="slider__item rubeus" data-tooltip="Rubeus Hagrid"><img src="./assets/images/mainpage/RubeusHagrid.png" class="imgHover" alt="Hagrid">
                 </div>
-                <div class="slider__item snape" data-tooltip="Severus Snape"><img
-                        src="./assets/images/mainpage/SeverusSnape.png" class="imgHover" alt="Snape">
+                <div class="slider__item snape" data-tooltip="Severus Snape"><img src="./assets/images/mainpage/SeverusSnape.png" class="imgHover" alt="Snape">
                 </div>
-                <div class="slider__item draco" data-tooltip="Draco Malfoy"><img
-                        src="./assets/images/mainpage/DracoMalfoy.jpg" class="imgHover" alt="Malfoy">
+                <div class="slider__item draco" data-tooltip="Draco Malfoy"><img src="./assets/images/mainpage/DracoMalfoy.jpg" class="imgHover" alt="Malfoy">
                 </div>
             </div>
         </div>
@@ -95,7 +82,7 @@
         <div id="tooltip"></div>
 
         <!--Spells Gallery-->
-        <article class="spellsGallery">
+        <article class="spellsGallery" id="spells">
             <h2 class="title_size padding">SPELLS</h2>
             <wrapper class="spellsGallery_wrapper wrapper ">
                 <div class="slider_spells slider_margin api_spells">
@@ -134,48 +121,46 @@
         </article>
 
         <!--Comments -->
-        <article class="comments">
+        <article class="comments" id="comments">
             <div class="commentsBox">
                 <h2 class="title_size commentsBox__title">COMMENTS</h2>
                 <div class="comments__block">
                     <div class="comments__form">
                         <form>
                             <div class="form-group">
-                                <input type="name" class="form-control form-name" id="comment-name"
-                                    placeholder="Your name:">
+                                <input type="name" class="form-control form-name" id="comment-name" placeholder="Your name:">
                             </div>
                             <div class="form-group">
-                                <input type="name" class="form-control form-comment" id="comment-body"
-                                    placeholder="Comment:">
+                                <input type="name" class="form-control form-comment" id="comment-body" placeholder="Comment:">
                             </div>
                         </form>
+<<<<<<< HEAD
                         <button type="submit" class="comments__button button__shine button_fontsize">Add
                             comment</button>
+=======
+                        <button type="submit" class="comments__button button__shine button_fontsize" id="comment-add">Add comment</button>
+>>>>>>> 172bd8e30880ffba88e32c47156ef441df4bc572
                     </div>
                     <div class="comments__result">
-                        <div class="comments__result-item">
-                            <img class="comments__photo" src="./assets/images/mainpage/mini_ava.svg" alt="photo">
-                            <p class="comments__name">Катя:</p>
-                            <p class="comments__content">Крутой сайт!</p>
-                            <p class="comments__time">06.01.2023</p>
+                        <div class="comments__result-item" id="comment-field">
+                            <p class="comments__name"></p>
+                            <p class="comments__content"></p>
+                            <p class="comments__time"></p>
                         </div>
                         <div class="comments__result-item">
-                            <img class="comments__photo" src="./assets/images/mainpage/mini_photo.svg" alt="photo">
-                            <p class="comments__name">Катя:</p>
-                            <p class="comments__content">Крутой сайт!</p>
-                            <p class="comments__time">06.01.2023</p>
+                            <p class="comments__name"></p>
+                            <p class="comments__content"></p>
+                            <p class="comments__time"></p>
                         </div>
                         <div class="comments__result-item">
-                            <img class="comments__photo" src="./assets/images/mainpage/mini_ava.svg" alt="photo">
-                            <p class="comments__name">Катя:</p>
-                            <p class="comments__content">Крутой сайт!</p>
-                            <p class="comments__time">06.01.2023</p>
+                            <p class="comments__name"></p>
+                            <p class="comments__content"></p>
+                            <p class="comments__time"></p>
                         </div>
                         <div class="comments__result-item">
-                            <img class="comments__photo" src="./assets/images/mainpage/mini_ava.svg" alt="photo">
-                            <p class="comments__name">Катя:</p>
-                            <p class="comments__content">Крутой сайт!</p>
-                            <p class="comments__time">06.01.2023</p>
+                            <p class="comments__name"></p>
+                            <p class="comments__content"></p>
+                            <p class="comments__time"></p>
                         </div>
                     </div>
                 </div>
@@ -192,10 +177,10 @@
                 </div>
                 <div class="footer__menu">
                     <ul class="footer__list">
-                        <li><a href="#" class="footer__link">Main</a></li>
-                        <li><a href="#" class="footer__link">Heroes</a></li>
-                        <li><a href="#" class="footer__link">Spells</a></li>
-                        <li><a href="#" class="footer__link">Comments</a></li>
+                        <li><a href="#mainpage" class="footer__link">Main</a></li>
+                        <li><a href="#heroes" class="footer__link">Heroes</a></li>
+                        <li><a href="#spells" class="footer__link">Spells</a></li>
+                        <li><a href="#comments" class="footer__link">Comments</a></li>
                     </ul>
                 </div>
             </div>
@@ -230,8 +215,7 @@
     <div class="spell-card">
         <div class="spell-card__container">
             <p class="spell-card__container__text1">Apparate</p>
-            <p class="spell-card__container__text2">A non-verbal transportation spell that allows a witch or wizard to
-                instantly travel on the spot and appear at another location (disapparate is the opposite)</p>
+            <p class="spell-card__container__text2">A non-verbal transportation spell that allows a witch or wizard to instantly travel on the spot and appear at another location (disapparate is the opposite)</p>
         </div>
         <button class="spell-card__container__button">Close</button>
     </div>
@@ -287,7 +271,11 @@
 
                 <div class="loginBlock">
                     <label for="userLogin" class="loginLabel">Login</label>
+<<<<<<< HEAD
                     <input type="text" id="userLogin" class="login" required pattern="[a-zA-Z0-9]+$" />
+=======
+                    <input type="text" id="userLogin" class="login" required pattern="[a-zA-Z0-9]+$" minlength="5" />
+>>>>>>> 172bd8e30880ffba88e32c47156ef441df4bc572
                 </div>
 
                 <div class="emailBlock">
@@ -297,12 +285,20 @@
 
                 <div class="passwordBlock">
                     <label for="userPassword" class="passwordLabel">Password</label>
+<<<<<<< HEAD
                     <input type="text" id="userPassword" class="password" required />
+=======
+                    <input type="text" id="userPassword1" class="password" required/>
+>>>>>>> 172bd8e30880ffba88e32c47156ef441df4bc572
                 </div>
 
                 <div class="passwordBlock">
                     <label for="userPassword" class="passwordLabel">Repeat password</label>
+<<<<<<< HEAD
                     <input type="text" id="userPassword" class="password" required />
+=======
+                    <input type="text" id="userPassword2" class="password" required/>
+>>>>>>> 172bd8e30880ffba88e32c47156ef441df4bc572
                 </div>
 
                 <div class="heroBlock">
@@ -313,9 +309,9 @@
                 <div class="checkboxBlock checkLogin">
                     <label class="rememberText"><input type="checkbox" name="remember" value="1">Remember me</label>
                 </div>
-
+                <div class="pasInfo" id="pasInfo"></div>
                 <div class="registration_Buttons">
-                    <button type="submit" class="button__shine signUpButton_registration">SIGN UP</button>
+                    <button type="submit" class="button__shine signUpButton_registration" id="registration">SIGN UP</button>
                 </div>
             </form>
         </div>
@@ -327,8 +323,13 @@
     <script src="./assets/scripts/search.js"></script>
     <script src="./assets/scripts/comments.js"></script>
     <script src="./assets/scripts/slaiderSpells.js"></script>
+<<<<<<< HEAD
     <script src="./assets/scripts/spells.js"></script>
 
+=======
+    <script src="./assets/scripts/validationReg.js"></script>
+    <script src="./assets/scripts/scroll.js"></script>
+>>>>>>> 172bd8e30880ffba88e32c47156ef441df4bc572
 </body>
 
 </html>
