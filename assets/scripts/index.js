@@ -177,16 +177,12 @@ fetch("https://hp-api.onrender.com/api/characters")
                 footerButtons: [
                     { class: 'btn btn__cancel button__shine', text: 'Close', handler: 'modalHandlerCancel' }
                 ]
-
-
             })
             modal.show();
             document.querySelector('.btn__cancel').addEventListener("click", () => modal.hide());
         })
     })
     .catch(err => console.log(err));
-
-
 
 $(".mainpage").fadeIn(1300);
 

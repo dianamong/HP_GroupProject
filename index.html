@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="./assets/scripts/modal.js"></script>
+    <script src="./assets/scripts/modal2.js"></script>
     <title>Document</title>
 
 </head>
@@ -84,33 +85,33 @@
         <article class="spellsGallery" id="spells">
             <h2 class="title_size padding">SPELLS</h2>
             <wrapper class="spellsGallery_wrapper wrapper ">
-                <div class="slider_spells slider_margin ">
+                <div class="slider_spells slider_margin api_spells">
                     <div class="slider__item slider__itemSpell">
-                        <p class="galleryText_size border">Aberto</p>
+                        <p class="galleryText_size ">Aberto</p>
                     </div>
                     <div class="slider__item  slider__itemSpell">
-                        <p class="galleryText_size border ">Accio</p>
+                        <p class="galleryText_size ">Accio</p>
                     </div>
                     <div class="slider__item  slider__itemSpell">
-                        <p class="galleryText_size border">Aquamenti</p>
+                        <p class="galleryText_size ">Aquamenti</p>
                     </div>
                     <div class="slider__item  slider__itemSpell">
-                        <p class="galleryText_size border">Первое</p>
-                    </div>
-                    <div class="slider__item slider__itemSpell">
-                        <p class="galleryText_size border">Первое</p>
+                        <p class="galleryText_size ">Первое</p>
                     </div>
                     <div class="slider__item slider__itemSpell">
-                        <p class="galleryText_size border">Первое</p>
+                        <p class="galleryText_size ">Первое</p>
                     </div>
                     <div class="slider__item slider__itemSpell">
-                        <p class="galleryText_size border">Первое</p>
+                        <p class="galleryText_size ">Первое</p>
+                    </div>
+                    <div class="slider__item slider__itemSpell">
+                        <p class="galleryText_size ">Первое</p>
                     </div>
                     <div class="slider__item  slider__itemSpell">
-                        <p class="galleryText_size border">Первое</p>
+                        <p class="galleryText_size ">Первое</p>
                     </div>
                     <div class="slider__item  slider__itemSpell">
-                        <p class="galleryText_size border">Первое</p>
+                        <p class="galleryText_size ">Первое</p>
                     </div>
                 </div>
                 </div>
@@ -133,7 +134,10 @@
                                 <input type="name" class="form-control form-comment" id="comment-body" placeholder="Comment:">
                             </div>
                         </form>
+
+
                         <button type="submit" class="comments__button button__shine button_fontsize" id="comment-add">Add comment</button>
+
                     </div>
                     <div class="comments__result">
                         <div class="comments__result-item" id="comment-field">
@@ -166,36 +170,7 @@
             </div>
         </div>
     </footer>
-    <!--Modal Hero -->
-    <div class="hero">
-        <div class="hero__container">
-            <img src="./assets/images/card/harry.png" alt="image of hero" class="hero__container__img">
-            <div class="hero__container__container2">
-                <div class="hero__container__container2__div1">Name: <span>Harry Potter</span></div>
-                <div class="hero__container__container2__div2">Species: <span>human, wizard</span></div>
-                <div class="hero__container__container2__div3">Gender: <span>male</span></div>
-                <div class="hero__container__container2__div4">House: <span>Griffindor</span></div>
-                <div class="hero__container__container2__div5">Date of birth: <span>31-07-1980</span></div>
-                <div class="hero__container__container2__div6">Ancestry: <span>half-blood</span></div>
-                <div class="hero__container__container2__div7">Eye colour: <span>green</span></div>
-                <div class="hero__container__container2r__div8">Hair colour: <span>black</span></div>
-                <div class="hero__container__container2__div9">Wand: <span>holy, phoneix feather, 11</span></div>
-                <div class="hero__container__container2__div10">Patronus: <span>stag</span></div>
-                <div class="hero__container__container2__div11">Status: <span>student, alive</span></div>
-                <div class="hero__container__container2__div12">Actor: <span>Daniel Radcliffe</span></div>
-            </div>
-        </div>
-        <button class="hero__container__button">Close</button>
-    </div>
-    <!--Modal Spell -->
-    <div class="spell-card">
-        <div class="spell-card__container">
-            <p class="spell-card__container__text1">Apparate</p>
-            <p class="spell-card__container__text2">A non-verbal transportation spell that allows a witch or wizard to instantly travel on the spot and appear at another location (disapparate is the opposite)</p>
-        </div>
-        <button class="spell-card__container__button">Close</button>
-    </div>
-
+ 
     <!--Forms -->
     <!--Login-->
     <div class="loginForm">
@@ -247,12 +222,14 @@
 
                 <div class="loginBlock">
                     <label for="userLogin" class="loginLabel">Login</label>
+
                     <input type="text" id="userLogin" class="login" required pattern="[a-zA-Z0-9]+$" minlength="5" />
+
                 </div>
 
                 <div class="emailBlock">
                     <label for="userEmail" class="emailLabel">Email</label>
-                    <input type="email" id="userEmail" class="email" required/>
+                    <input type="email" id="userEmail" class="email" required />
                 </div>
 
                 <div class="passwordBlock">
@@ -263,11 +240,12 @@
                 <div class="passwordBlock">
                     <label for="userPassword" class="passwordLabel">Repeat password</label>
                     <input type="text" id="userPassword2" class="password" required/>
+
                 </div>
 
                 <div class="heroBlock">
                     <label for="selectHero" class="heroLabel">Your Hero</label>
-                    <input type="text" id="selectHero" class="selectHero" placeholder="Sirius Black" required/>
+                    <input type="text" id="selectHero" class="selectHero" placeholder="Sirius Black" required />
                 </div>
 
                 <div class="checkboxBlock checkLogin">
@@ -287,8 +265,9 @@
     <script src="./assets/scripts/search.js"></script>
     <script src="./assets/scripts/comments.js"></script>
     <script src="./assets/scripts/slaiderSpells.js"></script>
+    <script src="./assets/scripts/spells.js"></script>
     <script src="./assets/scripts/validationReg.js"></script>
     <script src="./assets/scripts/scroll.js"></script>
-</body>
+
 
 </html>
