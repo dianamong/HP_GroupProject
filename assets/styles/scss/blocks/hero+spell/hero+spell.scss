@@ -1,61 +1,5 @@
-.hero {
-    margin: auto;
-    width: 450px;
-    height: 650px;
-    background-image: url('../../images/card/bigfon.png');
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 4px solid white;
-    border-radius: 40px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.21vw;
-    font-weight: 500;
-}
 
-.hero__container {
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-top: 8%;
-    display: grid;
-    width: 82%;
-    height: 70%;
-    grid-template-rows: 100%;
-    grid-template-columns: 40% 60%;
-    column-gap: 5%;
-}
-
-.hero__container__container2 {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(12, 1fr);
-}
-
-.hero__container__container2 span {
-    font-family: 'Playfair Display', serif;
-    font-weight: 100;
-}
-
-.hero__container__img {
-    width: 100%;
-}
-
-.hero__container__button {
-    margin-top: 20%;
-    margin-left: 70%;
-    width: 22%;
-    height: 5%;
-    background-color: #DE9E15;
-    border-width: 0;
-    border-radius: 12px;
-    color: white;
-    font-weight: 400;
-}
-
-.spell-card {
+/*.spell-card {
     margin: auto;
     width: 450px;
     height: 270px;
@@ -81,15 +25,9 @@
     grid-template-rows: 20% 80%;
     grid-template-columns: 100%;
 }
+*/
 
-.spell-card__container__text2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.11vw;
-    font-weight: 100;
-    line-height: 150%;
-}
-
-.spell-card__container__button {
+/*.spell-card__container__button {
     margin-left: 70%;
     width: 22%;
     height: 12%;
@@ -98,4 +36,4 @@
     border-radius: 12px;
     color: white;
     font-weight: 400;
-}
+}*/

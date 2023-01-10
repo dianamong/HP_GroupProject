@@ -19,12 +19,12 @@
     display: flex;
     flex-direction: column;
     background-clip: padding-box;
-    background-image: url('../../images/card/bigfon.png');
+    background-image: url('../../images/card/smallfon.png');
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     border: 4px solid white;
-    border-radius: 40px;
+    border-radius: 30px;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 1.21vw;
@@ -38,8 +38,8 @@
     }
 }
 
-.modal__show2 .modal__backdrop2,
-.modal__show2 .modal__content2 {
+.modal__show .modal__backdrop2,
+.modal__show .modal__content2 {
     opacity: 1;
     z-index: 1050;
     pointer-events: auto;
@@ -47,32 +47,16 @@
 }
 
 
-
-.modal__btn-close2 {
-    padding-left: 95%;
-    float: right;
-    font-family: sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1;
-    color: #000;
-    text-shadow: 0 1px 0 #fff;
-    opacity: 0.5;
-    text-decoration: none;
-}
-
 .modal__body2 {
     position: relative;
     padding-left: 8%;
     padding-right: 8%;
-    padding-top: 8%;
+    padding-top: 3%;
     display: grid;
-    width: 80%;
-    height: 75vh;
-    grid-template-rows: 100%;
-    grid-template-columns: 40% 60%;
-    column-gap: 5%;
-    ;
+    width: 82%;
+    height: 70%;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 100%;
     overflow: hidden;
 }
 
@@ -93,4 +77,11 @@
     border-radius: 12px;
     color: white;
     font-weight: 400;
+}
+
+.spell-card__container__text2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.11vw;
+    font-weight: 100;
+    line-height: 150%;
 }

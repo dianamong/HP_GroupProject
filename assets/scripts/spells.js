@@ -13,14 +13,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             spellsArray.forEach(elem => {
                 elem.addEventListener('click', () => {
                     let modalSpells = $modal2({
-                        content: `<div class="spell-card">
-                        <div class="spell-card__container">
-                            <p class="spell-card__container__text1">Apparate</p>
-                            <p class="spell-card__container__text2">A non-verbal transportation spell that allows a witch or wizard to
-                                instantly travel on the spot and appear at another location (disapparate is the opposite)</p>
-                        </div>
-                        <button class="spell-card__container__button">Close</button>
-                    </div>`,
+                        content: `<p class="spell-card__container__text1">Apparate</p><p class="spell-card__container__text2">A non-verbal transportation spell that allows a witch or wizard toinstantly travel on the spot and appear at another location (disapparate is the opposite)</p>`,
                         footerButtons: [
                             { class: 'btn btn__cancel button__shine', text: 'Close', handler: 'modalHandlerCancel' }
                         ]
