@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     fetch("https://hp-api.onrender.com/api/spells")
         .then(response => response.json())
         .then(spells => {
-            console.log(spells);
             let spellsCards = document.querySelectorAll('.apiSpells');
             spellsCards[0].addEventListener('click', function () {
                 let modalSpells = $modal2({

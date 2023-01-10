@@ -234,36 +234,30 @@
                 <p class="registration_welcome_text">Hi, <span class="nameColor">Stranger</span>!</p>
             </div>
 
-            <form class="registration_template_fieldset">
+            <form class="registration_template_fieldset form">
 
                 <div class="loginBlock">
                     <label for="userLogin" class="loginLabel">Login</label>
-
-                    <input type="text" id="userLogin" class="login" required pattern="[a-zA-Z0-9]+$" minlength="5" />
-
+                    <input type="text" id="userLogin" class="login form__item" required pattern="[a-zA-Z0-9]+$"
+                        minlength="5" />
                 </div>
-
                 <div class="emailBlock">
-                    <label for="userEmail" class="emailLabel">Email</label>
-                    <input type="email" id="userEmail" class="email" required />
+                    <label for="userEmail" class="emailLabel" pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$">Email</label>
+                    <input type="email" id="userEmail" class="email form__item" required />
                 </div>
-
                 <div class="passwordBlock">
-                    <label for="userPassword" class="passwordLabel">Password</label>
-                    <input type="text" id="userPassword1" class="password" required />
+                    <label for="userPassword" class="passwordLabel" pattern="^\d{1,}$">Password</label>
+                    <input type="text" id="userPassword1" class="password form__item" maxlength="7" required />
                 </div>
-
                 <div class="passwordBlock">
                     <label for="userPassword" class="passwordLabel">Repeat password</label>
-                    <input type="text" id="userPassword2" class="password" required />
-
+                    <input type="text" id="userPassword2" class="password form__item" required />
                 </div>
-
                 <div class="heroBlock">
                     <label for="selectHero" class="heroLabel">Your Hero</label>
-                    <input type="text" id="selectHero" class="selectHero" placeholder="Sirius Black" required />
+                    <input type="text" id="selectHero" class="selectHero form__item" placeholder="Sirius Black"
+                        required />
                 </div>
-
                 <div class="checkboxBlock checkLogin">
                     <label class="rememberText"><input type="checkbox" name="remember" value="1">Remember me</label>
                 </div>
@@ -278,6 +272,8 @@
 
     <script src="./assets/jquery-3.6.3.js"></script>
     <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js">
+    </script>
     <script src="./assets/scripts/index.js"></script>
     <script src="./assets/scripts/search.js"></script>
     <script src="./assets/scripts/comments.js"></script>

@@ -1170,6 +1170,18 @@ a:hover {
   font-family: "Roboto";
 }
 
+.valid {
+  border-color: rgb(26, 204, 58);
+}
+
+.error {
+  border-color: rgb(203, 68, 104);
+}
+
+input {
+  outline: 0;
+}
+
 .button {
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.3);
   display: inline-block;

@@ -163,8 +163,20 @@
     justify-content: flex-end;
 }
 
-.pasInfo{
-    height:2vh;
-    color:white;
+.pasInfo {
+    height: 2vh;
+    color: white;
     font-family: 'Roboto';
+}
+
+.valid {
+    border-color: rgb(26, 204, 58);
+}
+
+.error {
+    border-color: rgb(203, 68, 104);
+}
+
+input {
+    outline: 0;
 }
