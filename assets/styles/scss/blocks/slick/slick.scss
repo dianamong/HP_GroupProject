@@ -4,13 +4,15 @@
 }
 
 .slider_spells .slick-track {
-    height: 5em;
+    height: 6em;
 }
 
 .slick-list {
     overflow: hidden;
     margin: auto;
+
 }
+
 
 .slider {
     position: relative;
@@ -23,7 +25,8 @@
 .slider_spells {
 
     position: relative;
-    padding: 0 8%;
+    padding: 0;
+
 
 }
 
@@ -61,12 +64,12 @@
 }
 
 .slider_spells .slick-prev {
-    left: 7%;
+    left: -8%;
 
 }
 
 .slider_spells .slick-next {
-    right: 7%;
+    right: -8%;
 }
 
 .slick-prev:hover {
@@ -118,7 +121,6 @@
     width: 40%;
     margin: 0 auto;
 
-
 }
 
 .slider__itemSpell {
@@ -126,6 +128,7 @@
     margin: 0 1%;
     padding: 0;
     text-align: center;
+
 }
 
 .slider_spells p {

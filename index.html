@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="./assets/styles/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <script src="./assets/scripts/modal.js"></script>
     <script src="./assets/scripts/modal2.js"></script>
     <title>Document</title>
@@ -39,14 +41,17 @@
     <main class="main">
         <article class="mainpage" id="mainpage">
             <div class="mainpage__container">
-                <div class="mainpage__container__logodiv"><img class="mainpage__container__logo" src="./assets/images/mainpage/logo.png" alt="логотип"></div>
+                <div class="mainpage__container__logodiv"><img class="mainpage__container__logo"
+                        src="./assets/images/mainpage/logo.png" alt="логотип"></div>
                 <p class="mainpage__container__text1">Hello! You got into Harry Potter Wiki!</p>
-                <p class="mainpage__container__text2">Here you can find information about your favorite heroes and spells of the Harry Potter universe</p>
+                <p class="mainpage__container__text2">Here you can find information about your favorite heroes and
+                    spells of the Harry Potter universe</p>
                 <div class="mainpage__container2">
                     <div class="mainpage__container__search">
                         <input type="text" class="mainpage__container__input" placeholder="Name of character" id="hero">
                     </div>
-                    <button class="mainpage__container__button button_fontsize button__shine" onclick="heroSearch()">Search</button>
+                    <button class="mainpage__container__button button_fontsize button__shine"
+                        onclick="heroSearch()">Search</button>
                 </div>
                 <p class="mainpage__container__text3">P.S Please enter the character's First and Last Name!</p>
 
@@ -56,25 +61,33 @@
         <div class="wrapper heroesBox" id="heroes">
             <h2 class="title_size padding">MAIN HEROES</h2>
             <div class="slider">
-                <div class="slider__item harry" data-tooltip="Harry Potter"><img src="./assets/images/mainpage/HarryPotter.png" class="imgHover" alt="Harry">
+                <div class="slider__item harry" data-tooltip="Harry Potter"><img
+                        src="./assets/images/mainpage/HarryPotter.png" class="imgHover" alt="Harry">
                 </div>
-                <div class="slider__item lord" data-tooltip="Lord Voldemort"><img src="./assets/images/mainpage/Voldemort.png" class="imgHover" alt="Lord">
+                <div class="slider__item lord" data-tooltip="Lord Voldemort"><img
+                        src="./assets/images/mainpage/Voldemort.png" class="imgHover" alt="Lord">
 
                 </div>
-                <div class="slider__item hermione" data-tooltip="Hermione Granger"><img src="./assets/images/mainpage/HermioneGranger.png" class="imgHover" alt="Hermione">
+                <div class="slider__item hermione" data-tooltip="Hermione Granger"><img
+                        src="./assets/images/mainpage/HermioneGranger.png" class="imgHover" alt="Hermione">
 
                 </div>
-                <div class="slider__item ron" data-tooltip="Ron Weasley"><img src="./assets/images/mainpage/RonWeasley.png" class="imgHover" alt="Ron">
+                <div class="slider__item ron" data-tooltip="Ron Weasley"><img
+                        src="./assets/images/mainpage/RonWeasley.png" class="imgHover" alt="Ron">
 
                 </div>
-                <div class="slider__item albus" data-tooltip="Albus Dumbledore"><img src="./assets/images/mainpage/AlbusDumbledore.png" class="imgHover" alt="Albus">
+                <div class="slider__item albus" data-tooltip="Albus Dumbledore"><img
+                        src="./assets/images/mainpage/AlbusDumbledore.png" class="imgHover" alt="Albus">
                 </div>
 
-                <div class="slider__item rubeus" data-tooltip="Rubeus Hagrid"><img src="./assets/images/mainpage/RubeusHagrid.png" class="imgHover" alt="Hagrid">
+                <div class="slider__item rubeus" data-tooltip="Rubeus Hagrid"><img
+                        src="./assets/images/mainpage/RubeusHagrid.png" class="imgHover" alt="Hagrid">
                 </div>
-                <div class="slider__item snape" data-tooltip="Severus Snape"><img src="./assets/images/mainpage/SeverusSnape.png" class="imgHover" alt="Snape">
+                <div class="slider__item snape" data-tooltip="Severus Snape"><img
+                        src="./assets/images/mainpage/SeverusSnape.png" class="imgHover" alt="Snape">
                 </div>
-                <div class="slider__item draco" data-tooltip="Draco Malfoy"><img src="./assets/images/mainpage/DracoMalfoy.jpg" class="imgHover" alt="Malfoy">
+                <div class="slider__item draco" data-tooltip="Draco Malfoy"><img
+                        src="./assets/images/mainpage/DracoMalfoy.jpg" class="imgHover" alt="Malfoy">
                 </div>
             </div>
         </div>
@@ -84,40 +97,40 @@
         <!--Spells Gallery-->
         <article class="spellsGallery" id="spells">
             <h2 class="title_size padding">SPELLS</h2>
-            <wrapper class="spellsGallery_wrapper wrapper ">
+            <div class="spellsGallery_wrapper wrapper ">
                 <div class="slider_spells slider_margin api_spells">
-                    <div class="slider__item slider__itemSpell">
-                        <p class="galleryText_size ">Aberto</p>
+
+                    <div class="slider__item slider__itemSpell ">
+                        <p class="galleryText_size apiSpells">Reducio</p>
                     </div>
-                    <div class="slider__item  slider__itemSpell">
-                        <p class="galleryText_size ">Accio</p>
+                    <div class="slider__item slider__itemSpell ">
+                        <p class="galleryText_size apiSpells">Accio</p>
                     </div>
-                    <div class="slider__item  slider__itemSpell">
-                        <p class="galleryText_size ">Aquamenti</p>
+                    <div class="slider__item slider__itemSpell ">
+                        <p class="galleryText_size apiSpells">Crucio</p>
                     </div>
-                    <div class="slider__item  slider__itemSpell">
-                        <p class="galleryText_size ">Первое</p>
+                    <div class="slider__item slider__itemSpell ">
+                        <p class="galleryText_size apiSpells">Protego</p>
                     </div>
-                    <div class="slider__item slider__itemSpell">
-                        <p class="galleryText_size ">Первое</p>
-                    </div>
-                    <div class="slider__item slider__itemSpell">
-                        <p class="galleryText_size ">Первое</p>
+                    <div class="slider__item slider__itemSpell ">
+                        <p class="galleryText_size apiSpells">Expecto patronum'</p>
                     </div>
                     <div class="slider__item slider__itemSpell">
-                        <p class="galleryText_size ">Первое</p>
+                        <p class="galleryText_size apiSpells">Bombardo</p>
                     </div>
-                    <div class="slider__item  slider__itemSpell">
-                        <p class="galleryText_size ">Первое</p>
+                    <div class="slider__item slider__itemSpell">
+                        <p class="galleryText_size apiSpells">Avada Kedavra</p>
                     </div>
-                    <div class="slider__item  slider__itemSpell">
-                        <p class="galleryText_size ">Первое</p>
+                    <div class="slider__item slider__itemSpell ">
+                        <p class="galleryText_size apiSpells">Imperio</p>
+                    </div>
+                    <div class="slider__item slider__itemSpell ">
+                        <p class="galleryText_size apiSpells">Confundo</p>
                     </div>
                 </div>
-                </div>
-                </div>
-            </wrapper>
-            <div class="spells__img"><img src="./assets\images\spells\orig.gif" alt="spells-animation"></div>
+            </div>
+            </div>
+            <div class="spells__img"><img src="./assets/images/spells/orig.gif" alt="spells-animation"></div>
         </article>
 
         <!--Comments -->
@@ -128,15 +141,18 @@
                     <div class="comments__form">
                         <form>
                             <div class="form-group">
-                                <input type="name" class="form-control form-name" id="comment-name" placeholder="Your name:">
+                                <input type="name" class="form-control form-name" id="comment-name"
+                                    placeholder="Your name:">
                             </div>
                             <div class="form-group">
-                                <input type="name" class="form-control form-comment" id="comment-body" placeholder="Comment:">
+                                <input type="name" class="form-control form-comment" id="comment-body"
+                                    placeholder="Comment:">
                             </div>
                         </form>
 
 
-                        <button type="submit" class="comments__button button__shine button_fontsize" id="comment-add">Add comment</button>
+                        <button type="submit" class="comments__button button__shine button_fontsize"
+                            id="comment-add">Add comment</button>
 
                     </div>
                     <div class="comments__result">
@@ -170,7 +186,7 @@
             </div>
         </div>
     </footer>
- 
+
     <!--Forms -->
     <!--Login-->
     <div class="loginForm">
@@ -234,12 +250,12 @@
 
                 <div class="passwordBlock">
                     <label for="userPassword" class="passwordLabel">Password</label>
-                    <input type="text" id="userPassword1" class="password" required/>
+                    <input type="text" id="userPassword1" class="password" required />
                 </div>
 
                 <div class="passwordBlock">
                     <label for="userPassword" class="passwordLabel">Repeat password</label>
-                    <input type="text" id="userPassword2" class="password" required/>
+                    <input type="text" id="userPassword2" class="password" required />
 
                 </div>
 
@@ -253,7 +269,8 @@
                 </div>
                 <div class="pasInfo" id="pasInfo"></div>
                 <div class="registration_Buttons">
-                    <button type="submit" class="button__shine signUpButton_registration" id="registration">SIGN UP</button>
+                    <button type="submit" class="button__shine signUpButton_registration" id="registration">SIGN
+                        UP</button>
                 </div>
             </form>
         </div>
