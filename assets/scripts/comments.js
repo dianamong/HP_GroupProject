@@ -10,11 +10,12 @@ document.getElementById("comment-add").onclick = function() {
         body: commentBody.value,
         time: Math.floor(Date.now() / 1000),
     };
+
     const newElement = document.createElement("div");
     newElement.innerHTML = `<p class="comments__name" role="alert">${commentName.value}:</p>
     <p class="comments__content" role="alert">${commentBody.value}</p>
-    <p class="comments__time"><em>${timeConverter(Math.floor(Date.now() / 1000))}</em></p>
-    `;
+    <p class="comments__time"><em>${timeConverter(Math.floor(Date.now() / 1000))}</em></p>`;
+
     const commentsWrapper = document.querySelector(".comments__result-item");
     commentsWrapper.appendChild(newElement);
 
@@ -50,7 +51,3 @@ function timeConverter(UNIX_timestamp) {
     let time = date + " " + month + " " + year;
     return time;
 }
-
-const init = () => {
-    createElement();
-};

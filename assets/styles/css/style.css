@@ -617,9 +617,10 @@ template {
 }
 
 .comments__result-item > div {
-  width: 30rem;
+  width: 85vh;
   height: 7rem;
   background-color: white;
+  opacity: 0.8;
   border-radius: 27px;
 }
 
@@ -632,18 +633,18 @@ template {
 
 .comments__name {
   font-size: 25px;
-  margin: 1rem 0 0 5rem;
+  margin: 1vh 0 0 12vh;
 }
 
 .comments__content {
   font-size: 23px;
-  margin: 1rem 0 0 5rem;
+  margin: 2vh 0 0 12vh;
 }
 
 .comments__time {
   display: block;
   font-size: 15px;
-  margin: -1rem 0 0 25rem;
+  margin: 3vh 0 0 70vh;
 }
 
 .comments {
