@@ -1,10 +1,11 @@
 
 
 
-function heroSearch() {
+let searchBtn = document.querySelector('.mainpage__container__button');
+
+searchBtn.addEventListener('click', function () {
     let heroName = document.getElementById('hero').value;
     if (heroName == null ||
-
         heroName.length == 0) {
         alert("Вы не ввели имя и фамилию!");
     }
@@ -53,11 +54,8 @@ function heroSearch() {
 
                     modal.show();
                     document.getElementById('hero').value = "";
-
                 }
-
             }
         })
         .catch(err => console.log(err));
-}
-
+});
