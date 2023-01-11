@@ -896,7 +896,7 @@ a:hover {
   flex-direction: column;
   background-clip: padding-box;
   background-image: url("../../images/card/bigfon.png");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border: 4px solid white;
@@ -1259,7 +1259,7 @@ input {
   flex-direction: column;
   background-clip: padding-box;
   background-image: url("../../images/card/smallfon.png");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border: 4px solid white;
