@@ -10,7 +10,6 @@ form.addEventListener("click", function (evt) {
 });
 
 
-
 /*let Inputs = [...document.querySelectorAll('.form__item')].forEach(item => {
     item.addEventListener('input', () => {
 
