@@ -15,16 +15,19 @@
 
 .comments__name {
     font-size: 25px;
-    margin: 1vh 0 0 12vh;
+    margin: 1vh 0 0 5vh;
 }
 
 .comments__content {
     font-size: 23px;
-    margin: 2vh 0 0 12vh;
+    margin: 1vh 0 0 3vh;
+    max-width: 80vh;
+    max-height: 5vh;
+    overflow: auto;
 }
 
 .comments__time {
     display: block;
     font-size: 15px;
-    margin: 3vh 0 0 70vh;
+    margin: 2vh 0 0 70vh;
 }

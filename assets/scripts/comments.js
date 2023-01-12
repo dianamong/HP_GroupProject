@@ -1,7 +1,10 @@
 let comments = [];
 // loadComments();
 
-document.getElementById("comment-add").onclick = function() {
+let form = document.getElementsByClassName("comments__form-group")[0];
+form.addEventListener("submit", function(e) {
+    event.preventDefault();
+
     let commentName = document.getElementById("comment-name");
     let commentBody = document.getElementById("comment-body");
 
@@ -26,7 +29,33 @@ document.getElementById("comment-add").onclick = function() {
 
     saveComments();
     showComments();
-};
+});
+// document.getElementById("comment-add").onclick = function() {
+//     let commentName = document.getElementById("comment-name");
+//     let commentBody = document.getElementById("comment-body");
+
+//     let comment = {
+//         name: commentName.value,
+//         body: commentBody.value,
+//         time: Math.floor(Date.now() / 1000),
+//     };
+
+//     const newElement = document.createElement("div");
+//     newElement.innerHTML = `<p class="comments__name" role="alert">${commentName.value}:</p>
+//     <p class="comments__content" role="alert">${commentBody.value}</p>
+//     <p class="comments__time"><em>${timeConverter(Math.floor(Date.now() / 1000))}</em></p>`;
+
+//     const commentsWrapper = document.querySelector(".comments__result-item");
+//     commentsWrapper.appendChild(newElement);
+
+//     commentName.value = "";
+//     commentBody.value = "";
+
+//     comments.push(comment);
+
+//     saveComments();
+//     showComments();
+// };
 
 function saveComments() {
     localStorage.setItem("comments", JSON.stringify(comments));
