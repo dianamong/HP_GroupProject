@@ -1,15 +1,17 @@
-
-let pas1 = document.getElementById('userPassword1');
-let pas2 = document.getElementById('userPassword2');
-let form = document.querySelector('.form');
-form.addEventListener("click", function (evt) {
-    if (pas1.value !== pas2.value) {
+document.getElementById('registration').addEventListener("click", function(evt){
+    let pas1=document.getElementById('userPassword1').value;
+    let pas2=document.getElementById('userPassword2').value;
+    console.log(pas1);
+    console.log(pas2);
+    if (pas1 != pas2){
         evt.preventDefault();
-        document.getElementById('pasInfo').innerHTML = "Passwords don't match!";
+        document.getElementById('pasInfo').innerHTML="Passwords don't match!";
     }
-});
-
-
+    else{
+        document.getElementById('pasInfo').innerHTML=" ";
+    }
+    })
+    
 /*let Inputs = [...document.querySelectorAll('.form__item')].forEach(item => {
     item.addEventListener('input', () => {
 

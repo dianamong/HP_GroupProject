@@ -21,25 +21,12 @@ $modal4 = function (options) {
     function _createModal(options) {
         var
             elemModal = document.createElement('div'),
-            modalTemplate = '<div class="modal__backdrop4" data-dismiss="modal"><div class="modal__content4"><div class="modal__body4" data-modal="content">{{content}}</div>{{footer}}</div></div>',
-            modalFooterTemplate = '<div class="modal__footer4">{{buttons}}</div>',
-            modalButtonTemplate = '<button type="submit" class="{{button_class}}" data-handler={{button_handler}}>{{button_text}}</button>',
-            modalHTML,
-            modalFooterHTML = '';
+            modalTemplate = '<div class="modal__backdrop4" data-dismiss="modal"><div class="modal__content4"><div class="modal__body4" data-modal="content">{{content}}</div></div></div>',
+            modalHTML = '';
 
         elemModal.classList.add('modal');
         modalHTML = modalTemplate.replace('{{title}}', options.title || 'Новое окно');
         modalHTML = modalHTML.replace('{{content}}', options.content || '');
-        if (options.footerButtons) {
-            for (var i = 0, length = options.footerButtons.length; i < length; i++) {
-                var modalFooterButton = modalButtonTemplate.replace('{{button_class}}', options.footerButtons[i].class);
-                modalFooterButton = modalFooterButton.replace('{{button_handler}}', options.footerButtons[i].handler);
-                modalFooterButton = modalFooterButton.replace('{{button_text}}', options.footerButtons[i].text);
-                modalFooterHTML += modalFooterButton;
-            }
-            modalFooterHTML = modalFooterTemplate.replace('{{buttons}}', modalFooterHTML);
-        }
-        modalHTML = modalHTML.replace('{{footer}}', modalFooterHTML);
         elemModal.innerHTML = modalHTML;
         document.body.appendChild(elemModal);
         return elemModal;
