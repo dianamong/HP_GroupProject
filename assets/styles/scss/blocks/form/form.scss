@@ -14,13 +14,13 @@
 
 .registration_template {
     background-color: #1D1D1F;
-    width: 507px;
+    width: 38.4vw;
     border-radius: 31px;
 }
 
 
 .registration_template {
-    height: 960px;
+    height:  147.2vh;
 }
 
 
@@ -32,7 +32,8 @@
 .registration_template_pic_Harry {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 24px;
+    margin-top: 3.68vh;
+    width:90%;
 }
 
 
@@ -40,7 +41,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.51vw;
     color: #FFFFFF;
     text-align: center;
 }
@@ -60,8 +61,8 @@
 .heroBlock {
     display: grid;
     justify-items: left;
-    margin-bottom: 24px;
-    width: 422px;
+    margin-bottom:  3.68vh;
+    width: 32.01vw;
 }
 
 .email,
@@ -69,15 +70,15 @@
 .login,
 .selectHero {
     border-radius: 8px;
-    width: 406px;
-    height: 56px;
+    width: 30.8vw;
+    height:8.58vh;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.21vw;
+    line-height: 3.68vh;
     color: #1F2832;
-    padding-left: 16px;
+    padding-left: 1.21vw;
     border-style: solid;
     border: none;
 }
@@ -90,8 +91,8 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    margin-bottom: 8px;
+    font-size: 1.21vw;
+    margin-bottom: 1.22vh;
 }
 
 .restorePass_Link {
@@ -100,14 +101,14 @@
     color: #FFFFFF;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.21vw;
 }
 
 .rememberText {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.21vw;
     line-height: 100%;
     color: #FFFFFF;
 }
@@ -115,7 +116,7 @@
 .checkboxBlock {
     display: flex;
     grid-template-columns: 1fr 1fr;
-    width: 422px;
+    width: 32.01vw;
     justify-content: space-between;
     font-family: 'Roboto';
 }
@@ -124,17 +125,17 @@
 .registration_Buttons {
     display: flex;
     justify-content: space-between;
-    width: 422px;
+    width: 32.01vw;
     font-family: 'Roboto';
 }
 
 
 .signUpButton_close{
-    width: 100px;
-    height: 51px;
+    width: 7.58vw;
+    height: 7.82vh;
     border-radius: 8px;
     padding: 0px;
-    margin-top:23px;
+    margin-top: 3.52vh;
     color: #fff;
     font-family: 'Roboto';
     background-color: #966806fa;
@@ -143,11 +144,11 @@
 }
 
 .signUpButton_registration {
-    width: 300px;
-    height: 51px;
+    width: 22.76vw;
+    height: 7.82vh;
     border-radius: 8px;
     padding: 0px;
-    margin-top: 23px;
+    margin-top: 3.52vh;
     margin-bottom: 7%;
     color: #fff;
     background-color: #DE9E15;
