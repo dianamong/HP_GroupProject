@@ -777,10 +777,10 @@ input:focus:-ms-input-placeholder {
 .header__link {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
-  margin-right: 70px;
+  margin-right: 5.31vw;
   font-weight: 500;
-  font-size: 19px;
-  line-height: 19px;
+  font-size: 1.44vw;
+  line-height: 1.44vw;
   color: #000;
 }
 
@@ -798,8 +798,8 @@ input:focus:-ms-input-placeholder {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   font-weight: 500;
-  font-size: 19px;
-  line-height: 19px;
+  font-size: 1.44vw;
+  line-height: 1.44vw;
   color: #000;
 }
 
