@@ -1004,40 +1004,37 @@ a:hover {
   font-size: 20px;
 }
 
-.loginForm,
 .registrationForm {
-  display: flex;
+  margin-left: 30%;
+  position: absolute;
+  z-index: 999999;
+  display: none;
   justify-content: center;
+  border: 4px solid white;
+  border-radius: 40px;
+  color: white;
 }
 
-.loginForm_template,
 .registration_template {
   background-color: #1D1D1F;
   width: 507px;
   border-radius: 31px;
 }
 
-.loginForm_template {
-  height: 685px;
-}
-
 .registration_template {
   height: 960px;
 }
 
-.loginForm_template_pic,
 .registration_template_pic {
   display: flex;
 }
 
-.loginForm_template_pic_Harry,
 .registration_template_pic_Harry {
   margin-left: auto;
   margin-right: auto;
   margin-top: 24px;
 }
 
-.loginForm_welcome_text,
 .registration_welcome_text {
   font-family: "Roboto";
   font-style: normal;
@@ -1051,7 +1048,6 @@ a:hover {
   color: #DE9E15;
 }
 
-.loginForm_template_fieldset,
 .registration_template_fieldset {
   display: grid;
   justify-items: center;
@@ -1123,7 +1119,6 @@ a:hover {
   font-family: "Roboto";
 }
 
-.loginForm_Buttons,
 .registration_Buttons {
   display: flex;
   justify-content: space-between;
@@ -1131,30 +1126,21 @@ a:hover {
   font-family: "Roboto";
 }
 
-.loginButton,
-.signUpButton {
-  width: 193px;
+.signUpButton_close {
+  width: 100px;
   height: 51px;
   border-radius: 8px;
   padding: 0px;
-  margin-top: 41px;
+  margin-top: 23px;
   color: #fff;
   font-family: "Roboto";
-}
-
-.signUpButton {
-  background-color: #DE9E15;
+  background-color: rgba(150, 104, 6, 0.9803921569);
   border-style: solid;
   border: none;
 }
 
-.loginButton {
-  border: 1px solid white;
-  background-color: rgba(28, 28, 28, 0);
-}
-
 .signUpButton_registration {
-  width: 422px;
+  width: 300px;
   height: 51px;
   border-radius: 8px;
   padding: 0px;
@@ -1164,10 +1150,6 @@ a:hover {
   background-color: #DE9E15;
   border-style: solid;
   border: none;
-}
-
-.checkLogin {
-  justify-content: flex-end;
 }
 
 .pasInfo {
