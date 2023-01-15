@@ -661,9 +661,8 @@ template {
 .comments__result {
   display: flex;
   flex-direction: column;
-  max-height: 500px;
-  overflow: auto;
-  overflow-x: hidden;
+  max-height: 480px;
+  overflow: hidden;
 }
 
 .comments__result::-webkit-scrollbar {

@@ -3,7 +3,7 @@ let comments = [];
 
 let form = document.getElementsByClassName("comments__form-group")[0];
 form.addEventListener("submit", function(e) {
-    event.preventDefault();
+    e.preventDefault();
 
     let commentName = document.getElementById("comment-name");
     let commentBody = document.getElementById("comment-body");
@@ -20,7 +20,7 @@ form.addEventListener("submit", function(e) {
     <p class="comments__time"><em>${timeConverter(Math.floor(Date.now() / 1000))}</em></p>`;
 
     const commentsWrapper = document.querySelector(".comments__result-item");
-    commentsWrapper.appendChild(newElement);
+    commentsWrapper.prepend(newElement);
 
     commentName.value = "";
     commentBody.value = "";
@@ -29,33 +29,10 @@ form.addEventListener("submit", function(e) {
 
     saveComments();
     showComments();
+
+    let block = document.getElementById("block"); // получение блока с комментариями
+    block.scrollTo(0, 0);
 });
-// document.getElementById("comment-add").onclick = function() {
-//     let commentName = document.getElementById("comment-name");
-//     let commentBody = document.getElementById("comment-body");
-
-//     let comment = {
-//         name: commentName.value,
-//         body: commentBody.value,
-//         time: Math.floor(Date.now() / 1000),
-//     };
-
-//     const newElement = document.createElement("div");
-//     newElement.innerHTML = `<p class="comments__name" role="alert">${commentName.value}:</p>
-//     <p class="comments__content" role="alert">${commentBody.value}</p>
-//     <p class="comments__time"><em>${timeConverter(Math.floor(Date.now() / 1000))}</em></p>`;
-
-//     const commentsWrapper = document.querySelector(".comments__result-item");
-//     commentsWrapper.appendChild(newElement);
-
-//     commentName.value = "";
-//     commentBody.value = "";
-
-//     comments.push(comment);
-
-//     saveComments();
-//     showComments();
-// };
 
 function saveComments() {
     localStorage.setItem("comments", JSON.stringify(comments));
