@@ -829,6 +829,11 @@ input:focus:-ms-input-placeholder {
   color: #000;
 }
 
+.header__avatar {
+  display: none;
+  width: 100px;
+}
+
 .footer {
   background-color: #EDEDED;
 }
