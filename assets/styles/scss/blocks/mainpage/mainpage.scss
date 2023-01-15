@@ -5,6 +5,7 @@
 @import "./__container/__text1/mainpage__container__text1.scss";
 @import "./__container/__text2/mainpage__container__text2.scss";
 @import "./__container/__text3/mainpage__container__text3.scss";
+
 .mainpage {
   width: 100%;
   height: 100vh;
@@ -13,4 +14,15 @@
   background-repeat: no-repeat;
   font-family: 'Roboto', sans-serif;
   display: none;
+}
+
+.mainpage_click {
+  background: rgba(0, 0, 0, 0.6);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.179);
+
 }
