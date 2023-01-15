@@ -1027,7 +1027,6 @@ a:hover {
   z-index: 999999;
   display: none;
   justify-content: center;
-  border: 4px solid white;
   border-radius: 40px;
   color: white;
 }
@@ -1096,7 +1095,6 @@ a:hover {
   color: #1F2832;
   padding-left: 1.21vw;
   border-style: solid;
-  border: none;
 }
 
 .emailLabel,
@@ -1177,11 +1175,12 @@ a:hover {
 }
 
 .valid {
-  border-color: rgb(26, 204, 58);
+  border: 2px solid rgb(26, 204, 58);
+  color: blue;
 }
 
 .error {
-  border-color: rgb(203, 68, 104);
+  border: 2px solid rgb(203, 68, 104);
 }
 
 input {
@@ -1375,6 +1374,14 @@ input {
   width: auto;
   height: auto;
   overflow: hidden;
+}
+
+.valid {
+  border-color: rgb(26, 204, 58) !important;
+}
+
+.error {
+  border-color: rgb(203, 68, 104) !important;
 }
 
 /*# sourceMappingURL=style.css.map */

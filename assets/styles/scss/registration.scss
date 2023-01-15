@@ -14,7 +14,7 @@
 .modal__content4 {
     position: relative;
     width: 40%;
-    margin:auto;
+    margin: auto;
     transition: opacity 0.3s ease-in;
     display: flex;
     justify-content: center;
@@ -50,3 +50,10 @@
     overflow: hidden;
 }
 
+.valid {
+    border-color: rgb(26, 204, 58) !important;
+}
+
+.error {
+    border-color: rgb(203, 68, 104) !important;
+}
