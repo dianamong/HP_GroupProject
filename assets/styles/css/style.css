@@ -661,6 +661,23 @@ template {
 .comments__result {
   display: flex;
   flex-direction: column;
+  max-height: 500px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.comments__result::-webkit-scrollbar {
+  width: 3px;
+}
+
+.comments__result::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+}
+
+.comments__result::-webkit-scrollbar-thumb {
+  background-color: #356184;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.5, rgba(255, 255, 255, 0.25)), color-stop(0.5, transparent), to(transparent));
 }
 
 .mainpage__container {
