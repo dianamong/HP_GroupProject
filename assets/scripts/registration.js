@@ -37,7 +37,7 @@ document.getElementById('close').addEventListener("click", () => {
         console.log(login);
 let email = document.getElementById('userEmail').value;
 let pas = document.getElementById('userPassword1').value;
-let hero = document.getElementById('selectHero').value;
+let avatar = document.getElementById('selectHero').value;
         let loginSt = localStorage.getItem('login');
     if (loginSt === null) {
         localStorage.setItem('login', login);
