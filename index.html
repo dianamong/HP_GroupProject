@@ -8,11 +8,16 @@
     <link rel="stylesheet" href="./assets/styles/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <script src="./assets/scripts/modal.js"></script>
     <script src="./assets/scripts/modal2.js"></script>
     <script src="./assets/scripts/modalReg.js"></script>
     <title>Document</title>
+    <style>
+
+    </style>
 
 </head>
 
@@ -31,6 +36,9 @@
                     <li><a href="#comments" class="header__link">COMMENTS</a></li>
                 </ul>
             </nav>
+            <div class="header__avatar" id="avatar">
+                <img src="" alt="avatar">
+            </div>
             <div class="header__login">
                 <a href="#" id="signUp">SIGN UP</a>
             </div>
@@ -52,7 +60,8 @@
 
                     <div class="loginBlock">
                         <label for="userLogin" class="loginLabel">Login</label>
-                        <input type="text" id="userLogin" class="login form__item" required pattern="[a-zA-Z0-9]+$" minlength="5" />
+                        <input type="text" id="userLogin" class="login form__item" required pattern="[a-zA-Z0-9]+$"
+                            minlength="5" />
                     </div>
                     <div class="emailBlock">
                         <label for="userEmail" class="emailLabel" pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$">Email</label>
@@ -67,12 +76,11 @@
                         <input type="text" id="userPassword2" class="password form__item" required />
                     </div>
                     <div class="heroBlock">
-                        <label for="selectHero" class="heroLabel">Your Hero</label>
-                        <input type="text" id="selectHero" class="selectHero form__item" placeholder="Sirius Black" required />
+                        <label for="selectHero" class="heroLabel">Avatar</label>
+                        <input type="text" id="selectHero" class="selectHero form__item"
+                            placeholder="link to the picture" />
                     </div>
-                    <div class="checkboxBlock checkLogin">
-                        <label class="rememberText"><input type="checkbox" name="remember" value="1">Remember me</label>
-                    </div>
+
                     <div class="pasInfo" id="pasInfo"></div>
                     <div class="registration_Buttons">
                         <button type="submit" class="button__shine signUpButton_registration" id="registration">SIGN
@@ -85,14 +93,17 @@
 
         <article class="mainpage" id="mainpage">
             <div class="mainpage__container">
-                <div class="mainpage__container__logodiv"><img class="mainpage__container__logo" src="./assets/images/mainpage/logo.png" alt="логотип"></div>
+                <div class="mainpage__container__logodiv"><img class="mainpage__container__logo"
+                        src="./assets/images/mainpage/logo.png" alt="логотип"></div>
                 <p class="mainpage__container__text1">Hello! You got into Harry Potter Wiki!</p>
-                <p class="mainpage__container__text2">Here you can find information about your favorite heroes and spells of the Harry Potter universe</p>
+                <p class="mainpage__container__text2">Here you can find information about your favorite heroes and
+                    spells of the Harry Potter universe</p>
                 <div class="mainpage__container2">
                     <div class="mainpage__container__search">
                         <input type="text" class="mainpage__container__input" placeholder="Name of character" id="hero">
                     </div>
-                    <button class="mainpage__container__button button_fontsize button__shine" id="searchButton">Search</button>
+                    <button class="mainpage__container__button button_fontsize button__shine"
+                        id="searchButton">Search</button>
                 </div>
                 <p class="mainpage__container__text3">P.S Please enter the character's First and Last Name!</p>
 
@@ -102,25 +113,33 @@
         <div class="wrapper heroesBox" id="heroes">
             <h2 class="title_size padding">MAIN HEROES</h2>
             <div class="slider">
-                <div class="slider__item harry" data-tooltip="Harry Potter"><img src="./assets/images/mainpage/HarryPotter.png" class="imgHover" alt="Harry">
+                <div class="slider__item harry" data-tooltip="Harry Potter"><img
+                        src="./assets/images/mainpage/HarryPotter.png" class="imgHover" alt="Harry">
                 </div>
-                <div class="slider__item lord" data-tooltip="Lord Voldemort"><img src="./assets/images/mainpage/Voldemort.png" class="imgHover" alt="Lord">
+                <div class="slider__item lord" data-tooltip="Lord Voldemort"><img
+                        src="./assets/images/mainpage/Voldemort.png" class="imgHover" alt="Lord">
 
                 </div>
-                <div class="slider__item hermione" data-tooltip="Hermione Granger"><img src="./assets/images/mainpage/HermioneGranger.png" class="imgHover" alt="Hermione">
+                <div class="slider__item hermione" data-tooltip="Hermione Granger"><img
+                        src="./assets/images/mainpage/HermioneGranger.png" class="imgHover" alt="Hermione">
 
                 </div>
-                <div class="slider__item ron" data-tooltip="Ron Weasley"><img src="./assets/images/mainpage/RonWeasley.png" class="imgHover" alt="Ron">
+                <div class="slider__item ron" data-tooltip="Ron Weasley"><img
+                        src="./assets/images/mainpage/RonWeasley.png" class="imgHover" alt="Ron">
 
                 </div>
-                <div class="slider__item albus" data-tooltip="Albus Dumbledore"><img src="./assets/images/mainpage/AlbusDumbledore.png" class="imgHover" alt="Albus">
+                <div class="slider__item albus" data-tooltip="Albus Dumbledore"><img
+                        src="./assets/images/mainpage/AlbusDumbledore.png" class="imgHover" alt="Albus">
                 </div>
 
-                <div class="slider__item rubeus" data-tooltip="Rubeus Hagrid"><img src="./assets/images/mainpage/RubeusHagrid.png" class="imgHover" alt="Hagrid">
+                <div class="slider__item rubeus" data-tooltip="Rubeus Hagrid"><img
+                        src="./assets/images/mainpage/RubeusHagrid.png" class="imgHover" alt="Hagrid">
                 </div>
-                <div class="slider__item snape" data-tooltip="Severus Snape"><img src="./assets/images/mainpage/SeverusSnape.png" class="imgHover" alt="Snape">
+                <div class="slider__item snape" data-tooltip="Severus Snape"><img
+                        src="./assets/images/mainpage/SeverusSnape.png" class="imgHover" alt="Snape">
                 </div>
-                <div class="slider__item draco" data-tooltip="Draco Malfoy"><img src="./assets/images/mainpage/DracoMalfoy.jpg" class="imgHover" alt="Malfoy">
+                <div class="slider__item draco" data-tooltip="Draco Malfoy"><img
+                        src="./assets/images/mainpage/DracoMalfoy.jpg" class="imgHover" alt="Malfoy">
                 </div>
             </div>
         </div>
@@ -173,9 +192,12 @@
                 <div class="comments__block">
                     <div class="comments__form">
                         <form class="comments__form-group">
-                            <div class="form-group"><input type="name" class="form-control form-name" id="comment-name" placeholder="Your name:" required></div>
-                            <div class="form-group"><textarea type="name" class="form-control form-comment" id="comment-body" placeholder="Comment:" required>  </textarea></div>
-                            <button type="submit" class="comments__button button__shine button_fontsize" id="comment-add">Add comment</button>
+                            <div class="form-group"><input type="name" class="form-control form-name" id="comment-name"
+                                    placeholder="Your name:" required></div>
+                            <div class="form-group"><textarea type="name" class="form-control form-comment"
+                                    id="comment-body" placeholder="Comment:" required>  </textarea></div>
+                            <button type="submit" class="comments__button button__shine button_fontsize"
+                                id="comment-add">Add comment</button>
                         </form>
                     </div>
                     <div class="comments__result slider_container" id="block">

@@ -1,26 +1,25 @@
-
-
 .registrationForm {
-    margin-left:30%;
+    margin-left: 35%;
     position: absolute;
     z-index: 999999;
     display: none;
     justify-content: center;
-    border: 4px solid white;
     border-radius: 40px;
     color: white;
+
 }
 
 
 .registration_template {
     background-color: #1D1D1F;
-    width: 38.4vw;
+    width: 23vw;
     border-radius: 31px;
+
 }
 
 
 .registration_template {
-    height:  147.2vh;
+    height: 106vh;
 }
 
 
@@ -33,7 +32,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 3.68vh;
-    width:90%;
+    width: 90%;
 }
 
 
@@ -51,8 +50,11 @@
 }
 
 .registration_template_fieldset {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-items: center;
+    align-items: center;
+    margin: auto;
 }
 
 .emailBlock,
@@ -60,9 +62,8 @@
 .loginBlock,
 .heroBlock {
     display: grid;
-    justify-items: left;
-    margin-bottom:  3.68vh;
-    width: 32.01vw;
+    margin-bottom: 2vh;
+    width: 19.5vw;
 }
 
 .email,
@@ -70,8 +71,8 @@
 .login,
 .selectHero {
     border-radius: 8px;
-    width: 30.8vw;
-    height:8.58vh;
+    width: 18vw;
+    height: 5vh;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -80,7 +81,7 @@
     color: #1F2832;
     padding-left: 1.21vw;
     border-style: solid;
-    border: none;
+
 }
 
 .emailLabel,
@@ -125,17 +126,18 @@
 .registration_Buttons {
     display: flex;
     justify-content: space-between;
-    width: 32.01vw;
+    width: 20vw;
     font-family: 'Roboto';
+    margin-top: 0.7em;
 }
 
 
-.signUpButton_close{
-    width: 7.58vw;
-    height: 7.82vh;
+.signUpButton_close {
+    width: 5em;
+    height: 7vh;
     border-radius: 8px;
     padding: 0px;
-    margin-top: 3.52vh;
+
     color: #fff;
     font-family: 'Roboto';
     background-color: #966806fa;
@@ -144,12 +146,11 @@
 }
 
 .signUpButton_registration {
-    width: 22.76vw;
-    height: 7.82vh;
+    width: 13em;
+    height: 7vh;
     border-radius: 8px;
     padding: 0px;
-    margin-top: 3.52vh;
-    margin-bottom: 7%;
+
     color: #fff;
     background-color: #DE9E15;
     border-style: solid;
@@ -165,11 +166,12 @@
 }
 
 .valid {
-    border-color: rgb(26, 204, 58);
+    border: 2px solid rgb(26, 204, 58);
+    color: blue;
 }
 
 .error {
-    border-color: rgb(203, 68, 104);
+    border: 2px solid rgb(203, 68, 104);
 }
 
 input {
