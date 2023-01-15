@@ -59,6 +59,7 @@ document.getElementById('regForm').addEventListener("submit", () => {
     let mailSt = localStorage.getItem('mail');
     let pasSt = localStorage.getItem('pas');
     let avatarSt = localStorage.getItem('avatar');
+    let link = document.querySelector('.selectHero');
     if (loginSt === null) {
         localStorage.setItem('login', login);
     }
