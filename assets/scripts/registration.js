@@ -59,7 +59,7 @@ document.getElementById('regForm').addEventListener("submit", () => {
     let mailSt = localStorage.getItem('mail');
     let pasSt = localStorage.getItem('pas');
     let avatarSt = localStorage.getItem('avatar');
-    let link = document.querySelector('.selectHero');
+
     if (loginSt === null) {
         localStorage.setItem('login', login);
     }
@@ -72,9 +72,8 @@ document.getElementById('regForm').addEventListener("submit", () => {
     if (avatarSt === null) {
         localStorage.setItem('avatar', avatar);
     }
-    if (link === '') {
-        link =
-            'https://abrakadabra.fun/uploads/posts/2021-12/thumbs/1640528649_39-abrakadabra-fun-p-serii-chelovek-na-avu-44.jpg';
+    if (avatar === '') {
+        localStorage.setItem('avatar', 'https://abrakadabra.fun/uploads/posts/2021-12/thumbs/1640528649_39-abrakadabra-fun-p-serii-chelovek-na-avu-44.jpg');
     }
 
 });
