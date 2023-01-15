@@ -1,5 +1,9 @@
 
-
+$("#hero").keyup(function(event) {
+    if (event.keyCode === 13) {
+        $("#searchButton").click();
+    }
+});
 
 let searchBtn = document.querySelector('.mainpage__container__button');
 

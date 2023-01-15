@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="./assets/scripts/modal.js"></script>
     <script src="./assets/scripts/modal2.js"></script>
-    <script src="./assets/scripts/modalvhod.js"></script>
     <script src="./assets/scripts/modalReg.js"></script>
     <title>Document</title>
 
@@ -33,12 +32,57 @@
                 </ul>
             </nav>
             <div class="header__login">
-                <a href="#" id="signIn">SIGN IN</a>
+                <a href="#" id="signUp">SIGN UP</a>
             </div>
         </div>
     </header>
     <!--Main-->
     <main class="main">
+
+        <div class="registrationForm" id="registrationForm">
+            <div class="registration_template">
+                <div class="registration_template_pic">
+                    <img class="registration_template_pic_Harry" src="./assets/images/login/authorisation.png">
+                </div>
+                <div class="registration_welcome">
+                    <p class="registration_welcome_text">Hi, <span class="nameColor">Stranger</span>!</p>
+                </div>
+
+                <form class="registration_template_fieldset form" id="regForm">
+
+                    <div class="loginBlock">
+                        <label for="userLogin" class="loginLabel">Login</label>
+                        <input type="text" id="userLogin" class="login form__item" required pattern="[a-zA-Z0-9]+$" minlength="5" />
+                    </div>
+                    <div class="emailBlock">
+                        <label for="userEmail" class="emailLabel" pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$">Email</label>
+                        <input type="email" id="userEmail" class="email form__item" required />
+                    </div>
+                    <div class="passwordBlock">
+                        <label for="userPassword" class="passwordLabel" pattern="^\d{1,}$">Password</label>
+                        <input type="text" id="userPassword1" class="password form__item" maxlength="7" required />
+                    </div>
+                    <div class="passwordBlock">
+                        <label for="userPassword" class="passwordLabel">Repeat password</label>
+                        <input type="text" id="userPassword2" class="password form__item" required />
+                    </div>
+                    <div class="heroBlock">
+                        <label for="selectHero" class="heroLabel">Your Hero</label>
+                        <input type="text" id="selectHero" class="selectHero form__item" placeholder="Sirius Black" required />
+                    </div>
+                    <div class="checkboxBlock checkLogin">
+                        <label class="rememberText"><input type="checkbox" name="remember" value="1">Remember me</label>
+                    </div>
+                    <div class="pasInfo" id="pasInfo"></div>
+                    <div class="registration_Buttons">
+                        <button type="submit" class="button__shine signUpButton_registration" id="registration">SIGN
+                            UP</button>
+                        <button type="button" class="button__shine signUpButton_close" id="close">CLOSE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
         <article class="mainpage" id="mainpage">
             <div class="mainpage__container">
                 <div class="mainpage__container__logodiv"><img class="mainpage__container__logo" src="./assets/images/mainpage/logo.png" alt="логотип"></div>
@@ -48,7 +92,7 @@
                     <div class="mainpage__container__search">
                         <input type="text" class="mainpage__container__input" placeholder="Name of character" id="hero">
                     </div>
-                    <button class="mainpage__container__button button_fontsize button__shine">Search</button>
+                    <button class="mainpage__container__button button_fontsize button__shine" id="searchButton">Search</button>
                 </div>
                 <p class="mainpage__container__text3">P.S Please enter the character's First and Last Name!</p>
 
@@ -130,7 +174,7 @@
                     <div class="comments__form">
                         <form class="comments__form-group">
                             <div class="form-group"><input type="name" class="form-control form-name" id="comment-name" placeholder="Your name:" required></div>
-                            <div class="form-group"><input type="name" class="form-control form-comment" id="comment-body" placeholder="Comment:" required></div>
+                            <div class="form-group"><textarea type="name" class="form-control form-comment" id="comment-body" placeholder="Comment:" required>  </textarea></div>
                             <button type="submit" class="comments__button button__shine button_fontsize" id="comment-add">Add comment</button>
                         </form>
                     </div>
@@ -165,100 +209,16 @@
         </div>
     </footer>
 
-    <!--Forms -->
-    <!--Login-->
-    <div class="loginForm">
-        <div class="loginForm_template">
-            <div class="loginForm_template_pic">
-                <img class="loginForm_template_pic_Harry" src="./assets/images/login/authorisation.png">
-            </div>
-            <div class="loginForm_welcome">
-                <p class="loginForm_welcome_text">Hi, <span class="nameColor">Stranger</span>!</p>
-            </div>
-
-            <div class="loginForm_template_fieldset">
-                <div class="emailBlock">
-                    <label for="userEmail" class="emailLabel">Email</label>
-                    <input type="email" id="userEmail" class="email" />
-                </div>
-
-                <div class="passwordBlock">
-                    <label for="userPassword" class="passwordLabel">Password</label>
-                    <input type="text" id="userPassword" class="password" />
-                </div>
-
-                <div class="checkboxBlock">
-                    <label class="rememberText"><input type="checkbox" name="remember" value="1"> Remember me</label>
-                    <div class="restorePass">
-                        <a href="#" class="restorePass_Link">Forgot password?</a>
-                    </div>
-                </div>
-
-                <div class="loginForm_Buttons">
-                    <button class="button__shine loginButton">LOGIN</button>
-                    <button class="button__shine signUpButton">SIGN UP</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="registrationForm">
-        <div class="registration_template">
-            <div class="registration_template_pic">
-                <img class="registration_template_pic_Harry" src="./assets/images/login/authorisation.png">
-            </div>
-            <div class="registration_welcome">
-                <p class="registration_welcome_text">Hi, <span class="nameColor">Stranger</span>!</p>
-            </div>
-
-            <form class="registration_template_fieldset form">
-
-                <div class="loginBlock">
-                    <label for="userLogin" class="loginLabel">Login</label>
-                    <input type="text" id="userLogin" class="login form__item" required pattern="[a-zA-Z0-9]+$" minlength="5" />
-                </div>
-                <div class="emailBlock">
-                    <label for="userEmail" class="emailLabel" pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$">Email</label>
-                    <input type="email" id="userEmail" class="email form__item" required />
-                </div>
-                <div class="passwordBlock">
-                    <label for="userPassword" class="passwordLabel" pattern="^\d{1,}$">Password</label>
-                    <input type="text" id="userPassword1" class="password form__item" maxlength="7" required />
-                </div>
-                <div class="passwordBlock">
-                    <label for="userPassword" class="passwordLabel">Repeat password</label>
-                    <input type="text" id="userPassword2" class="password form__item" required />
-                </div>
-                <div class="heroBlock">
-                    <label for="selectHero" class="heroLabel">Your Hero</label>
-                    <input type="text" id="selectHero" class="selectHero form__item" placeholder="Sirius Black" required />
-                </div>
-                <div class="checkboxBlock checkLogin">
-                    <label class="rememberText"><input type="checkbox" name="remember" value="1">Remember me</label>
-                </div>
-                <div class="pasInfo" id="pasInfo"></div>
-                <div class="registration_Buttons">
-                    <button type="submit" class="button__shine signUpButton_registration" id="registration">SIGN
-                        UP</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
     <script src="./assets/jquery-3.6.3.js"></script>
     <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="js/jquery.validate.min.js">
-    </script>
     <script src="./assets/scripts/index.js"></script>
     <script src="./assets/scripts/search.js"></script>
     <script src="./assets/scripts/comments.js"></script>
     <script src="./assets/scripts/slaiderSpells.js"></script>
     <script src="./assets/scripts/spells.js"></script>
-    <script src="./assets/scripts/validationReg.js"></script>
     <script src="./assets/scripts/scroll.js"></script>
-    <script src="./assets/scripts/vhod.js"></script>
     <script src="./assets/scripts/registration.js"></script>
+
 
 
 </html>

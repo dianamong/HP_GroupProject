@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="./assets/scripts/modal.js"></script>
+    <script src="./assets/scripts/modal2.js"></script>
+    <title>Document</title>
+
+    <style>
+        .mainpage__container{
+            padding-top: 15vh;
+            padding-left: 6vw;
+            padding-right: 6vw;
+            display: flex;
+            width: 55vw;
+            height: 100%;
+            align-items: center;
+        }
+        .mainpage {
+            width: 100%;
+            height: 100vh;
+            font-family: 'Roboto', sans-serif;
+            display: none;
+        }
+
+        .userAccountPage{
+            background-image: url(./assets/images/mainpage/fon_mainpage.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            height: 1832px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .userForm{
+            border: 5px solid white;
+            border-radius: 53px;
+            height: 1491px;
+            width: 994px;
+            background-color: #1D1D1F;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 172px;
+        }
+
+        .welcome{
+            display: flex;
+            width: 780px;
+            align-items: center;
+            margin-top: 94px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .welcomeUser{
+            margin-left: 30px;
+            color: white;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 100%;
+        }
+
+        .userFormPic{
+            width: 221px;
+        }
+
+        .fieldset{
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            margin-top: 41px;
+        }
+        .fieldsetItems{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+
+.registration_template {
+  height: 960px;
+}
+
+.loginForm_welcome_text,
+.registration_welcome_text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.nameColor {
+  color: #DE9E15;
+}
+
+.LKemailBlock,
+.LKpasswordBlock,
+.LKloginBlock,
+.LKheroBlock,
+.LKavatarBlock,
+.LKcommentBlock {
+  display: grid;
+  justify-items: left;
+  margin-bottom: 13px;
+  width: 780px;
+}
+
+.LKemail,
+.LKpassword,
+.LKlogin,
+.LKselectHero,
+.LKuserAvatar {
+  border-radius: 24px;
+  width: 718px;
+  height: 92px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1F2832;
+  padding-left: 50px;
+  border: 6px solid white;
+  background-color: transparent;;
+}
+
+.LKuserComment {
+  border-radius: 24px;
+  width: 718px;
+  height: 267px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1F2832;
+  padding-left: 50px;
+  border: 6px solid white;
+  background-color: transparent;;
+}
+
+.LKemailLabel,
+.LKpasswordLabel,
+.LKloginLabel,
+.LKheroLabel,
+.LKuserAvatarLabel,
+.LKcommentLabel {
+  color: #fff;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.restorePass_Link {
+  text-align: right;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.rememberText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+.checkboxBlock {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  width: 422px;
+  justify-content: space-between;
+  font-family: "Roboto";
+}
+
+.LKForm_Buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 422px;
+  font-family: "Roboto";
+}
+
+.closeButton,
+.signUpButton {
+  width: 177px;
+  height: 59px;
+  border-radius: 24px;
+  padding: 0px;
+  margin-top: 41px;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 26px;
+}
+
+.signUpButton {
+  background-color: #DE9E15;
+  border-style: solid;
+  border: none;
+}
+
+.closeButton {
+    border-style: solid;
+  border: none;
+  background: rgba(222, 158, 21, 0.48);;
+}
+
+.signUpButton_registration {
+  width: 422px;
+  height: 51px;
+  border-radius: 8px;
+  padding: 0px;
+  margin-top: 23px;
+  color: #fff;
+  background-color: #DE9E15;
+  border-style: solid;
+  border: none;
+}
+
+
+        
+        </style>
+</head>
+
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="./index.html"><img src="./assets/images/header/image 26.png" alt="logo"></a>
+            </div>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li><a href="#mainpage" class="header__link">MAIN</a></li>
+                    <li><a href="#heroes" class="header__link">HEROES</a></li>
+                    <li><a href="#spells" class="header__link">SPELLS</a></li>
+                    <li><a href="#comments" class="header__link">COMMENTS</a></li>
+                </ul>
+            </nav>
+            <div class="userPicture">
+                <img src="./assets/images/account/Oval.png">
+            </div>
+        </div>
+    </header>
+
+<!--Main-->
+<main class="userAccountPage">
+    <div class="userForm">
+        <div class="welcome">
+            <img class="userFormPic" src="./assets/images/account/Ellipse.png">
+            <p class="welcomeUser">Hi, Katechka</p>
+        </div>
+
+        <div class="fieldset">
+            <div class="fieldsetItems">
+
+            <div class="LKloginBlock">
+                <label for="LKuserLogin" class="LKloginLabel">Login</label>
+                <input type="text" id="LKuserLogin" class="LKlogin form__item" required pattern="[a-zA-Z0-9]+$"
+                    minlength="5" />
+            </div>
+
+            <div class="LKemailBlock">
+                <label for="LKuserEmail" class="LKemailLabel">Email</label>
+                <input type="email" id="LKuserEmail" class="LKemail" />
+            </div>
+
+            <div class="LKpasswordBlock">
+                <label for="LKuserPassword" class="LKpasswordLabel">Password</label>
+                <input type="text" id="LKuserPassword" class="LKpassword" />
+            </div>
+
+            <div class="LKavatarBlock">
+                <label for="LKuserAvatar" class="LKuserAvatarLabel">Avatar</label>
+                <input type="text" id="LKuserAvatar" class="LKuserAvatar" />
+            </div>
+
+            <div class="LKcommentBlock">
+                <label for="LKuserComment" class="LKcommentLabel">About you</label>
+                <input type="text" rows="3" id="LKuserComment" class="LKuserComment" />
+            </div>
+
+            <div class="LKForm_Buttons">
+                <button class="button__shine signUpButton">Save</button>
+                <button class="button__shine closeButton">Close</button>
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+</main>
+
+
+
+    <!--Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__col-l">
+                <div class="footer__logo">
+                    <a href=""><img src="./assets/images/footer/image 42.png" alt="HP-logo"></a>
+                </div>
+                <div class="footer__menu">
+                    <ul class="footer__list">
+                        <li><a href="#mainpage" class="footer__link">Main</a></li>
+                        <li><a href="#heroes" class="footer__link">Heroes</a></li>
+                        <li><a href="#spells" class="footer__link">Spells</a></li>
+                        <li><a href="#comments" class="footer__link">Comments</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__social">
+                <a href="#"><img src="./assets/images/footer/image_41.png" id="insta" alt="inst"></a>
+                <a href="#"><img src="./assets/images/footer/image_40.png" id="whats" alt="whatsapp"></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+</html>
