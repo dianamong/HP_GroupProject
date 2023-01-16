@@ -762,7 +762,7 @@ input:focus:-ms-input-placeholder {
 .mainpage__container__text3 {
   color: rgb(177, 176, 176);
   font-size: 1vw;
-  font-weight: 100;
+  font-weight: bold;
 }
 
 .mainpage {
@@ -772,15 +772,13 @@ input:focus:-ms-input-placeholder {
   background-size: 100%;
   background-repeat: no-repeat;
   font-family: "Roboto", sans-serif;
-  display: none;
 }
 
 .mainpage_click {
-  background: rgba(0, 0, 0, 0.6);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: multiply;
-  text-align: center;
+  filter: brightness(60%);
+}
+
+.text_click {
   color: rgba(255, 255, 255, 0.179);
 }
 
@@ -830,7 +828,6 @@ input:focus:-ms-input-placeholder {
 
 .header__avatar {
   display: none;
-  width: 100px;
 }
 
 .footer {
