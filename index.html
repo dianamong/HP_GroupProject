@@ -189,28 +189,24 @@
         </article>
 
         <!--Comments -->
-        <article class="comments" id="comments">
+       <article class="comments" id="comments">
             <div class="commentsBox">
                 <h2 class="title_size commentsBox__title">COMMENTS</h2>
                 <div class="comments__block">
                     <div class="comments__form">
                         <form class="comments__form-group">
-                            <div class="form-group"><input type="name" class="form-control form-name" id="comment-name"
-                                    placeholder="Your name:" required></div>
-                            <div class="form-group"><textarea type="name" class="form-control form-comment"
-                                    id="comment-body" placeholder="Comment:" required>  </textarea></div>
-                            <button type="submit" class="comments__button button__shine button_fontsize"
-                                id="comment-add">Add comment</button>
+                            <div class="form-group"><input type="name" class="form-control form-name" id="comment-name" placeholder="Your name:" required></div>
+                            <div class="form-group"><textarea type="name" class="form-control form-comment" id="comment-body" placeholder="Comment:" required>  </textarea></div>
+                            <button type="submit" class="comments__button button__shine button_fontsize" id="comment-add">Add comment</button>
                         </form>
                     </div>
-                    <div class="comments__result slider_container" id="block">
-                        <div class="comments__result-item slider-item" id="comment-field"></div>
+                    <div class="comments__result" id="block">
+                        <div class="comments__result-item slick-vertical" id="comment-field"></div>
                     </div>
                 </div>
+                <button class="comments__result-btn button__shine" id="btnEnd"><img src="./assets/images/mainpage/arrayBlueR.svg" alt="end"></button>
+                <button class="comments__result-btn button__shine" id="btnStart"><img src="./assets/images/mainpage/arrayBlueL.svg" alt="start"></button>
             </div>
-            <button id="btnEnd">Click to end</button>
-            <button id="btnStart">Click to start</button>
-            <!-- кнопки прокрутки -->
         </article>
 
     </main>
