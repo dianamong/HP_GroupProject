@@ -1,33 +1,46 @@
+let loginSt = localStorage.getItem('login');
+let link = "./assets/images/header/avatar.svg"
+document.addEventListener("DOMContentLoaded", function () {
+    if (loginSt !== null) {
+        document.getElementById('signUp').style.display = "none";
+        document.getElementById('img_avatar').src = link;
+        document.getElementById('img_avatar').style.width = '3em';
+        document.getElementById('avatar').style.display = "block";
+    }
+})
+
+
 
 document.getElementById('signUp').addEventListener("click", () => {
     document.getElementById('registrationForm').style.display = "flex";
+    document.querySelector('.mainpage').classList.add("mainpage_click");
+    let elements = [...document.getElementsByClassName("text")].forEach(item => {
+        item.classList.add("text_click");
+    })
+
+
 })
 document.getElementById('close').addEventListener("click", () => {
     document.getElementById('registrationForm').style.display = "none";
-    mainpage.classList.remove("mainpage_click");
+    document.querySelector('.mainpage').classList.remove("mainpage_click");
+    let elements = [...document.getElementsByClassName("text")].forEach(item => {
+        item.classList.remove("text_click");
+    })
 
 })
-/*let modalreg = $modal4({
-    content: `<div class="registration_template_pic"> <img class="registration_template_pic_Harry" src="./assets/images/login/authorisation.png"> </div> <div class="registration_welcome"> <p class="registration_welcome_text">Hi, <span class="nameColor">Stranger</span>!</p> </div> <form class="registration_template_fieldset form"> <div class="loginBlock"> <label for="userLogin" class="loginLabel">Login</label> <input type="text" id="userLogin" class="login form__item" required pattern="[a-zA-Z0-9]+$" minlength="5" /> </div> <div class="emailBlock"> <label for="userEmail" class="emailLabel" pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$">Email</label> <input type="email" id="userEmail" class="email form__item userEmail" required /> </div> <div class="passwordBlock"> <label for="userPassword" class="passwordLabel" pattern="^\d{1,}$">Password</label> <input type="text" id="userPassword1" class="password userPassword1 form__item" maxlength="7" required /> </div> <div class="passwordBlock"> <label for="userPassword" class="passwordLabel">Repeat password</label> <input type="text" id="userPassword2" class="password userPassword2 form__item" required /> </div> <div class="heroBlock"> <label for="selectHero" class="heroLabel">Your Hero</label> <input type="text" id="selectHero" class="selectHero form__item" placeholder="Sirius Black" required /> </div> <div class="checkboxBlock checkLogin"> <label class="rememberText"><input type="checkbox" name="remember" value="1">Remember me</label> </div> <div class="pasInfo" id="pasInfo"></div> <button type="submit" class="button__shine signUpButton_registration" id="registration">SIGN UP</button></form>`,
+document.querySelector('.signUpButton_registration').addEventListener('click', () => {
+    document.getElementById('img_avatar').style.width = '4em';
+    document.querySelector('.mainpage').classList.remove("mainpage_click");
+    let elements = [...document.getElementsByClassName("text")].forEach(item => {
+        item.classList.remove("text_click");
+    })
+
 })
 
-modalreg.show();
-$('.signUpButton_registration').on("click", function (evt) {
-    pushLocalSt()
-    let pas1 = document.querySelector('.userPassword1').value;
-    let pas2 = document.querySelector('.userPassword2').value;
-    if (pas1 !== pas2) {
-        evt.preventDefault();
-        alert("Passwords don't match!");
-    }
-
-})*/
-let mainpage = document.querySelector('.mainpage__container');
+let mainpage = document.querySelector('.text');
 let pas1 = document.getElementById('userPassword1');
 let pas2 = document.getElementById('userPassword2');
 document.getElementById('registration').addEventListener("click", (evt) => {
-
-    mainpage.classList.add("mainpage_click");
     if (pas1.value !== pas2.value) {
         evt.preventDefault();
         document.getElementById('pasInfo').innerHTML = "Passwords don't match!";
@@ -55,15 +68,13 @@ let Inputs = [...document.querySelectorAll('.form__item')].forEach(item => {
 });
 
 document.getElementById('regForm').addEventListener("submit", () => {
-    document.getElementById('avatar').src = `${document.getElementById('selectHero').value}`;
+    document.getElementById('img_avatar').src = link;
     document.getElementById('avatar').style.display = "block";
-    document.getElementById('signUp').style.display="none";
+    document.getElementById('signUp').style.display = "none";
     let login = document.getElementById('userLogin').value;
-    console.log(login);
     let mail = document.getElementById('userEmail').value;
     let pas = document.getElementById('userPassword1').value;
     let avatar = document.getElementById('selectHero').value;
-    let loginSt = localStorage.getItem('login');
     let mailSt = localStorage.getItem('mail');
     let pasSt = localStorage.getItem('pas');
     let avatarSt = localStorage.getItem('avatar');
@@ -81,7 +92,7 @@ document.getElementById('regForm').addEventListener("submit", () => {
         localStorage.setItem('avatar', avatar);
     }
     if (avatar === '') {
-        localStorage.setItem('avatar', 'https://abrakadabra.fun/uploads/posts/2021-12/thumbs/1640528649_39-abrakadabra-fun-p-serii-chelovek-na-avu-44.jpg');
+        localStorage.setItem('avatar', link);
     }
 
     let Inputs = [...document.querySelectorAll('.form__item')].forEach(item => {
@@ -92,6 +103,22 @@ document.getElementById('regForm').addEventListener("submit", () => {
     });
 });
 
+
+/*let modalreg = $modal4({
+    content: `<div class="registration_template_pic"> <img class="registration_template_pic_Harry" src="./assets/images/login/authorisation.png"> </div> <div class="registration_welcome"> <p class="registration_welcome_text">Hi, <span class="nameColor">Stranger</span>!</p> </div> <form class="registration_template_fieldset form"> <div class="loginBlock"> <label for="userLogin" class="loginLabel">Login</label> <input type="text" id="userLogin" class="login form__item" required pattern="[a-zA-Z0-9]+$" minlength="5" /> </div> <div class="emailBlock"> <label for="userEmail" class="emailLabel" pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$">Email</label> <input type="email" id="userEmail" class="email form__item userEmail" required /> </div> <div class="passwordBlock"> <label for="userPassword" class="passwordLabel" pattern="^\d{1,}$">Password</label> <input type="text" id="userPassword1" class="password userPassword1 form__item" maxlength="7" required /> </div> <div class="passwordBlock"> <label for="userPassword" class="passwordLabel">Repeat password</label> <input type="text" id="userPassword2" class="password userPassword2 form__item" required /> </div> <div class="heroBlock"> <label for="selectHero" class="heroLabel">Your Hero</label> <input type="text" id="selectHero" class="selectHero form__item" placeholder="Sirius Black" required /> </div> <div class="checkboxBlock checkLogin"> <label class="rememberText"><input type="checkbox" name="remember" value="1">Remember me</label> </div> <div class="pasInfo" id="pasInfo"></div> <button type="submit" class="button__shine signUpButton_registration" id="registration">SIGN UP</button></form>`,
+})
+
+modalreg.show();
+$('.signUpButton_registration').on("click", function (evt) {
+    pushLocalSt()
+    let pas1 = document.querySelector('.userPassword1').value;
+    let pas2 = document.querySelector('.userPassword2').value;
+    if (pas1 !== pas2) {
+        evt.preventDefault();
+        alert("Passwords don't match!");
+    }
+
+})*/
 
 /*if (document.getElementById('registrationForm').style.display=="flex"){
 document.getElementById('signUp').addEventListener("click", () => {

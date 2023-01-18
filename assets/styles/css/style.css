@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(./__button/__button.scss);
 .slick-track {
   display: flex;
   height: 20em;
@@ -649,7 +648,7 @@ input:focus:-ms-input-placeholder {
 .mainpage__container__text3 {
   color: rgb(177, 176, 176);
   font-size: 1vw;
-  font-weight: 100;
+  font-weight: bold;
 }
 
 .mainpage {
@@ -659,15 +658,13 @@ input:focus:-ms-input-placeholder {
   background-size: 100%;
   background-repeat: no-repeat;
   font-family: "Roboto", sans-serif;
-  display: none;
 }
 
 .mainpage_click {
-  background: rgba(0, 0, 0, 0.6);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: multiply;
-  text-align: center;
+  filter: brightness(60%);
+}
+
+.text_click {
   color: rgba(255, 255, 255, 0.179);
 }
 
@@ -717,7 +714,6 @@ input:focus:-ms-input-placeholder {
 
 .header__avatar {
   display: none;
-  width: 100px;
 }
 
 .footer {
@@ -1282,6 +1278,259 @@ input {
 
 .error {
   border-color: rgb(203, 68, 104) !important;
+}
+
+.modal__backdrop5 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in;
+}
+
+.modal__content5 {
+  position: relative;
+  width: 40%;
+  margin: auto;
+  transition: opacity 0.3s ease-in;
+  border: 5px solid white;
+  border-radius: 53px;
+  height: 228.68vh;
+  width: 75.41vw;
+  background-color: #1D1D1F;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 26.38vh;
+}
+
+@media (min-width: 576px) {
+  .modal__content4 {
+    max-width: 500px;
+    margin: 50px auto;
+  }
+}
+.modal__show .modal__backdrop5,
+.modal__show .modal__content5 {
+  opacity: 1;
+  z-index: 1050;
+  pointer-events: auto;
+  overflow-y: auto;
+}
+
+.modal__body5 {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.userAccountPage {
+  background-image: url(./assets/images/mainpage/fon_mainpage.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 280.98vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userForm {
+  border: 5px solid white;
+  border-radius: 53px;
+  height: 228.68vh;
+  width: 75.41vw;
+  background-color: #1D1D1F;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 26.38vh;
+}
+
+.welcome {
+  display: flex;
+  width: 59.18vw;
+  align-items: center;
+  margin-top: 14.41vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.welcomeUser {
+  margin-left: 2.27vw;
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.27vw;
+  line-height: 100%;
+}
+
+.userFormPic {
+  width: 16.7vw;
+}
+
+.fieldset {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin-top: 6.28vh;
+}
+
+.fieldsetItems {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.registration_template {
+  height: 147.23vh;
+}
+
+.loginForm_welcome_text,
+.registration_welcome_text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.51vw;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.nameColor {
+  color: #DE9E15;
+}
+
+.LKemailBlock,
+.LKpasswordBlock,
+.LKloginBlock,
+.LKheroBlock,
+.LKavatarBlock,
+.LKcommentBlock {
+  display: grid;
+  justify-items: left;
+  margin-bottom: 1.99vh;
+  width: 59.18vw;
+}
+
+.LKemail,
+.LKpassword,
+.LKlogin,
+.LKselectHero,
+.LKuserAvatar {
+  border-radius: 24px;
+  width: 54.47vw;
+  height: 14.11vw;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.21vw;
+  line-height: 3.68vh;
+  color: #1F2832;
+  padding-left: 3.79vw;
+  border: 6px solid white;
+  background-color: transparent;
+}
+
+.LKuserComment {
+  border-radius: 24px;
+  width: 54.47vw;
+  height: 40.95vh;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.21vw;
+  line-height: 3.68vh;
+  color: #1F2832;
+  padding-left: 3.79vw;
+  border: 6px solid white;
+  background-color: transparent;
+}
+
+.LKemailLabel,
+.LKpasswordLabel,
+.LKloginLabel,
+.LKheroLabel,
+.LKuserAvatarLabel,
+.LKcommentLabel {
+  color: #fff;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.27vw;
+  margin-bottom: 1.22vh;
+}
+
+.restorePass_Link {
+  text-align: right;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.rememberText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.21vw;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+.checkboxBlock {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  width: 32.01vw;
+  justify-content: space-between;
+  font-family: "Roboto";
+}
+
+.LKForm_Buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 32.01vw;
+  font-family: "Roboto";
+}
+
+.closeButton,
+.signUpButton {
+  width: 13.4vw;
+  height: 9.04vh;
+  border-radius: 24px;
+  padding: 0px;
+  margin-top: 6.28vh;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 1.97vw;
+}
+
+.signUpButton {
+  background-color: #DE9E15;
+  border-style: solid;
+  border: none;
+}
+
+.closeButton {
+  border-style: solid;
+  border: none;
+  background: rgba(222, 158, 21, 0.48);
+}
+
+.signUpButton_registration {
+  width: 32.01vw;
+  height: 7.82vh;
+  border-radius: 8px;
+  padding: 0px;
+  margin-top: 3.52vh;
+  color: #fff;
+  background-color: #DE9E15;
+  border-style: solid;
+  border: none;
 }
 
 .commentsBox__title {

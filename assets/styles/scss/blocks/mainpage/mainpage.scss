@@ -13,16 +13,16 @@
   background-size: 100%;
   background-repeat: no-repeat;
   font-family: 'Roboto', sans-serif;
-  display: none;
+
+
 }
 
 .mainpage_click {
-  background: rgba(0, 0, 0, 0.6);
+  filter: brightness(60%)
+}
 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: multiply;
-  text-align: center;
+
+.text_click {
   color: rgba(255, 255, 255, 0.179);
-
+  ;
 }

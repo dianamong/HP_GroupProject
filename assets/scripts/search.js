@@ -1,5 +1,5 @@
 
-$("#hero").keyup(function(event) {
+$("#hero").keyup(function (event) {
     if (event.keyCode === 13) {
         $("#searchButton").click();
     }
@@ -8,6 +8,22 @@ $("#hero").keyup(function(event) {
 let searchBtn = document.querySelector('.mainpage__container__button');
 
 searchBtn.addEventListener('click', function () {
+    async function Error() {
+        try {
+            const response = await fetch("https://hp-api.onrender.com/api/characters", {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            const json = await response.json();
+            console.log('Успех:', JSON.stringify(json));
+        } catch (error) {
+            console.error('Ошибка:', error);
+        }
+    }
+
     let heroName = document.getElementById('hero').value;
     if (heroName == null ||
         heroName.length == 0) {
