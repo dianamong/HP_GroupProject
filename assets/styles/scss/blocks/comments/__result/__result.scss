@@ -31,3 +31,20 @@
     font-size: 15px;
     margin: 2vh 0 0 70vh;
 }
+
+.comments__result-btn {
+    position: relative;
+    margin-top: 2vh;
+    border-radius: 40px;
+    background-color: black;
+}
+
+#btnEnd {
+    margin-left: 120vh;
+    transform: rotate(90deg);
+}
+
+#btnStart {
+    margin-left: 35vh;
+    transform: rotate(90deg);
+}
