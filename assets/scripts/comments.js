@@ -1,5 +1,6 @@
 let comments = [];
-// loadComments();
+
+loadComments();
 
 let form = document.getElementsByClassName("comments__form-group")[0];
 form.addEventListener("submit", function(e) {
