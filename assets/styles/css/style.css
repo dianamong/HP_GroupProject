@@ -929,7 +929,7 @@ a:hover {
 .registrationForm {
   margin-left: 35%;
   position: absolute;
-  z-index: 999999;
+  z-index: 9999;
   display: none;
   justify-content: center;
   border-radius: 40px;
@@ -1337,33 +1337,39 @@ input {
   overflow: hidden;
 }
 
+/*
 .userAccountPage {
-  background-image: url(./assets/images/mainpage/fon_mainpage.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  display: flex;
-  height: 280.98vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    background-image: url(./assets/images/mainpage/fon_mainpage.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 280.98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+*/
 .userForm {
+  display: none;
+  margin-left: 30vw;
+  position: absolute;
+  z-index: 10000;
+  padding-left: 3vw;
   border: 5px solid white;
   border-radius: 53px;
-  height: 228.68vh;
-  width: 3em;
+  height: 120vh;
+  width: 35%;
   background-color: #1D1D1F;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 26.38vh;
+  margin-top: 5vh;
 }
 
 .welcome {
   display: flex;
-  width: 59.18vw;
+  width: 100%;
   align-items: center;
-  margin-top: 14.41vh;
+  margin-top: 5vh;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1374,7 +1380,7 @@ input {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 2.27vw;
+  font-size: 1.5vw;
   line-height: 100%;
 }
 
@@ -1383,8 +1389,7 @@ input {
 }
 
 .fieldset {
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   display: flex;
   margin-top: 6.28vh;
 }
@@ -1422,7 +1427,7 @@ input {
   display: grid;
   justify-items: left;
   margin-bottom: 1.99vh;
-  width: 59.18vw;
+  width: 80%;
 }
 
 .LKemail,
@@ -1431,7 +1436,7 @@ input {
 .LKselectHero,
 .LKuserAvatar {
   border-radius: 24px;
-  width: 20em;
+  width: 90%;
   height: 3em;
   font-family: "Roboto";
   font-style: normal;
@@ -1440,14 +1445,14 @@ input {
   line-height: 3.68vh;
   color: #1F2832;
   padding-left: 3.79vw;
-  border: 6px solid white;
+  border: 3px solid white;
   background-color: transparent;
 }
 
 .LKuserComment {
   border-radius: 24px;
-  width: 54.47vw;
-  height: 40.95vh;
+  width: 90%;
+  height: 5em;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -1455,7 +1460,7 @@ input {
   line-height: 3.68vh;
   color: #1F2832;
   padding-left: 3.79vw;
-  border: 6px solid white;
+  border: 3px solid white;
   background-color: transparent;
 }
 
@@ -1469,7 +1474,7 @@ input {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 2.27vw;
+  font-size: 1.27vw;
   margin-bottom: 1.22vh;
 }
 
@@ -1502,20 +1507,20 @@ input {
 .LKForm_Buttons {
   display: flex;
   justify-content: space-between;
-  width: 32.01vw;
+  width: 100%;
   font-family: "Roboto";
 }
 
 .closeButton,
 .signUpButton {
-  width: 13.4vw;
-  height: 9.04vh;
+  width: 10vw;
+  height: 7vh;
   border-radius: 24px;
   padding: 0px;
   margin-top: 6.28vh;
   color: #fff;
   font-family: "Roboto";
-  font-size: 1.97vw;
+  font-size: 1.57vw;
 }
 
 .signUpButton {
