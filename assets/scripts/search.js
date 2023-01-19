@@ -17,8 +17,12 @@ searchBtn.addEventListener('click', function () {
         alert("Enter the first and last name of the hero!");
     }
 
-    if (heroName == hero.name) {
-        let array = heroName.split(" ");
+    let array = heroName;
+    if (array[1] !== null ||
+        heroName.length !== 0) {
+        alert('нет результятов братан')
+    } else {
+        arraysplit(" ");
         let name = array[0].split('');
         let first_name = name[0].toUpperCase()
         name.splice(0, 1);
@@ -28,13 +32,13 @@ searchBtn.addEventListener('click', function () {
         surname.splice(0, 1);
         let resultsurname = [first_surname, ...surname].join('');
         heroName = resultname + " " + resultsurname;
+    }
 
-
-        fetch("https://hp-api.onrender.com/api/characters")
-            .then(response => response.json())
-            .then(heroes => {
-                for (let hero of heroes) {
-
+    fetch("https://hp-api.onrender.com/api/characters")
+        .then(response => response.json())
+        .then(heroes => {
+            for (let hero of heroes) {
+                if (heroName == hero.name) {
                     function getStatusInfo() {
                         if (hero.alive == true) {
                             return "alive";
@@ -58,18 +62,19 @@ searchBtn.addEventListener('click', function () {
                             { class: 'btn btn__cancel button__shine', text: 'Close', handler: 'modalHandlerCancel' }
                         ]
                     });
-
                     modal.show();
                     document.getElementById('hero').value = "";
                 }
 
-            })
+            }
+
+        })
 
 
-            .catch(err => console.log(err));
-    }
-    else {
-        alert(`We could't find anything :(\nTry again!`);
-        document.getElementById('hero').value = "";
-    }
+        .catch(err => console.log(err));
+
+    //else {
+    //alert(`We could't find anything :(\nTry again!`);
+    // document.getElementById('hero').value = "";
+    // }
 });
