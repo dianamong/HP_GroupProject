@@ -59,6 +59,9 @@
 }
 
 .userForm {
+    position: absolute;
+    z-index: 10000;
+    display: none;
     border: 5px solid white;
     border-radius: 53px;
     height: 228.68vh;

@@ -920,7 +920,7 @@ a:hover {
 .registrationForm {
   margin-left: 35%;
   position: absolute;
-  z-index: 999999;
+  z-index: 9999;
   display: none;
   justify-content: center;
   border-radius: 40px;
@@ -1340,6 +1340,9 @@ input {
 }
 
 .userForm {
+  position: absolute;
+  z-index: 10000;
+  display: none;
   border: 5px solid white;
   border-radius: 53px;
   height: 228.68vh;
