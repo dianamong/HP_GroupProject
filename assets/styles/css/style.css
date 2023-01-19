@@ -585,7 +585,7 @@ template {
 }
 
 .mainpage__container__button {
-  margin-left: 3%;
+  margin-left: 1%;
   width: 100%;
   height: 100%;
   background-color: #DE9E15;
@@ -631,6 +631,10 @@ input:focus:-ms-input-placeholder {
   border: 1px solid white;
   border-radius: 30px;
   padding: 10px;
+}
+
+.mainpage__container__search:hover {
+  border-color: #DE9E15;
 }
 
 .mainpage__container__text1 {
@@ -714,6 +718,11 @@ input:focus:-ms-input-placeholder {
 
 .header__avatar {
   display: none;
+  transition: 0.5s;
+}
+
+.header__avatar:hover {
+  scale: 1.1;
 }
 
 .footer {
@@ -1301,7 +1310,7 @@ input {
   border: 5px solid white;
   border-radius: 53px;
   height: 228.68vh;
-  width: 75.41vw;
+  width: 40%;
   background-color: #1D1D1F;
   justify-content: center;
   align-items: flex-start;
@@ -1343,7 +1352,7 @@ input {
   border: 5px solid white;
   border-radius: 53px;
   height: 228.68vh;
-  width: 75.41vw;
+  width: 3em;
   background-color: #1D1D1F;
   justify-content: center;
   align-items: flex-start;
@@ -1370,7 +1379,7 @@ input {
 }
 
 .userFormPic {
-  width: 16.7vw;
+  width: 17%;
 }
 
 .fieldset {
@@ -1422,8 +1431,8 @@ input {
 .LKselectHero,
 .LKuserAvatar {
   border-radius: 24px;
-  width: 54.47vw;
-  height: 14.11vw;
+  width: 20em;
+  height: 3em;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;

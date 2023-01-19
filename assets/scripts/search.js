@@ -5,32 +5,19 @@ $("#hero").keyup(function (event) {
     }
 });
 
+
+
+
 let searchBtn = document.querySelector('.mainpage__container__button');
 
 searchBtn.addEventListener('click', function () {
-    async function Error() {
-        try {
-            const response = await fetch("https://hp-api.onrender.com/api/characters", {
-                method: 'POST',
-                body: JSON.stringify(data),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            });
-            const json = await response.json();
-            console.log('Успех:', JSON.stringify(json));
-        } catch (error) {
-            console.error('Ошибка:', error);
-        }
-    }
-
     let heroName = document.getElementById('hero').value;
     if (heroName == null ||
         heroName.length == 0) {
-        alert("Вы не ввели имя и фамилию!");
+        alert("Enter the first and last name of the hero!");
     }
 
-    if (heroName.length !== 0) {
+    if (heroName == hero.name) {
         let array = heroName.split(" ");
         let name = array[0].split('');
         let first_name = name[0].toUpperCase()
@@ -41,13 +28,13 @@ searchBtn.addEventListener('click', function () {
         surname.splice(0, 1);
         let resultsurname = [first_surname, ...surname].join('');
         heroName = resultname + " " + resultsurname;
-    }
 
-    fetch("https://hp-api.onrender.com/api/characters")
-        .then(response => response.json())
-        .then(heroes => {
-            for (let hero of heroes) {
-                if (heroName == hero.name) {
+
+        fetch("https://hp-api.onrender.com/api/characters")
+            .then(response => response.json())
+            .then(heroes => {
+                for (let hero of heroes) {
+
                     function getStatusInfo() {
                         if (hero.alive == true) {
                             return "alive";
@@ -75,7 +62,14 @@ searchBtn.addEventListener('click', function () {
                     modal.show();
                     document.getElementById('hero').value = "";
                 }
-            }
-        })
-        .catch(err => console.log(err));
+
+            })
+
+
+            .catch(err => console.log(err));
+    }
+    else {
+        alert(`We could't find anything :(\nTry again!`);
+        document.getElementById('hero').value = "";
+    }
 });
