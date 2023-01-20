@@ -7,22 +7,33 @@ $("#hero").keyup(function (event) {
 
 
 
-
 let searchBtn = document.querySelector('.mainpage__container__button');
 
 searchBtn.addEventListener('click', function () {
+    async function Error() {
+        try {
+            const response = await fetch("https://hp-api.onrender.com/api/characters", {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            const json = await response.json();
+            console.log('Успех:', JSON.stringify(json));
+        } catch (error) {
+            console.error('Ошибка:', error);
+        }
+    }
+
     let heroName = document.getElementById('hero').value;
     if (heroName == null ||
         heroName.length == 0) {
-        alert("Enter the first and last name of the hero!");
+        alert("Вы не ввели имя и фамилию!");
     }
 
-    let array = heroName;
-    if (array[1] !== null ||
-        heroName.length !== 0) {
-        alert('нет результятов братан')
-    } else {
-        arraysplit(" ");
+    if (heroName.length !== 0) {
+        let array = heroName.split(" ");
         let name = array[0].split('');
         let first_name = name[0].toUpperCase()
         name.splice(0, 1);
@@ -33,6 +44,7 @@ searchBtn.addEventListener('click', function () {
         let resultsurname = [first_surname, ...surname].join('');
         heroName = resultname + " " + resultsurname;
     }
+
 
     fetch("https://hp-api.onrender.com/api/characters")
         .then(response => response.json())
@@ -62,19 +74,11 @@ searchBtn.addEventListener('click', function () {
                             { class: 'btn btn__cancel button__shine', text: 'Close', handler: 'modalHandlerCancel' }
                         ]
                     });
+
                     modal.show();
                     document.getElementById('hero').value = "";
                 }
-
             }
-
         })
-
-
         .catch(err => console.log(err));
-
-    //else {
-    //alert(`We could't find anything :(\nTry again!`);
-    // document.getElementById('hero').value = "";
-    // }
 });
