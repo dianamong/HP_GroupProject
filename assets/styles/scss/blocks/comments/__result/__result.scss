@@ -44,8 +44,8 @@
     width: 52px;
     height: 52px;
     margin-top: 2vh;
-    border-radius: 40px;
-    background-color: black;
+    border-radius: 50%;
+    background-color: opacify($color: black, $amount: 0);
 }
 
 #btnEnd {
