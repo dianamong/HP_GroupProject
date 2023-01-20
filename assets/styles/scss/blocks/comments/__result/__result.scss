@@ -49,21 +49,16 @@
 }
 
 #btnEnd {
-<<<<<<< HEAD
+
     border-radius: 20%;
     margin-left: 110vh;
     transform: rotate(90deg);
     background: url('../../images/mainpage/arrayBlueR.svg')no-repeat;
-=======
-    margin-left: 120vh;
-    transform: rotate(-90deg);
->>>>>>> adaaa936ef3d9e2b1c94349fbc4d68273611a590
 }
 
 #btnStart {
-    margin-left: 35vh;
+    margin-left: 150vh;
     transform: rotate(90deg);
-<<<<<<< HEAD
     background: url('../../images/mainpage/arrayBlueL.svg')no-repeat;
 }
 
@@ -75,6 +70,5 @@
 #btnStart:hover {
     transform: rotate(90deg);
     background: url('../../images/mainpage/arrayRight.svg')no-repeat;
-=======
->>>>>>> adaaa936ef3d9e2b1c94349fbc4d68273611a590
+
 }
