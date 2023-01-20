@@ -584,6 +584,11 @@ template {
   grid-template-rows: 100%;
 }
 
+#res {
+  color: #DE9E15;
+  font-weight: normal;
+}
+
 .mainpage__container__button {
   margin-left: 1%;
   width: 100%;
