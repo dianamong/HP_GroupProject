@@ -1084,7 +1084,6 @@ a:hover {
 
 .valid {
   border: 2px solid rgb(26, 204, 58);
-  color: blue;
 }
 
 .error {
@@ -1262,7 +1261,7 @@ input {
   margin-right: auto;
 }
 
-.welcomeUser {
+#welcomeUser {
   margin-left: 2.27vw;
   color: white;
   font-family: "Roboto";
@@ -1426,6 +1425,7 @@ input {
 .form-name {
   height: 12vh;
   border-radius: 19px;
+  outline: none;
 }
 
 .form-comment {
@@ -1434,6 +1434,7 @@ input {
   border-radius: 29px;
   margin: 3rem 0;
   padding: 3vh 0 0 4vh;
+  outline: none;
 }
 
 .comments__button {
@@ -1491,7 +1492,7 @@ input {
   display: none;
   width: 40px;
   height: 56px;
-  margin-top: 2vh;
+  margin-top: 0.5vh;
   border: none;
 }
 
@@ -1527,11 +1528,8 @@ input {
 .comments {
   background-image: url("../../images/mainpage/hat.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-#comments {
-  height: 108vh;
+  background-size: 105%;
+  height: 102vh;
 }
 
 .comments__result {

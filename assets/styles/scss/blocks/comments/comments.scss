@@ -3,21 +3,21 @@
 @import "./__form/_form";
 @import "./__button/_button";
 @import "./__result/_result";
+
 .comments {
     background-image: url('../../images/mainpage/hat.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 105%;
+    height: 102vh;
 }
 
-#comments {
-    height: 108vh;
-}
 
 .comments__result {
     display: flex;
     flex-direction: column;
     max-height: 480px;
     overflow: hidden;
+
 }
 
 .comments__result::-webkit-scrollbar {

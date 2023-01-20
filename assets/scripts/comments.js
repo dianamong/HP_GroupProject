@@ -1,7 +1,7 @@
 let comments = [];
 
 let form = document.getElementsByClassName("comments__form-group")[0];
-form.addEventListener("submit", function(e) {
+form.addEventListener("submit", function (e) {
     e.preventDefault();
 
     let commentName = document.getElementById("comment-name"); //объявляю переменные для вводимых данных (имя + комментарий)
@@ -15,11 +15,10 @@ form.addEventListener("submit", function(e) {
 
     const newElement = document.createElement("div"); //создаю новый див, куда буду выводить введенную информацтию (фото + имя + коммент + время)
 
-    let avatar = "assets/images/mainpage/user.png";
+    let avatar = "https://cdn-icons-png.flaticon.com/512/195/195138.png";
     const imgUrl = localStorage.getItem("avatar");
-    const imgTag = `<img src=${
-    imgUrl || avatar
-  } style='position:relative; width: 60px; top: 10px; left: 5px;' alt='avatar' />`;
+    const imgTag = `<img src=${imgUrl || avatar
+        } style='position:relative; width: 60px; top: 10px; left: 5px;' alt='avatar' />`;
 
     let login = localStorage.getItem("login");
 

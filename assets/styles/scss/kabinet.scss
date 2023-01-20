@@ -1,10 +1,9 @@
-
 .userForm {
     display: none;
-    margin-left:30vw;
+    margin-left: 30vw;
     position: absolute;
     z-index: 10000;
-    padding-left:3vw;
+    padding-left: 3vw;
     border: 5px solid white;
     border-radius: 53px;
     height: 120vh;
@@ -28,7 +27,7 @@
     margin-right: auto;
 }
 
-.welcomeUser {
+#welcomeUser {
     margin-left: 2.27vw;
     color: white;
     font-family: 'Roboto';
@@ -51,7 +50,7 @@
 .fieldsetItems {
     width: 100%;
     display: block;
-    
+
 }
 
 
@@ -105,7 +104,7 @@
 
 .LKuserComment {
     border-radius: 24px;
-    width:100%;
+    width: 100%;
     height: 5em;
     font-family: "Roboto";
     font-style: normal;
@@ -167,4 +166,3 @@
     background: rgba(222, 158, 21, 0.48);
     ;
 }
-
