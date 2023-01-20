@@ -13,8 +13,9 @@ document.getElementById("img_avatar").addEventListener("click", () => {
 });
 document.getElementById("kabinet_close").addEventListener("click", () => {
     document.getElementById("userForm").style.display = "none";
+    console.log('hi')
 });
-
-document.getElementById("LKuserLogin").placeholder = login;
-document.getElementById("LKuserEmail").placeholder = mail;
-document.getElementById("LKuserPassword").placeholder = pas;
+document.getElementById('welcomeUser').innerHTML = `Hi, ${login}`
+document.getElementById("LKuserLogin").value = login;
+document.getElementById("LKuserEmail").value = mail;
+document.getElementById("LKuserPassword").value = pas;
