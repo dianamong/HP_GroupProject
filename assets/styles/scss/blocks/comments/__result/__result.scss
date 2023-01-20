@@ -33,10 +33,12 @@
 }
 
 .comments__result-btn {
-    position: relative;
+    display: none;
+    width: 52px;
+    height: 52px;
     margin-top: 2vh;
-    border-radius: 40px;
-    background-color: black;
+    border-radius: 50%;
+    background-color: opacify($color: black, $amount: 0);
 }
 
 #btnEnd {
@@ -45,6 +47,7 @@
 }
 
 #btnStart {
-    margin-left: 35vh;
+    margin-left: 160vh;
+    margin-top: -7vh;
     transform: rotate(90deg);
 }

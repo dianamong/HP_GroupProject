@@ -1,12 +1,10 @@
 let comments = [];
 
-loadComments();
-
 let form = document.getElementsByClassName("comments__form-group")[0];
 form.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    let commentName = document.getElementById("comment-name");
+    let commentName = document.getElementById("comment-name"); //объявляю переменные для вводимых данных (имя + комментарий)
     let commentBody = document.getElementById("comment-body");
 
     let comment = {
@@ -15,8 +13,14 @@ form.addEventListener("submit", function(e) {
         time: Math.floor(Date.now() / 1000),
     };
 
-    const newElement = document.createElement("div");
-    newElement.innerHTML = `<p class="comments__name" role="alert">${commentName.value}:</p>
+    const newElement = document.createElement("div"); //создаю новый див, куда буду выводить введенную информацтию (фото + имя + коммент + время)
+
+    const imgUrl = localStorage.getItem("_device_id");
+    const imgTag = imgUrl ? `<img url=${imgUrl} alt='avatar' />` : "";
+
+    newElement.innerHTML = `
+    ${imgTag}
+    <p class="comments__name" role="alert">${commentName.value}:</p>
     <p class="comments__content" role="alert">${commentBody.value}</p>
     <p class="comments__time"><em>${timeConverter(Math.floor(Date.now() / 1000))}</em></p>`;
 
@@ -28,28 +32,32 @@ form.addEventListener("submit", function(e) {
 
     comments.push(comment);
 
-    saveComments();
+    // saveComments();
+
+    showButtons();
     showComments();
 
-    let block = document.getElementById("block"); // получение блока с комментариями
+    let block = document.getElementById("block"); // получение блока с комментариями для слайдера
     block.scrollTo(0, 0);
 });
 
-function saveComments() {
-    localStorage.setItem("comments", JSON.stringify(comments));
-}
+// function saveComments() {
+//     localStorage.setItem("comments", JSON.stringify(comments));
+// }
 
 function loadComments() {
     if (localStorage.getItem("comments")) comments = JSON.parse(localStorage.getItem("comments"));
     showComments();
 }
 
+// loadComments();
+
 function showComments() {
     const commentsWrapper = document.querySelector(".comments__result-item");
-    console.log(commentsWrapper.children.length);
 }
 
 function timeConverter(UNIX_timestamp) {
+    // вычисление времени введенного комментария
     let a = new Date(UNIX_timestamp * 1000);
     let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     let year = a.getFullYear();

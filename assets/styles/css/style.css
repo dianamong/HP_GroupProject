@@ -1539,7 +1539,7 @@ input {
 
 .commentsBox {
   box-sizing: border-box;
-  padding: 4em 6vw 4vw 6vw;
+  padding: 4em 6vw 0 6vw;
 }
 
 .comments__block {
@@ -1573,7 +1573,7 @@ input {
   height: 30vh;
   border-radius: 29px;
   margin: 3rem 0;
-  padding-bottom: 5.5em;
+  padding: 3vh 0 0 4vh;
 }
 
 .comments__button {
@@ -1621,9 +1621,11 @@ input {
 }
 
 .comments__result-btn {
-  position: relative;
+  display: none;
+  width: 52px;
+  height: 52px;
   margin-top: 2vh;
-  border-radius: 40px;
+  border-radius: 50%;
   background-color: black;
 }
 
@@ -1633,7 +1635,8 @@ input {
 }
 
 #btnStart {
-  margin-left: 35vh;
+  margin-left: 160vh;
+  margin-top: -7vh;
   transform: rotate(90deg);
 }
 
@@ -1641,6 +1644,10 @@ input {
   background-image: url("../../images/mainpage/hat.png");
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+#comments {
+  height: 108vh;
 }
 
 .comments__result {
