@@ -16,16 +16,18 @@ form.addEventListener("submit", function(e) {
     const newElement = document.createElement("div"); //создаю новый див, куда буду выводить введенную информацтию (фото + имя + коммент + время)
 
     let avatar = "assets/images/mainpage/user.png";
-    const imgUrl = localStorage.getItem("img_avatar");
+    const imgUrl = localStorage.getItem("avatar");
     const imgTag = `<img src=${
     imgUrl || avatar
   } style='position:relative; width: 60px; top: 10px; left: 5px;' alt='avatar' />`;
+
+    let login = localStorage.getItem("login");
 
     console.log(imgTag);
 
     newElement.innerHTML = `
     ${imgTag}
-    <p class="comments__name" role="alert">${commentName.value}:</p>
+    <p class="comments__name" role="alert">${login || commentName.value}:</p>
     <p class="comments__content" role="alert">${commentBody.value}</p>
     <p class="comments__time"><em>${timeConverter(Math.floor(Date.now() / 1000))}</em></p>`;
 
