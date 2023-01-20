@@ -2,10 +2,16 @@ let loginSt = localStorage.getItem('login');
 let link = "./assets/images/header/avatar.svg"
 document.addEventListener("DOMContentLoaded", function () {
     if (loginSt !== null) {
+
         document.getElementById('signUp').style.display = "none";
-        document.getElementById('img_avatar').src = link;
         document.getElementById('img_avatar').style.width = '3em';
         document.getElementById('avatar').style.display = "block";
+        if(  localStorage.getItem('avatar') == ""){
+            document.getElementById('img_avatar').src = link;
+        }
+         else{
+            document.getElementById('img_avatar').src =  localStorage.getItem('avatar');
+         }
     }
 })
 
@@ -68,13 +74,14 @@ let Inputs = [...document.querySelectorAll('.form__item')].forEach(item => {
 });
 
 document.getElementById('regForm').addEventListener("submit", () => {
-    document.getElementById('img_avatar').src = link;
+    
     document.getElementById('avatar').style.display = "block";
     document.getElementById('signUp').style.display = "none";
     let login = document.getElementById('userLogin').value;
     let mail = document.getElementById('userEmail').value;
     let pas = document.getElementById('userPassword1').value;
     let avatar = document.getElementById('selectHero').value;
+   
     let mailSt = localStorage.getItem('mail');
     let pasSt = localStorage.getItem('pas');
     let avatarSt = localStorage.getItem('avatar');
@@ -94,7 +101,12 @@ document.getElementById('regForm').addEventListener("submit", () => {
     if (avatar === '') {
         localStorage.setItem('avatar', link);
     }
-
+ if( avatar == ""){
+        document.getElementById('img_avatar').src = link;
+    }
+     else{
+        document.getElementById('img_avatar').src =  localStorage.getItem('avatar');
+     }
     let Inputs = [...document.querySelectorAll('.form__item')].forEach(item => {
         if (item.validity.valid) {
             document.getElementById('registrationForm').style.display = "none";

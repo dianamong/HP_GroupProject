@@ -44,9 +44,8 @@
     width: 52px;
     height: 52px;
     margin-top: 2vh;
-    border-radius: 50%;
-    border: none !important;
-    background: black;
+    border-radius: 40px;
+    background-color: black;
 }
 
 #btnEnd {
@@ -55,7 +54,6 @@
 }
 
 #btnStart {
-    margin-left: 160vh;
-    margin-top: -7vh;
+    margin-left: 35vh;
     transform: rotate(90deg);
 }
