@@ -1490,9 +1490,10 @@ input {
 
 .comments__result-btn {
   display: none;
+  position: relative;
   width: 40px;
   height: 56px;
-  margin-top: 0.5vh;
+  margin-top: 2vh;
   border: none;
 }
 
@@ -1529,7 +1530,7 @@ input {
   background-image: url("../../images/mainpage/hat.png");
   background-repeat: no-repeat;
   background-size: 105%;
-  height: 102vh;
+  height: 104vh;
 }
 
 .comments__result {
