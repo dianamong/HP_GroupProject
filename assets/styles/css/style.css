@@ -1289,66 +1289,6 @@ input {
   border-color: rgb(203, 68, 104) !important;
 }
 
-.modal__backdrop5 {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  z-index: -1;
-  pointer-events: none;
-  transition: opacity 0.2s ease-in;
-}
-
-.modal__content5 {
-  position: relative;
-  width: 40%;
-  margin: auto;
-  transition: opacity 0.3s ease-in;
-  border: 5px solid white;
-  border-radius: 53px;
-  height: 228.68vh;
-  width: 40%;
-  background-color: #1D1D1F;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 26.38vh;
-}
-
-@media (min-width: 576px) {
-  .modal__content4 {
-    max-width: 500px;
-    margin: 50px auto;
-  }
-}
-.modal__show .modal__backdrop5,
-.modal__show .modal__content5 {
-  opacity: 1;
-  z-index: 1050;
-  pointer-events: auto;
-  overflow-y: auto;
-}
-
-.modal__body5 {
-  width: auto;
-  height: auto;
-  overflow: hidden;
-}
-
-/*
-.userAccountPage {
-    background-image: url(./assets/images/mainpage/fon_mainpage.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    display: flex;
-    height: 280.98vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-*/
 .userForm {
   display: none;
   margin-left: 30vw;
@@ -1395,13 +1335,8 @@ input {
 }
 
 .fieldsetItems {
+  width: 100%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.registration_template {
-  height: 147.23vh;
 }
 
 .loginForm_welcome_text,
@@ -1436,14 +1371,14 @@ input {
 .LKselectHero,
 .LKuserAvatar {
   border-radius: 24px;
-  width: 90%;
+  width: 100%;
   height: 3em;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 1.21vw;
   line-height: 3.68vh;
-  color: #1F2832;
+  color: #FFFFFF;
   padding-left: 3.79vw;
   border: 3px solid white;
   background-color: transparent;
@@ -1451,14 +1386,14 @@ input {
 
 .LKuserComment {
   border-radius: 24px;
-  width: 90%;
+  width: 100%;
   height: 5em;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 1.21vw;
   line-height: 3.68vh;
-  color: #1F2832;
+  color: #FFFFFF;
   padding-left: 3.79vw;
   border: 3px solid white;
   background-color: transparent;
@@ -1478,42 +1413,16 @@ input {
   margin-bottom: 1.22vh;
 }
 
-.restorePass_Link {
-  text-align: right;
-  text-decoration-line: underline;
-  color: #FFFFFF;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.rememberText {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.21vw;
-  line-height: 100%;
-  color: #FFFFFF;
-}
-
-.checkboxBlock {
-  display: flex;
-  grid-template-columns: 1fr 1fr;
-  width: 32.01vw;
-  justify-content: space-between;
-  font-family: "Roboto";
-}
-
 .LKForm_Buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
   font-family: "Roboto";
 }
 
 .closeButton,
 .signUpButton {
-  width: 10vw;
+  width: 40%;
   height: 7vh;
   border-radius: 24px;
   padding: 0px;
@@ -1530,21 +1439,10 @@ input {
 }
 
 .closeButton {
+  margin-left: 10%;
   border-style: solid;
   border: none;
   background: rgba(222, 158, 21, 0.48);
-}
-
-.signUpButton_registration {
-  width: 32.01vw;
-  height: 7.82vh;
-  border-radius: 8px;
-  padding: 0px;
-  margin-top: 3.52vh;
-  color: #fff;
-  background-color: #DE9E15;
-  border-style: solid;
-  border: none;
 }
 
 .commentsBox__title {

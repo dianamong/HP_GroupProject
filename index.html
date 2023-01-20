@@ -93,7 +93,7 @@
                 </form>
             </div>
         </div>
-        <div class="userForm" id="userForm">
+        <form class="userForm" id="userForm">
             <div class="welcome">
                 <img class="userFormPic" src="./assets/images/account/Ellipse.png">
                 <p class="welcomeUser">Hi, Katechka</p>
@@ -115,7 +115,7 @@
     
                 <div class="LKpasswordBlock">
                     <label for="LKuserPassword" class="LKpasswordLabel">Password</label>
-                    <input type="text" id="LKuserPassword" class="LKpassword" />
+                    <input type="text" id="LKuserPassword" class="LKpassword" minlength="6"/>
                 </div>
     
                 <div class="LKavatarBlock">
@@ -129,13 +129,13 @@
                 </div>
     
                 <div class="LKForm_Buttons">
-                    <button class="button__shine signUpButton">Save</button>
+                    <button type="submit" class="button__shine signUpButton">Save</button>
                     <button class="button__shine closeButton">Close</button>
                 </div>
     
             </div>
             </div>
-        </div>
+        </form>
         <!--MainPage-->
         <article class="mainpage" id="mainpage">
             <div class="mainpage__container">
