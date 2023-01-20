@@ -68,13 +68,19 @@ let Inputs = [...document.querySelectorAll('.form__item')].forEach(item => {
 });
 
 document.getElementById('regForm').addEventListener("submit", () => {
-    document.getElementById('img_avatar').src = link;
+    
     document.getElementById('avatar').style.display = "block";
     document.getElementById('signUp').style.display = "none";
     let login = document.getElementById('userLogin').value;
     let mail = document.getElementById('userEmail').value;
     let pas = document.getElementById('userPassword1').value;
     let avatar = document.getElementById('selectHero').value;
+    if( avatar == ""){
+        document.getElementById('img_avatar').src = link;
+    }
+     else{
+        document.getElementById('img_avatar').src = avatar;
+     }
     let mailSt = localStorage.getItem('mail');
     let pasSt = localStorage.getItem('pas');
     let avatarSt = localStorage.getItem('avatar');
