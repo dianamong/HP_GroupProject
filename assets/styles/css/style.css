@@ -934,10 +934,10 @@ a:hover {
 }
 
 .registrationForm {
-  margin-left: 35%;
+  display: none;
+  margin-left: 32%;
   position: absolute;
   z-index: 9999;
-  display: none;
   justify-content: center;
   border-radius: 40px;
   color: white;
@@ -945,12 +945,9 @@ a:hover {
 
 .registration_template {
   background-color: #1D1D1F;
-  width: 23vw;
+  width: 95%;
+  height: 120vh;
   border-radius: 31px;
-}
-
-.registration_template {
-  height: 106vh;
 }
 
 .registration_template_pic {
@@ -981,8 +978,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  align-items: center;
-  margin: auto;
+  margin-left: 7%;
 }
 
 .emailBlock,
@@ -991,7 +987,7 @@ a:hover {
 .heroBlock {
   display: grid;
   margin-bottom: 2vh;
-  width: 19.5vw;
+  width: 87%;
 }
 
 .email,
@@ -999,8 +995,8 @@ a:hover {
 .login,
 .selectHero {
   border-radius: 8px;
-  width: 18vw;
-  height: 5vh;
+  width: 100%;
+  height: 6vh;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -1052,13 +1048,13 @@ a:hover {
 .registration_Buttons {
   display: flex;
   justify-content: space-between;
-  width: 20vw;
+  width: 90%;
   font-family: "Roboto";
   margin-top: 0.7em;
 }
 
 .signUpButton_close {
-  width: 5em;
+  width: 35%;
   height: 7vh;
   border-radius: 8px;
   padding: 0px;
@@ -1070,7 +1066,7 @@ a:hover {
 }
 
 .signUpButton_registration {
-  width: 13em;
+  width: 60%;
   height: 7vh;
   border-radius: 8px;
   padding: 0px;
@@ -1238,64 +1234,6 @@ input {
   line-height: 150%;
 }
 
-.modal__backdrop4 {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  z-index: -1;
-  pointer-events: none;
-  transition: opacity 0.2s ease-in;
-}
-
-.modal__content4 {
-  position: relative;
-  width: 40%;
-  margin: auto;
-  transition: opacity 0.3s ease-in;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-clip: padding-box;
-  background-color: #1D1D1F;
-  border: 4px solid white;
-  border-radius: 30px;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.21vw;
-}
-
-@media (min-width: 576px) {
-  .modal__content4 {
-    max-width: 500px;
-    margin: 50px auto;
-  }
-}
-.modal__show .modal__backdrop4,
-.modal__show .modal__content4 {
-  opacity: 1;
-  z-index: 1050;
-  pointer-events: auto;
-  overflow-y: auto;
-}
-
-.modal__body4 {
-  width: auto;
-  height: auto;
-  overflow: hidden;
-}
-
-.valid {
-  border-color: rgb(26, 204, 58) !important;
-}
-
-.error {
-  border-color: rgb(203, 68, 104) !important;
-}
-
 .userForm {
   display: none;
   margin-left: 30vw;
@@ -1306,7 +1244,10 @@ input {
   border-radius: 53px;
   height: 120vh;
   width: 35%;
-  background-color: #1D1D1F;
+  background-image: url("../../images/card/bigfon.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   justify-content: center;
   align-items: flex-start;
   margin-top: 5vh;
