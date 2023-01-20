@@ -1517,8 +1517,8 @@ input {
 }
 
 .btnFlex {
-  margin-left: 35em;
-  width: 70%;
+  margin-left: 40em;
+  width: 55%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

@@ -15,7 +15,6 @@ document.getElementById("kabinet_close").addEventListener("click", () => {
     document.getElementById("userForm").style.display = "none";
 });
 
-document.getElementById("LKuserLogin").value = login;
-document.getElementById("LKuserEmail").value = mail;
-document.getElementById("LKuserPassword").value = pas;
-document.getElementById("LKuserAvatar").value = kabinetAva;
+document.getElementById("LKuserLogin").placeholder = login;
+document.getElementById("LKuserEmail").placeholder = mail;
+document.getElementById("LKuserPassword").placeholder = pas;
