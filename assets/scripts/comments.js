@@ -13,9 +13,9 @@ form.addEventListener("submit", function(e) {
         time: Math.floor(Date.now() / 1000),
     };
 
-    const newElement = document.createElement("div"); //создаю новый див, куда буду выводить введенную информацтию (фото + имя + коммент + время)
+    const newElement = document.createElement("div"); //создаю новый див, куда буду выводить введенную информацию (фото + имя + коммент + время)
 
-    let avatar = "assets/images/mainpage/user.png";
+    let avatar = "assets/images/mainpage/user.png"; //фото
     const imgUrl = localStorage.getItem("avatar");
     const imgTag = `<img src=${
     imgUrl || avatar
@@ -23,24 +23,21 @@ form.addEventListener("submit", function(e) {
 
     let login = localStorage.getItem("login");
 
-    console.log(imgTag);
-
     newElement.innerHTML = `
     ${imgTag}
-    <p class="comments__name" role="alert">${login || commentName.value}:</p>
+    <p class="comments__name" role="alert">${login || commentName.value}:</p> 
     <p class="comments__content" role="alert">${commentBody.value}</p>
     <p class="comments__time"><em>${timeConverter(Math.floor(Date.now() / 1000))}</em></p>`;
 
     const commentsWrapper = document.querySelector(".comments__result-item");
     commentsWrapper.prepend(newElement);
 
-    commentName.value = "";
+    commentName.value = ""; //очищаем строку
     commentBody.value = "";
 
-    comments.push(comment);
+    comments.push(comment); // добавляем коммент в массив
 
-    // saveComments();
-
+    saveComments();
     showButtons();
     showComments();
 
@@ -48,19 +45,26 @@ form.addEventListener("submit", function(e) {
     block.scrollTo(0, 0);
 });
 
-// function saveComments() {
-//     localStorage.setItem("comments", JSON.stringify(comments));
-// }
+function showComments() {
+    let commentField = document.getElementById("comment-field");
+    let out = "";
+    comments.forEach(function(item) {
+        out += `<p class="comments__name" role="alert">${login || commentName.value}:</p>
+        <p class="comments__content" role="alert">${commentBody.value}</p>
+        <p class="comments__time"><em>${timeConverter(Math.floor(Date.now() / 1000))}</em></p>`;
+    });
+    commentField.innerHTML = out;
+
+    const commentsWrapper = document.querySelector(".comments__result-item");
+}
+
+function saveComments() {
+    localStorage.setItem("comments", JSON.stringify(comments));
+}
 
 function loadComments() {
     if (localStorage.getItem("comments")) comments = JSON.parse(localStorage.getItem("comments"));
     showComments();
-}
-
-// loadComments();
-
-function showComments() {
-    const commentsWrapper = document.querySelector(".comments__result-item");
 }
 
 function timeConverter(UNIX_timestamp) {
