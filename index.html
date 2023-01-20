@@ -67,11 +67,12 @@
                     </div>
                     <div class="passwordBlock">
                         <label for="userPassword" class="passwordLabel" pattern="^\d{1,}$">Password</label>
-                        <input type="text" id="userPassword1" class="password form__item" maxlength="7" required />
+                        <input type="password" id="userPassword1" class="password form__item" minlength="6" pattern="^\d{1,}$" required />
                     </div>
                     <div class="passwordBlock">
                         <label for="userPassword" class="passwordLabel">Repeat password</label>
-                        <input type="text" id="userPassword2" class="password form__item" required />
+                        <input type="password" id="userPassword2" class="password form__item" required />
+
                     </div>
                     <div class="heroBlock">
                         <label for="selectHero" class="heroLabel">Avatar</label>
@@ -87,12 +88,51 @@
                 </form>
             </div>
         </div>
+        <form class="userForm" id="userForm">
+            <div class="welcome">
+                <img class="userFormPic" src="./assets/images/account/Ellipse.png">
+                <p class="welcomeUser">Hi, Katechka</p>
+            </div>
+
+            <div class="fieldset">
+                <div class="fieldsetItems">
+
+                    <div class="LKloginBlock">
+                        <label for="LKuserLogin" class="LKloginLabel">Login</label>
+                        <input type="text" id="LKuserLogin" class="LKlogin form__item" required pattern="[a-zA-Z0-9]+$" minlength="5" />
+                    </div>
+
+                    <div class="LKemailBlock">
+                        <label for="LKuserEmail" class="LKemailLabel">Email</label>
+                        <input type="email" id="LKuserEmail" class="LKemail" />
+                    </div>
+
+                    <div class="LKpasswordBlock">
+                        <label for="LKuserPassword" class="LKpasswordLabel">Password</label>
+                        <input type="text" id="LKuserPassword" class="LKpassword" minlength="6" />
+                    </div>
+
+                    <div class="LKavatarBlock">
+                        <label for="LKuserAvatar" class="LKuserAvatarLabel">Avatar</label>
+                        <input type="text" id="LKuserAvatar" class="LKuserAvatar" />
+                    </div>
+
+                    <div class="LKcommentBlock">
+                        <label for="LKuserComment" class="LKcommentLabel">About you</label>
+                        <input type="text" rows="3" id="LKuserComment" class="LKuserComment" />
+                    </div>
+
+                    <div class="LKForm_Buttons">
+                        <button type="submit" class="button__shine signUpButton">Save</button>
+                        <button class="button__shine closeButton">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </form>
         <!--MainPage-->
         <article class="mainpage" id="mainpage">
             <div class="mainpage__container">
-                <div class="mainpage__container__logodiv"><img class="mainpage__container__logo" src="./assets/images/mainpage/logo.png" alt="логотип"></div>
-                <p class="mainpage__container__text1">Hello! You got into Harry Potter Wiki!</p>
-                <p class="mainpage__container__text2">Here you can find information about your favorite heroes and spells of the Harry Potter universe</p>
                 <div class="mainpage__container__logodiv"><img class="mainpage__container__logo" src="./assets/images/mainpage/logo.png" alt="логотип"></div>
                 <p class="mainpage__container__text1 text ">Hello! You got into Harry Potter Wiki!</p>
                 <p class="mainpage__container__text2 text">Here you can find information about your favorite heroes and spells of the Harry Potter universe</p>
@@ -195,7 +235,6 @@
                 <button class="comments__result-btn" id="btnStart"><img src="./assets/images/mainpage/arrayBlueL.svg" alt="start"></button>
             </div>
         </article>
-
     </main>
     <!--Footer -->
     <footer class="footer">

@@ -5,6 +5,8 @@ $("#hero").keyup(function (event) {
     }
 });
 
+
+
 let searchBtn = document.querySelector('.mainpage__container__button');
 
 searchBtn.addEventListener('click', function () {
@@ -42,6 +44,7 @@ searchBtn.addEventListener('click', function () {
         let resultsurname = [first_surname, ...surname].join('');
         heroName = resultname + " " + resultsurname;
     }
+
 
     fetch("https://hp-api.onrender.com/api/characters")
         .then(response => response.json())
