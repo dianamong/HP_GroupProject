@@ -7,6 +7,7 @@ $("#hero").keyup(function (event) {
 
 let searchBtn = document.querySelector('.mainpage__container__button');
 searchBtn.addEventListener('click', function () {
+
     let heroName = document.getElementById('hero').value;
     let regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
     if (!regName.test(heroName)) {
@@ -59,8 +60,9 @@ searchBtn.addEventListener('click', function () {
 
                     modal.show();
                     document.getElementById('hero').value = "";
+
                 }
-                else {
+                if (heroName !== hero.name) {
                     document.getElementById('res').textContent =
                         'Увы, ничего не смогли найти :( Попробуйте еще раз';
                 }
