@@ -584,6 +584,11 @@ template {
   grid-template-rows: 100%;
 }
 
+#res {
+  color: #DE9E15;
+  font-weight: normal;
+}
+
 .mainpage__container__button {
   margin-left: 1%;
   width: 100%;
@@ -1474,9 +1479,11 @@ input {
 }
 
 .comments__result-btn {
-  position: relative;
+  display: none;
+  width: 52px;
+  height: 52px;
   margin-top: 2vh;
-  border-radius: 40px;
+  border-radius: 50%;
   background-color: black;
 }
 
@@ -1486,7 +1493,8 @@ input {
 }
 
 #btnStart {
-  margin-left: 35vh;
+  margin-left: 160vh;
+  margin-top: -7vh;
   transform: rotate(90deg);
 }
 
@@ -1494,6 +1502,10 @@ input {
   background-image: url("../../images/mainpage/hat.png");
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+#comments {
+  height: 108vh;
 }
 
 .comments__result {
