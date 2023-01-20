@@ -45,19 +45,19 @@
     width: 40px;
     height: 56px;
     margin-top: 2vh;
-    border: none
+    border: none;
 }
 
 #btnEnd {
 
     border-radius: 20%;
-    margin-left: 110vh;
+
     transform: rotate(90deg);
     background: url('../../images/mainpage/arrayBlueR.svg')no-repeat;
 }
 
 #btnStart {
-    margin-left: 150vh;
+
     transform: rotate(90deg);
     background: url('../../images/mainpage/arrayBlueL.svg')no-repeat;
 }
@@ -70,5 +70,15 @@
 #btnStart:hover {
     transform: rotate(90deg);
     background: url('../../images/mainpage/arrayRight.svg')no-repeat;
+
+}
+
+.btnFlex {
+    margin-left: 35em;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
 
 }
