@@ -14,3 +14,8 @@ document.getElementById('img_avatar').addEventListener("click", () => {
 document.getElementById('kabinet_close').addEventListener("click", () => {
     document.getElementById('userForm').style.display = "none";
 })
+
+document.getElementById('LKuserLogin').value=login;
+document.getElementById('LKuserEmail').value=mail;
+document.getElementById('LKuserPassword').value=pas;
+document.getElementById('LKuserAvatar').value=kabinetAva;
