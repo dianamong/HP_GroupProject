@@ -1,9 +1,11 @@
 .comments__result-item>div {
     width: 85vh;
-    height: 7rem;
+    height: 102px;
     background-color: white;
     opacity: 0.8;
     border-radius: 27px;
+    padding: 1vh;
+    margin-bottom: 5px;
 }
 
 .comments__photo {
@@ -14,13 +16,18 @@
 }
 
 .comments__name {
+    display: inline-block;
+    position: relative;
     font-size: 25px;
-    margin: 1vh 0 0 5vh;
+    top: -30px;
+    left: 15px;
 }
 
 .comments__content {
+    display: block;
+    position: relative;
     font-size: 23px;
-    margin: 1vh 0 0 3vh;
+    margin: -47px 0 0 80px;
     max-width: 80vh;
     max-height: 5vh;
     overflow: auto;
@@ -38,12 +45,13 @@
     height: 52px;
     margin-top: 2vh;
     border-radius: 50%;
-    background-color: opacify($color: black, $amount: 0);
+    border: none !important;
+    background: black;
 }
 
 #btnEnd {
     margin-left: 120vh;
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
 }
 
 #btnStart {
