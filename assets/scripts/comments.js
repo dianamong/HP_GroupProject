@@ -15,8 +15,11 @@ form.addEventListener("submit", function(e) {
 
     const newElement = document.createElement("div"); //создаю новый див, куда буду выводить введенную информацтию (фото + имя + коммент + время)
 
-    const imgUrl = localStorage.getItem("_device_id");
-    const imgTag = imgUrl ? `<img url=${imgUrl} alt='avatar' />` : "";
+    let avatar = "assets/images/mainpage/user.png";
+    const imgUrl = localStorage.getItem("img_avatar");
+    const imgTag = `<img src=${imgUrl || avatar} style='position:relative; width: 60px; top: 10px; left: 5px;' alt='avatar' />`;
+
+    console.log(imgTag);
 
     newElement.innerHTML = `
     ${imgTag}
