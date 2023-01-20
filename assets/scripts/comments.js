@@ -1,4 +1,15 @@
 let comments = [];
+let login = localStorage.getItem("login");
+let aboutInput = document.getElementById('LKuserComment').value;
+const loginUpper = login;
+const splitted = loginUpper.split("")
+const first = splitted[0].toUpperCase()
+splitted.splice(0, 1)
+const resultLogin = [first, ...splitted].join("");
+document.addEventListener("DOMContentLoaded", function (event) {
+    document.getElementById("comment-name").value = resultLogin;
+
+});
 
 let form = document.getElementsByClassName("comments__form-group")[0];
 form.addEventListener("submit", function (e) {
