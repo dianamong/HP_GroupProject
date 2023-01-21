@@ -12,7 +12,7 @@ searchBtn.addEventListener('click', function () {
     let regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
     if (!regName.test(heroName)) {
         document.getElementById('res').textContent =
-            'Введите имя и фамилию!';
+            'Enter first and last name!';
     }
 
     if (heroName.length !== 0) {
@@ -64,7 +64,7 @@ searchBtn.addEventListener('click', function () {
                 }
                 if (heroName !== hero.name) {
                     document.getElementById('res').textContent =
-                        'Увы, ничего не смогли найти :( Попробуйте еще раз';
+                        'We could not find anything :( Try again';
                 }
             }
 
