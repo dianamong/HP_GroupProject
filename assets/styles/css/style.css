@@ -1448,7 +1448,17 @@ input {
 }
 
 .comments__result-item > div {
-  width: 85vh;
+  width: 83vh;
+  height: 102px;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 27px;
+  padding: 1vh;
+  margin-bottom: 5px;
+}
+
+.comments__result-block {
+  width: 83vh;
   height: 102px;
   background-color: white;
   opacity: 0.8;
@@ -1485,6 +1495,7 @@ input {
 .comments__time {
   display: block;
   font-size: 15px;
+  font-style: italic;
   margin: 2vh 0 0 70vh;
 }
 
@@ -1524,6 +1535,13 @@ input {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+#user-avatar {
+  position: relative;
+  width: 60px;
+  top: 10px;
+  left: 5px;
 }
 
 .comments {
