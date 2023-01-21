@@ -11,7 +11,7 @@ btnStart.onclick = () => {
 
 // кнопки появляются после введения 5-го комеентария, чтоб мб листать
 function showButtons() {
-    if (comments.length < 5) {
+    if (comments.length < 2) {
         btnEnd.style.display = "none";
         btnStart.style.display = "none";
     } else {
