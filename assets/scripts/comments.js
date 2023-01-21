@@ -37,14 +37,14 @@ form.addEventListener("submit", function (e) {
 
     newElement.innerHTML = `
     ${imgTag}
-    <p class="comments__name" role="alert">${login || commentName.value}:</p> 
+    <p class="comments__name" role="alert">${resultLogin || commentName.value}:</p> 
     <p class="comments__content" role="alert">${commentBody.value}</p>
     <p class="comments__time"><em>${timeConverter(Math.floor(Date.now() / 1000))}</em></p>`;
 
     const commentsWrapper = document.querySelector(".comments__result-item");
     commentsWrapper.prepend(newElement);
 
-    commentName.value = ""; //очищаем строку
+    //очищаем строку
     commentBody.value = "";
 
     comments.push(comment); // добавляем коммент в массив
@@ -52,6 +52,7 @@ form.addEventListener("submit", function (e) {
     saveComments();
     showButtons();
     showComments();
+
 
     let block = document.getElementById("block"); // получение блока с комментариями для слайдера
     block.scrollTo(0, 0);
