@@ -130,6 +130,8 @@ document.getElementById('regForm').addEventListener("submit", () => {
                     document.getElementById('LKuserComment').value = aboutMe;
                 }
             });
+
+
             document.getElementById('kabinet_save').addEventListener('click', () => {
                 localStorage.setItem('about', document.getElementById('LKuserComment').value);
                 localStorage.setItem('login', document.getElementById("LKuserLogin").value);
@@ -161,7 +163,6 @@ document.getElementById('regForm').addEventListener("submit", () => {
             document.getElementById("LKuserEmail").value = mail;
             document.getElementById("LKuserPassword").value = pas;
         }
-
     });
 });
 

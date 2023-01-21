@@ -33,6 +33,8 @@ form.addEventListener("submit", function (e) {
 
     let login = localStorage.getItem("login");
 
+
+
     newElement.innerHTML = `
     ${imgTag}
     <p class="comments__name" role="alert">${login || commentName.value}:</p> 
