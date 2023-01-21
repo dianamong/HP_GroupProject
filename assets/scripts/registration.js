@@ -124,7 +124,7 @@ document.getElementById('regForm').addEventListener("submit", () => {
                 let elements = [...document.getElementsByClassName("text")].forEach(item => {
                     item.classList.add("text_click");
                 })
-
+                userFormPic.src = localStorage.getItem('avatar');
                 let aboutMe = localStorage.getItem("about");
                 if (aboutMe !== null) {
                     document.getElementById('LKuserComment').value = aboutMe;
